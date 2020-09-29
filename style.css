@@ -4,13 +4,25 @@
 ? 1. Importing Fonts
 * 2. MAIN STYLES
 ! 3. HEADER STYLES
+? 4. SLIDER STYLES
+* 5. BREADCRUMB_BAR STYLES
 -------------------------------------*/
 
 /* GROUP 1.@Importing Fonts */
+/*
+!==============================!
+?GROUP 1.@Importing Fonts
+!==============================!
+*/
 
 @import "https://fonts.googleapis.com/css2?family=Montserrat&display=swap";
 
-/* GROUP 2.@MAIN STYLES */
+/*
+!==============================!
+*GROUP 2.@MAIN STYLES
+!==============================!
+*/
+
 * {
   font-family: "Montserrat", sans-serif;
 }
@@ -20,7 +32,15 @@ body {
   padding: 0;
 }
 
-/* GROUP 3.@HEADER STYLES */
+section{
+  margin-bottom: 30px;
+}
+
+/*
+!==============================!
+?GROUP 3.@HEADER STYLES
+!==============================!
+*/
 ul{
   list-style: none;
 }
@@ -173,6 +193,125 @@ header{
   padding: 0 10px;
 }
 
+.side_links a:hover{
+  color: #c40233;
+}
+
 .side_links{
   text-align: right;
+}
+
+
+/*
+!==============================!
+*GROUP 4.@SLIDER STYLES
+!==============================!
+*/
+
+
+.swiper-slide{
+  height: 450px !important;
+  background-position: center;
+  background-size: cover;
+}
+
+.slide_1{
+  background-image: url(./images/slide_1.png);
+}
+
+.slide_2{
+  background-image: url(./images/slide_2.png);
+}
+
+.slide_3{
+  background-image: url(./images/slide_3.png);
+}
+
+.slider_content{
+  padding: 7rem;
+  width: 50%;
+}
+
+.slide_1 .slider_content{
+  margin-right: auto;
+  text-align: left;
+}
+.slide_2 .slider_content{
+  margin: 0 auto;
+  text-align: center;
+}
+.slide_3 .slider_content{
+  margin-left: auto;
+  text-align: right;
+}
+
+.slider_content h1{
+  font-weight: 900;
+  font-size: 3.5rem;
+}
+.slider_content h2{
+  font-size: 2.5rem;
+}
+
+.slider_content button{
+  background-color: transparent;
+  border: 2px solid #222;
+  box-shadow: none;
+  padding: 10px 20px;
+  transition: all 0.4s;
+}
+.slider_content button:hover{
+  background-color: #222;
+  color: #fff;
+}
+
+/*
+!==============================!
+?GROUP 5.@BREADCRUMB_BAR STYLES
+!==============================!
+*/
+
+.bar{
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 100rem;
+  box-shadow: 0 0 10px #000;
+  display: flex;
+  padding: 0 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.first_half{
+  width: 20%;
+  padding: 10px 0;
+  position: relative;
+}
+.first_half::before,.second_half::before{
+  content: "";
+  clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  width: 35px;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 99.9%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  z-index: 100;
+}
+
+.second_half{
+  padding: 10px 40px;
+  width: 20%;
+  position: relative;
+  background-color: #c40233;
+  color: #fff;
+}
+.second_half::before{
+  background-color: #c40233;
+
+}
+
+.third_half{
+  padding: 10px 40px;
 }
