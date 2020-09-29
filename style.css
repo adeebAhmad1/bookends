@@ -1,0 +1,178 @@
+/* ------------------------------------
+![Table of contents]!
+
+? 1. Importing Fonts
+* 2. MAIN STYLES
+! 3. HEADER STYLES
+-------------------------------------*/
+
+/* GROUP 1.@Importing Fonts */
+
+@import "https://fonts.googleapis.com/css2?family=Montserrat&display=swap";
+
+/* GROUP 2.@MAIN STYLES */
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* GROUP 3.@HEADER STYLES */
+ul{
+  list-style: none;
+}
+.header_upper a {
+  font-size: 0.6rem;
+  display: inline-block;
+  padding: 0 10px;
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+}
+.header_upper {
+  font-size: 0.6rem;
+  padding: 6px 0;
+}
+.header_upper a:hover {
+  color: #666;
+}
+
+.header_email_wrapper {
+  text-align: right;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.header_logo {
+  font-weight: 800;
+  color: #c40233;
+}
+.links_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first_row{
+  display: none;
+}
+.header_links {
+  list-style: none;
+  margin: 0;
+}
+
+.link_item{
+  display: inline-block;
+}
+
+.header_links .link_item a {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  padding-bottom: 5px;
+  color: #333;
+}
+.link_item a::before {
+  content: "";
+  width: 0;
+  transition: all 0.3s;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #c40233;
+  border-radius: 100px;
+}
+.link_item:hover > a {
+  color: #c40233;
+}
+.link_item a:hover {
+  color: #c40233;
+}
+.link_item a:hover::before {
+  width: 100%;
+}
+.link_item svg {
+  color: #666;
+}
+.link_item:hover svg {
+  color: #c40233;
+}
+
+.mega-menu {
+  -webkit-tap-highlight-color: transparent;
+  font-weight: 400;
+  color: #666;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 2.4rem;
+  list-style: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  z-index: 3;
+  background: #fff;
+  padding: 30px 15px;
+  box-shadow: 0 0 3.76px 0.24px rgba(0, 0, 0, 0.15);
+  margin: 0 15px;
+  transform-style: preserve-3d;
+  transform: scaleY(0);
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: scaleY(0);
+  transform-origin: top;
+  transition: all 0.3s;
+}
+
+.mega-menu li ul li.mega-menu-title {
+  margin-bottom: 20px;
+}
+
+.mega-menu li ul li.mega-menu-title a {
+  color: #253237;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.mega-menu li a {
+  text-align: left;
+  color: #888;
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 13px;
+  padding-bottom: 0;
+}
+
+.dropdown_item:hover .mega-menu{
+  transform: scaleY(1);
+  -webkit-transform: scaleY(1);
+}
+
+.header{
+  padding: 10px 0;
+}
+header{
+  border-bottom: 1px solid #ddd ;
+}
+
+.side_links a{
+  text-decoration: none;
+  color: #333;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.side_links{
+  text-align: right;
+}
