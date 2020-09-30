@@ -1,21 +1,37 @@
 /* ------------------------------------
 ![Table of contents]!
-
+! 0. ROOT COLORS
 ? 1. Importing Fonts
 * 2. MAIN STYLES
 ! 3. HEADER STYLES
 ? 4. SLIDER STYLES
 * 5. BREADCRUMB_BAR STYLES
+! 6. CATEGORY_CARDS STYLES
+? 7. BOOKS_STACK STYLES
 -------------------------------------*/
 
-/* GROUP 1.@Importing Fonts */
+/*
+!==============================!
+?GROUP 0.@ROOT COLORS
+!==============================!
+*/
+
+:root{
+  --mate-red: #c40233;
+  --dark-midnight-blue: #152238;
+  --white: #fff;
+}
+
+
+
+
 /*
 !==============================!
 ?GROUP 1.@Importing Fonts
 !==============================!
 */
 
-@import "https://fonts.googleapis.com/css2?family=Montserrat&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
 
 /*
 !==============================!
@@ -68,7 +84,7 @@ ul{
 
 .header_logo {
   font-weight: 800;
-  color: #c40233;
+  color: var(--mate-red);
 }
 .links_wrapper {
   display: flex;
@@ -106,14 +122,14 @@ ul{
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #c40233;
+  background-color: var(--mate-red);
   border-radius: 100px;
 }
 .link_item:hover > a {
-  color: #c40233;
+  color: var(--mate-red);
 }
 .link_item a:hover {
-  color: #c40233;
+  color: var(--mate-red);
 }
 .link_item a:hover::before {
   width: 100%;
@@ -122,7 +138,7 @@ ul{
   color: #666;
 }
 .link_item:hover svg {
-  color: #c40233;
+  color: var(--mate-red);
 }
 
 .mega-menu {
@@ -142,7 +158,7 @@ ul{
   right: 0;
   max-width: 100%;
   z-index: 3;
-  background: #fff;
+  background: var(--white);
   padding: 30px 15px;
   box-shadow: 0 0 3.76px 0.24px rgba(0, 0, 0, 0.15);
   margin: 0 15px;
@@ -156,6 +172,10 @@ ul{
 
 .mega-menu li ul li.mega-menu-title {
   margin-bottom: 20px;
+}
+
+.mega-menu li ul{
+  padding: 0;
 }
 
 .mega-menu li ul li.mega-menu-title a {
@@ -194,7 +214,7 @@ header{
 }
 
 .side_links a:hover{
-  color: #c40233;
+  color: var(--mate-red);
 }
 
 .side_links{
@@ -228,7 +248,7 @@ header{
 }
 
 .slider_content{
-  padding: 7rem;
+  padding: 6rem;
   width: 50%;
 }
 
@@ -262,7 +282,7 @@ header{
 }
 .slider_content button:hover{
   background-color: #222;
-  color: #fff;
+  color: var(--white);
 }
 
 /*
@@ -280,6 +300,8 @@ header{
   font-weight: bold;
   box-shadow: 0 0 10px #000;
   text-align: center;
+  background-color:var(--dark-midnight-blue);
+  color: var(--white);
 }
 
 .first_half{
@@ -296,25 +318,33 @@ header{
   top: 50%;
   left: 99.9%;
   transform: translateY(-50%);
-  background-color: #fff;
+  background-color: var(--dark-midnight-blue);
   z-index: 100;
 }
 
 .second_half{
-  padding: 10px 40px;
+  padding: 10px 50px;
   width: 20%;
   position: relative;
-  background-color: #c40233;
-  color: #fff;
+  background-color: var(--mate-red);
+  color: var(--white);
 }
 .second_half::before{
-  background-color: #c40233;
+  background-color: var(--mate-red);
 
 }
 
 .third_half{
-  padding: 10px 40px;
+  padding: 10px 50px;
 }
+
+
+/*
+!==============================!
+?GROUP 1.@Importing Fonts
+!==============================!
+*/
+
 
 .category_wrapper{
   width: 95%;
@@ -332,14 +362,83 @@ header{
   position: absolute;
   padding: 10px;
   top: 0;
-  width: 70%;
+  width: 75%;
   background-color: rgba(255, 255, 255, 0.5);
   font-weight: bold;
   top: 50%;
-  /* left: 50%; */
   transform: translate(0,-50%);
 }
 
 .category_card_content h1{
   font-size: 2rem;
+  font-weight: 700;
+}
+
+
+/*
+!==============================!
+*GROUP 6.@BOOKS_STACK STYLES
+!==============================!
+*/
+
+.books_stack{
+  background-color: #152238;
+  padding: 20px 0;
+}
+
+.stack_container{
+  width: 95%;
+  margin: 0 auto;
+  background-color: var(--white);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.stack_container h5{
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 10px;
+}
+.stack_images_wrapper{
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+.stack_container img{
+  height: 100%;
+  margin: 0 5px;
+  width: auto;
+  max-width: 165px;
+  transition: all 0.5s ease-in-out;
+  border-radius: 3px;
+}
+
+.stack_container figure{
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.stack_container figure:hover img{
+  filter: blur(4px) brightness(70%);
+}
+
+
+.stack_container figcaption{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,50%);
+  z-index: 100;
+  opacity: 0;
+  width: 100%;
+  text-align: center;
+  color: var(--white);
+  transition: all 0.5s ease-in-out;
+}
+
+.stack_container figure:hover figcaption{
+  opacity: 1;
+  transform: translate(-50%,-50%);
 }
