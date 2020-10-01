@@ -1,14 +1,28 @@
-/* ------------------------------------
+/* todo------------------------------------
 ![Table of contents]!
+
+
 ! 0. ROOT COLORS
+
 ? 1. Importing Fonts
+
 * 2. MAIN STYLES
+
 ! 3. HEADER STYLES
+
 ? 4. SLIDER STYLES
+
 * 5. BREADCRUMB_BAR STYLES
+
 ! 6. CATEGORY_CARDS STYLES
+
 ? 7. BOOKS_STACK STYLES
--------------------------------------*/
+
+* 8. PRODUCS STYLES
+
+! 9. ABOUT_US STYLES
+
+todo------------------------------------ */
 
 /*
 !==============================!
@@ -203,7 +217,7 @@ ul{
   padding: 10px 0;
 }
 header{
-  border-bottom: 1px solid #ddd ;
+  border-bottom: 1px solid #ddd;
 }
 
 .side_links a{
@@ -273,14 +287,14 @@ header{
   font-size: 2.5rem;
 }
 
-.slider_content button{
+.shop_btn{
   background-color: transparent;
   border: 2px solid #222;
   box-shadow: none;
   padding: 10px 20px;
   transition: all 0.4s;
 }
-.slider_content button:hover{
+.shop_btn:hover{
   background-color: #222;
   color: var(--white);
 }
@@ -341,7 +355,7 @@ header{
 
 /*
 !==============================!
-?GROUP 1.@Importing Fonts
+*GROUP 6.@CATEGORY_CARDS STYLES
 !==============================!
 */
 
@@ -377,7 +391,7 @@ header{
 
 /*
 !==============================!
-*GROUP 6.@BOOKS_STACK STYLES
+?GROUP 7.@BOOKS_STACK STYLES
 !==============================!
 */
 
@@ -441,4 +455,279 @@ header{
 .stack_container figure:hover figcaption{
   opacity: 1;
   transform: translate(-50%,-50%);
+}
+
+
+/*
+!==============================!
+?GROUP 8.@PRODUCS STYLES
+!==============================!
+*/
+
+.products_container{
+  padding-top: 70px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.heading_wrapper{
+  text-align: center;
+}
+
+.products_heading{
+  text-align: center;
+  font-weight: 800;
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.products_heading::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  z-index: -1;
+  background-color: var(--mate-red);
+  opacity: 0.3;
+}
+.products_buttons_wrapper{
+  text-align: center;
+  padding: 20px 10px;
+  margin-bottom: 20px;
+}
+
+.products_buttons_wrapper button{
+  background-color: #fff;
+  border: 2px dashed transparent;
+  color: var(--mate-red);
+  box-shadow: none;
+  display: inline-block;
+  width: 150px;
+  border-radius: 50rem;
+  margin: 10px;
+  padding: 10px;
+  transition: all 0.4s ease;
+  outline: none;
+}
+
+.product_card{
+  border: 1px solid #efefef;
+  background-color: #fff;
+}
+
+.product_image,.product_content{
+  width: 70%;
+  margin: 20px auto;
+  position: relative;
+}
+
+.product_image::before,.product_image::after{
+  content: "";
+  width: 0;
+  height: 100%;
+  transition: all 0.3s;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.product_image::before{
+  left: 0;
+}
+.product_image::after{
+  right: 0;
+}
+
+.product_card:hover .product_image::before{
+  width: 50%;
+}
+.product_card:hover .product_image::after{
+  width: 50%;
+}
+
+.products_buttons_wrapper button.active,.products_buttons_wrapper button:hover{
+  border-color: var(--mate-red);
+  color: #333;
+}
+
+.products_wrapper img{
+  width: 100%;
+}
+
+.product_content{
+  margin: 0 auto;
+}
+
+.product_content h5{
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product_content h5 span{
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: var(--mate-red);
+}
+
+.product_content p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.product_content p:last-child{
+  color: var(--mate-red);
+}
+
+.product_icon_wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.all_products{
+  position: relative;
+}
+
+.products_wrapper{
+  transform: rotateX(90deg);
+  transform-origin: top;
+  transition: all 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.products_wrapper.active{
+  transform: rotateX(0deg);
+  z-index: 0 !important;
+  position: relative !important;
+}
+
+.product_icons{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.product_icon{
+  width: 35px;
+  height: 35px;
+  display: flex;
+  background-color: #fff;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: all 0s;
+  opacity: 0;
+
+  transform: translateY(-50%);
+}
+
+.product_card:hover .product_icon:nth-child(1){
+  transition-delay: 0.3s;
+}
+.product_card:hover .product_icon:nth-child(2){
+  transition-delay: 0.5s;
+}
+.product_card:hover .product_icon:nth-child(3){
+  transition-delay: 0.7s;
+}
+
+
+.product_icon svg{
+  width: 15px;
+  height: 15px;
+}
+
+.product_card:hover .product_icon{
+  opacity: 1;
+  transition: all 0.5s;
+  transform: translateY(0);
+}
+
+
+.by{
+  font-size: 0.6rem;
+  margin-bottom: 0;
+}
+
+
+
+/*
+!==============================!
+?GROUP 9.@ABOUT_US STYLES
+!==============================!
+*/
+
+
+.about_us{
+  background-color: var(--dark-midnight-blue);
+}
+
+.about_inner{
+  padding: 20px;
+}
+
+.about_inner h1{
+  font-weight: 700;
+  text-align: center;
+}
+
+.about_heading{
+  font-size: 4rem;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.about_card{
+  background-color: #fff;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+/* .about_image{
+  width: 35%;
+} */
+
+.about_image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_image img{
+  width: 80%;
+}
+
+.about_content{
+  padding: 20px;
+}
+
+.about_content h1{
+  text-align: left;
+  margin-bottom: 1.5rem;
+  /* margin-top: 1rem; */
+}
+
+.about_content .shop_btn{
+  background-color: var(--mate-red);
+  border-color: var(--mate-red);
+  color: var(--white);
+}
+
+.about_content p{
+  text-align: justify;
+  margin-bottom: 1.5rem;
 }
