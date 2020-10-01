@@ -8,6 +8,10 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
@@ -289,6 +293,7 @@
 
     <main>
       <!-- ? SLIDER START -->
+
       <section class="slider">
         <div class="swiper-container">
           <!-- Additional required wrapper -->
@@ -333,9 +338,13 @@
           <div class="swiper-button-next"></div>
         </div>
       </section>
+
       <!-- ? SLIDER END ? -->
 
+
+
       <!-- * BREADCRUMB START * -->
+
       <section class="breadcrumb_bar">
         <div class="bar">
           <div class="first_half">Bookends</div>
@@ -343,14 +352,18 @@
           <div class="third_half">For those who Love books.</div>
         </div>
       </section>
+
       <!-- * BREADCRUMB END * -->
 
+
+
       <!-- ! CATEGORY CARDS START ! -->
+
       <section class="category_cards">
         <div class="category_wrapper">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-md-6">
                 <img src="./images/category_1.png" alt="" />
                 <div class="category_card_content">
                   <h1>Detective Novels</h1>
@@ -358,7 +371,7 @@
                   <p>SHOP NOW</p>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-md-6">
                 <img src="./images/category_2.png" alt="" />
                 <div class="category_card_content">
                   <h1>Drama & Fiction</h1>
@@ -366,10 +379,18 @@
                   <p>SHOP NOW</p>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-md-6">
                 <img src="./images/category_3.png" alt="" />
                 <div class="category_card_content">
                   <h1>Tragic Stories</h1>
+                  <p>50% off</p>
+                  <p>SHOP NOW</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 hide_on_large">
+                <img src="./images/category_4.png" alt="" />
+                <div class="category_card_content">
+                  <h1>Horror Stories</h1>
                   <p>50% off</p>
                   <p>SHOP NOW</p>
                 </div>
@@ -378,48 +399,50 @@
           </div>
         </div>
       </section>
+
       <!-- ! CATEGORY CARDS END ! -->
 
+
+
       <!-- ? BOOK STACK START ? -->
+
       <section class="books_stack">
         <div class="stack_container">
           <h5>Trending Deals</h5>
           <a href="#">See More</a>
-          <div class="stack_images_wrapper">
-            <figure>
+          <div class="stack_images_wrapper row">
+            <figure class="col-lg-2 col-md-4 col-sm-6">
               <img src="./images/stack_1.png" alt="" />
               <figcaption>For 50$ Only</figcaption>
             </figure>
-            <figure>
+            <figure class="col-lg-2 col-md-4 col-sm-6">
               <img src="./images/stack_2.png" alt="" />
               <figcaption>For 50$ Only</figcaption>
             </figure>
-            <figure>
+            <figure class="col-lg-2 col-md-4 col-sm-6">
               <img src="./images/stack_3.png" alt="" />
               <figcaption>For 50$ Only</figcaption>
             </figure>
-            <figure>
+            <figure class="col-lg-2 col-md-4 col-sm-6">
               <img src="./images/stack_4.png" alt="" />
               <figcaption>For 50$ Only</figcaption>
             </figure>
-            <figure>
+            <figure class="col-lg-2 col-md-4 col-sm-6">
               <img src="./images/stack_5.png" alt="" />
               <figcaption>For 50$ Only</figcaption>
             </figure>
-            <figure>
+            <figure class="col-lg-2 col-md-4 col-sm-6">
               <img src="./images/stack_6.png" alt="" />
-              <figcaption>For 50$ Only</figcaption>
-            </figure>
-            <figure>
-              <img src="./images/stack_7.png" alt="" />
               <figcaption>For 50$ Only</figcaption>
             </figure>
           </div>
         </div>
       </section>
+
       <!-- ? BOOK STACK END ? -->
 
       <!-- * PRODUCTS SECTION START * -->
+
       <section class="products">
         <div class="products_container">
           <div class="heading_wrapper">
@@ -433,7 +456,7 @@
           </div>
           <div class="all_products">
             <div class="products_wrapper row best active">
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="product_card">
                   <div class="product_image">
                     <img src="./images/stack_2.png" alt="" />
@@ -486,7 +509,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="product_card">
                   <div class="product_image">
                     <img src="./images/stack_3.png" alt="" />
@@ -539,7 +562,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="product_card">
                   <div class="product_image">
                     <img src="./images/stack_4.png" alt="" />
@@ -592,7 +615,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="product_card">
                   <div class="product_image">
                     <img src="./images/stack_5.png" alt="" />
@@ -647,7 +670,7 @@
               </div>
             </div>
             <div class="products_wrapper row featured">
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="product_card">
                   <div class="product_image">
                     <img src="./images/stack_5.png" alt="" />
@@ -700,7 +723,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="product_card">
                   <div class="product_image">
                     <img src="./images/stack_2.png" alt="" />
@@ -753,7 +776,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="product_card">
                   <div class="product_image">
                     <img src="./images/stack_3.png" alt="" />
@@ -806,7 +829,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="product_card">
                   <div class="product_image">
                     <img src="./images/stack_6.png" alt="" />
@@ -861,7 +884,7 @@
               </div>
             </div>
             <div class="products_wrapper row sale">
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="product_card">
                   <div class="product_image">
                     <img src="./images/stack_2.png" alt="" />
@@ -914,7 +937,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="product_card">
                   <div class="product_image">
                     <img src="./images/stack_7.png" alt="" />
@@ -967,7 +990,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="product_card">
                   <div class="product_image">
                     <img src="./images/stack_4.png" alt="" />
@@ -1020,7 +1043,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="product_card">
                   <div class="product_image">
                     <img src="./images/stack_3.png" alt="" />
@@ -1077,16 +1100,20 @@
           </div>
         </div>
       </section>
+
       <!-- * PRODUCTS SECTION END * -->
 
+
+
       <!-- ! ABOUT SECTION START ! -->
+
       <section class="about_us">
         <div class="container about_inner">
-          <h1 class="text-white about_heading">About Us</h1>
+          <h1 class="about_heading">About Us</h1>
           <div class="about_card container-fluid">
             <div class="row">
               <div class="col-lg-4 about_image">
-                  <img src="images/about_us_graph.png" alt="" srcset="" />
+                <img src="images/about_us_graph.png" alt="" srcset="" />
               </div>
               <div class="col-lg-8">
                 <div class="about_content">
@@ -1101,9 +1128,7 @@
                     ducimus expedita nostrum quaerat in maxime id dignissimos
                     minus?
                   </p>
-                  <button class="shop_btn">
-                    Learn More
-                  </button>
+                  <button class="shop_btn">Learn More</button>
                 </div>
               </div>
             </div>
@@ -1123,19 +1148,196 @@
                     ducimus expedita nostrum quaerat in maxime id dignissimos
                     minus?
                   </p>
-                  <button class="shop_btn">
-                    Learn More
-                  </button>
+                  <button class="shop_btn">Learn More</button>
                 </div>
               </div>
               <div class="col-lg-4 about_image">
-                  <img src="images/about_us_graph.png" alt="" srcset="" />
+                <img src="images/about_us_graph.png" alt="" srcset="" />
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <!-- ! ABOUT SECTION END ! -->
+
+
+
+      <!-- ? TESTIMONIAL SECTION START ? -->
+
+      <section class="testimonials">
+        <h1 class="text-center testimonial_heading text-white">TESTIMONIAL</h1>
+        <div class="container">
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper cd-testimonials">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="testimonial">
+                  <div class="testimonial-content">
+                    <p>
+                      FIRST SLIDE Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit. Maecenas sed diam eget risus varius
+                      blandit sit amet non magna.
+                    </p>
+                    <div class="cd-author">
+                      <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRJZG-8Pk5VYr_MOP4Ks3uEeZdArTUAizNRwg&usqp=CAU"
+                        alt="Author image"
+                      />
+                      <ul class="cd-author-info">
+                        <li>
+                          Lorem<strong>Ipsum</strong><br /><span
+                            >@twitterhandle</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial">
+                  <div class="testimonial-content">
+                    <p>
+                      SECOND SLIDE Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit. Maecenas sed diam eget risus varius
+                      blandit sit amet non magna.
+                    </p>
+                    <div class="cd-author">
+                      <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRJZG-8Pk5VYr_MOP4Ks3uEeZdArTUAizNRwg&usqp=CAU"
+                        alt="Author image"
+                      />
+                      <ul class="cd-author-info">
+                        <li>
+                          Lorem<strong>Ipsum</strong><br /><span
+                            >@twitterhandle</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial">
+                  <div class="testimonial-content">
+                    <p>
+                      THIRD SLIDE Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit. Maecenas sed diam eget risus varius
+                      blandit sit amet non magna.
+                    </p>
+                    <div class="cd-author">
+                      <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRJZG-8Pk5VYr_MOP4Ks3uEeZdArTUAizNRwg&usqp=CAU"
+                        alt="Author image"
+                      />
+                      <ul class="cd-author-info">
+                        <li>
+                          Lorem<strong>Ipsum</strong><br /><span
+                            >@twitterhandle</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev text-white"></div>
+            <div class="swiper-button-next text-white"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ? TESTIMONIAL SECTION END ? -->
+
+
+
+      <!-- * YOU MAY LIKE SECTION START * -->
+
+      <section class="you_may_like">
+        <h1 class="about_heading text-center">Hand Picked Product For You</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="inner_div">
+                <img class="main_img" src="./images/may_like_1.png" alt="">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="image_wrapper active">
+                      <img src="./images/may_like_1.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="image_wrapper">
+                      <img src="./images/may_like_2.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="image_wrapper">
+                      <img src="./images/may_like_3.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="image_wrapper">
+                      <img src="./images/stack_2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <h2>Harry Potter Series</h2>
+              <h3 class="price">$250.00</h3>
+              <p>
+                <svg width="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M205.22 22.09c-7.94-28.78-49.44-30.12-58.44 0C100.01 179.85 0 222.72 0 333.91 0 432.35 78.72 512 176 512s176-79.65 176-178.09c0-111.75-99.79-153.34-146.78-311.82zM176 448c-61.75 0-112-50.25-112-112 0-8.84 7.16-16 16-16s16 7.16 16 16c0 44.11 35.89 80 80 80 8.84 0 16 7.16 16 16s-7.16 16-16 16z"></path></svg>
+                <b>14</b> sold in last <b>10</b> hours.
+              </p>
+              <p>
+                <svg width="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M360 64c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24 0 90.965 51.016 167.734 120.842 192C75.016 280.266 24 357.035 24 448c-13.255 0-24 10.745-24 24v16c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24v-16c0-13.255-10.745-24-24-24 0-90.965-51.016-167.734-120.842-192C308.984 231.734 360 154.965 360 64zM192 208c-57.787 0-104-66.518-104-144h208c0 77.945-46.51 144-104 144z"></path></svg>
+                &nbsp;<span>HURRY! ONLY</span> <b class="price">15</b> <span>LEFT IN STOCK.</span>
+              </p>
+              <div class="bar_like"></div>
+              <p>Famous Publication of J.K ROWLING. Hurry limited stock left. To inspire your love of reading.</p>
+              <h6><b>J.K ROWLING</b></h6>
+              <div class="buttons_wrapper">
+                <div class="cart_item_number">
+                  <b data-sign="-" class="minus inc">-</b>
+                  <div contenteditable class="value">1</div>
+                  <b data-sign="+" class="plus inc">+</b>
+                </div>
+                <button class="cart_btn">Add to cart</button>
+                <button class="wishlist_button">
+                  <svg width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg>
+                </button>
+              </div>
+              <div class="supponsor">
+                <img src="./images/supponsor.png" alt="">
+                <img src="./images/supponsor2.png" alt="">
+                <img src="./images/supponsor3.png" alt="">
+              </div>
+              <p>
+                <svg width="13" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z"></path></svg>
+                <b>82 People</b> are viewing this product right now.
+              </p>
+              <p>
+                <svg width="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M624 352h-16V243.9c0-12.7-5.1-24.9-14.1-33.9L494 110.1c-9-9-21.2-14.1-33.9-14.1H416V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h16c0 53 43 96 96 96s96-43 96-96h128c0 53 43 96 96 96s96-43 96-96h48c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zM160 464c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm320 0c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm80-208H416V144h44.1l99.9 99.9V256z"></path></svg>
+                Order in next 19 Hours and 30 Minutes to get it between <u><b>Monday, 5th October</b></u> and <u><b>Sunday, 12th October</b></u>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- * YOU MAY LIKE SECTION END * -->
     </main>
     <!-- ! BODY END ! -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

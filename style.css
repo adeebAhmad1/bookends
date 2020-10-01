@@ -2,9 +2,7 @@
 ![Table of contents]!
 
 
-! 0. ROOT COLORS
-
-? 1. Importing Fonts
+? 1. ROOT COLORS
 
 * 2. MAIN STYLES
 
@@ -22,35 +20,36 @@
 
 ! 9. ABOUT_US STYLES
 
+? 10. TESTIMONIALS STYLES
+
+* 11. YOU MAY LIKE SECTION STYLES
+
 todo------------------------------------ */
 
+
 /*
+*==============================*
 !==============================!
-?GROUP 0.@ROOT COLORS
+?GROUP 1.@ROOT COLORS
 !==============================!
+*==============================*
 */
 
 :root{
   --mate-red: #c40233;
+  --mate-brown: #654321;
+  --mate-light-blue: #87cefa;
   --dark-midnight-blue: #152238;
   --white: #fff;
 }
 
 
-
-
 /*
-!==============================!
-?GROUP 1.@Importing Fonts
-!==============================!
-*/
-
-@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
-
-/*
+?==============================?
 !==============================!
 *GROUP 2.@MAIN STYLES
 !==============================!
+?==============================?
 */
 
 * {
@@ -67,9 +66,11 @@ section{
 }
 
 /*
+*==============================*
 !==============================!
 ?GROUP 3.@HEADER STYLES
 !==============================!
+*==============================*
 */
 ul{
   list-style: none;
@@ -237,13 +238,15 @@ header{
 
 
 /*
+?==============================?
 !==============================!
 *GROUP 4.@SLIDER STYLES
 !==============================!
+?==============================?
 */
 
 
-.swiper-slide{
+.slider .swiper-slide{
   height: 450px !important;
   background-position: center;
   background-size: cover;
@@ -300,9 +303,11 @@ header{
 }
 
 /*
+*==============================*
 !==============================!
 ?GROUP 5.@BREADCRUMB_BAR STYLES
 !==============================!
+*==============================*
 */
 
 .bar{
@@ -330,15 +335,22 @@ header{
   height: 100%;
   position: absolute;
   top: 50%;
-  left: 99.9%;
+  left: 99%;
   transform: translateY(-50%);
   background-color: var(--dark-midnight-blue);
   z-index: 100;
 }
 
+
+@media (min-width: 992px) {
+  .hide_on_large{
+    display: none;
+  }
+}
+
 .second_half{
-  padding: 10px 50px;
-  width: 20%;
+  padding: 10px 0 10px 50px;
+  width: 25%;
   position: relative;
   background-color: var(--mate-red);
   color: var(--white);
@@ -354,9 +366,11 @@ header{
 
 
 /*
+?==============================?
 !==============================!
 *GROUP 6.@CATEGORY_CARDS STYLES
 !==============================!
+?==============================?
 */
 
 
@@ -390,9 +404,11 @@ header{
 
 
 /*
+*==============================*
 !==============================!
 ?GROUP 7.@BOOKS_STACK STYLES
 !==============================!
+*==============================*
 */
 
 .books_stack{
@@ -414,16 +430,12 @@ header{
   display: inline-block;
   margin-right: 10px;
 }
-.stack_images_wrapper{
-  height: 250px;
-  display: flex;
-  justify-content: space-between;
-}
+
 .stack_container img{
   height: 100%;
   margin: 0 5px;
-  width: auto;
-  max-width: 165px;
+  /* width: auto; */
+  width: 100%;
   transition: all 0.5s ease-in-out;
   border-radius: 3px;
 }
@@ -432,6 +444,10 @@ header{
   position: relative;
   cursor: pointer;
   margin-bottom: 0;
+}
+
+.stack_container figure:last-child{
+  padding-right: 25px !important;
 }
 
 .stack_container figure:hover img{
@@ -459,9 +475,11 @@ header{
 
 
 /*
+?==============================?
 !==============================!
-?GROUP 8.@PRODUCS STYLES
+*GROUP 8.@PRODUCS STYLES
 !==============================!
+?==============================?
 */
 
 .products_container{
@@ -501,7 +519,7 @@ header{
 }
 
 .products_buttons_wrapper button{
-  background-color: #fff;
+  background-color: var(--white);
   border: 2px dashed transparent;
   color: var(--mate-red);
   box-shadow: none;
@@ -516,7 +534,7 @@ header{
 
 .product_card{
   border: 1px solid #efefef;
-  background-color: #fff;
+  background-color:var(--white);
 }
 
 .product_image,.product_content{
@@ -624,7 +642,7 @@ header{
   width: 35px;
   height: 35px;
   display: flex;
-  background-color: #fff;
+  background-color:var(--white);
   border-radius: 50%;
   justify-content: center;
   align-items: center;
@@ -666,14 +684,16 @@ header{
 
 
 /*
+*==============================*
 !==============================!
-?GROUP 9.@ABOUT_US STYLES
+? GROUP 9.@ABOUT_US STYLES
 !==============================!
+*==============================*
 */
 
 
 .about_us{
-  background-color: var(--dark-midnight-blue);
+  background-color: #f0f0f0;
 }
 
 .about_inner{
@@ -681,25 +701,23 @@ header{
 }
 
 .about_inner h1{
-  font-weight: 700;
   text-align: center;
+  font-weight: 700;
 }
 
 .about_heading{
+  font-weight: 700;
   font-size: 4rem;
   padding: 20px;
+  color: var(--mate-light-blue);
   margin-bottom: 20px;
 }
 
 .about_card{
-  background-color: #fff;
+  background-color: var(--white);
   margin-bottom: 40px;
   padding: 20px;
 }
-
-/* .about_image{
-  width: 35%;
-} */
 
 .about_image{
   display: flex;
@@ -730,4 +748,296 @@ header{
 .about_content p{
   text-align: justify;
   margin-bottom: 1.5rem;
+}
+
+/*
+?==============================?
+!==============================!
+* GROUP 10.@TESTIMONIALS STYLES
+!==============================!
+?==============================?
+*/
+
+.testimonials{
+  background-color: var(--mate-brown);
+  padding-bottom: 30px;
+}
+
+.testimonial_heading{
+  font-weight: bold;
+  font-style: italic;
+  font-size: 3.5rem;
+  padding: 30px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cd-testimonials {
+	color: var(--white);
+	text-align: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.cd-testimonials > .testimonial {
+	position: absolute;
+	opacity: 0;
+}
+
+.cd-testimonials > .testimonial:first-child {
+	position: relative;
+	opacity: 1;
+}
+
+.testimonial-content p {
+	font-style: italic;
+	line-height: 1.4;
+	margin-bottom: 1em;
+  padding: 0 14px;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 768px) {
+	.testimonial-content p {
+		font-size: 20px;
+	}
+}
+
+@media only screen and (min-width: 1170px) {
+	.testimonial-content p {
+		font-size: 24px;
+		line-height: 1.6;
+	}
+}
+
+.cd-author-info span p {
+	display: inline-block;
+	font-size: 14px;
+	padding-left: 0;
+}
+
+.cd-author img,
+.cd-author .cd-author-info {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.cd-author img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+
+.cd-author .cd-author-info {
+	text-align: left;
+	line-height: 1;
+}
+
+.cd-author .cd-author-info li:first-child {
+	font-size: 14px;
+	margin-top: 4px;
+}
+
+.cd-author .cd-author-info li:last-child {
+	font-size: 12px;
+}
+
+ul.cd-author-info {
+	list-style: none;
+}
+
+.testimonial-content {
+  max-width: 1000px;
+  width: 80%;
+  margin: 0 auto 30px auto;
+}
+
+ul.cd-author-info li span {
+	font-size: 14px;
+	padding-left: 30px;
+	line-height: 24px;
+	font-style: italic;
+	font-weight: 300;
+}
+
+@media only screen and (min-width: 768px) {
+	.cd-author img {
+		width: 58px;
+		height: 58px;
+	}
+	.cd-author .cd-author-info {
+		line-height: 1.4;
+	}
+	.cd-author .cd-author-info li:first-child {
+		font-size: 18px;
+	}
+}
+
+
+/*
+*==============================*
+!==============================!
+?GROUP 11.@YOU MAY LIKE SECTION STYLES
+!==============================!
+*==============================*
+*/
+
+
+.you_may_like img{
+  width: 100%;
+}
+.you_may_like .main_img{
+  margin-bottom: 20px;
+}
+
+.inner_div{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.image_wrapper{
+  position: relative;
+}
+
+.image_wrapper img{
+  height: 100%;
+}
+
+.image_wrapper::before,.image_wrapper::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 50%;
+  left: 0;
+  transition: all 0.3s;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.image_wrapper::before{
+  top: 0;
+}
+
+.image_wrapper::after{
+  bottom: 0;
+}
+
+.image_wrapper:hover::before,
+.image_wrapper:hover::after,
+.image_wrapper.active::before,
+.image_wrapper.active::after{
+  height: 0;
+}
+
+.price{
+  color: var(--mate-red);
+}
+
+.you_may_like h2{
+  font-weight: 700;
+}
+
+.you_may_like p{
+  line-height: 2.5;
+}
+
+.bar_like{
+  width: 80%;
+  border-radius: 10rem;
+  position: relative;
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+.bar_like::before{
+  content: "";
+  width: 100%;
+  border-radius: 10rem;
+  height: 100%;
+  background-color: var(--mate-red);
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bar_like::after{
+  content: "";
+  position: absolute;
+  border-radius: 10rem;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--mate-red);
+  width: 30%;
+}
+
+.you_may_like p{
+  width: 80%;
+}
+
+.cart_item_number{
+  min-width: 100px;
+  width: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10rem;
+  border: 2px solid #222;
+  user-select: none;
+  display: inline-flex;
+  margin-right: 30px;
+}
+
+.cart_item_number .inc{
+  cursor: pointer;
+}
+
+.cart_item_number .value{
+  outline: none;
+  cursor: text;
+  width: -webkit-fill-available;
+  text-align: center;
+  padding: 0 10px;
+}
+.buttons_wrapper{
+  margin-bottom: 20px;
+}
+
+.buttons_wrapper .cart_btn{
+  background-color: var(--dark-midnight-blue);
+  color: var(--white);
+  border-radius: 30rem;
+  border: none;
+  padding: 10px 30px;
+  font-weight: 600;
+  outline: none;
+  margin-right: 20px;
+}
+
+.wishlist_button{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  border: 2px solid #333;
+  background: none;
+  justify-content: center;
+  display: inline-block;
+  align-items: center;
+  transition: all 0.3s;
+  border-radius: 50%;
+}
+
+.wishlist_button:hover{
+  color: var(--mate-red);
+  border-color: var(--mate-red);
+}
+
+.supponsor img{
+  width: 20% !important;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
 }
