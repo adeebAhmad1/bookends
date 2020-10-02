@@ -6,9 +6,20 @@ const you_may_like_main_img = document.querySelector('.main_img');
 const cart_item_number = document.querySelector('.cart_item_number');
 
 // ? SWIPER JS INITIALIZATION
-var mySwiper = new Swiper('.swiper-container', {
+var mySwiper = new Swiper('.swiper_container', {
   // Optional parameters
   loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+})
+new Swiper('.insta_slider', {
+  // Optional parameters
+  loop: true,
+  slidesPerView: 5,
+  spaceBetween: 20,
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',

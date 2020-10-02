@@ -24,6 +24,18 @@
 
 * 11. YOU MAY LIKE SECTION STYLES
 
+! 12. EXPLORE MORE STYLES
+
+? 13. INSTAGRAM SECTION STYLES
+
+* 14. CONTACT US SECTION STYLES
+
+! 15. BRANDS SECTION STYLES( NO STYLES )
+
+? 16. HOW WE HELP YOU SECTION STYLES
+
+* 17. CONTACT FORM SECTION STYLES
+
 todo------------------------------------ */
 
 
@@ -1036,8 +1048,211 @@ ul.cd-author-info li span {
 }
 
 .supponsor img{
-  width: 20% !important;
+  width: 15% !important;
   margin-right: 20px;
   margin-bottom: 20px;
+}
 
+/*
+?==============================?
+!==============================!
+*GROUP 12.@EXPLORE MORE STYLES
+!==============================!
+?==============================?
+*/
+
+.explore_card_1{
+  right: 0;
+  text-align: right;
+  margin-right: 15px;
+}
+
+p.explore_para span{
+  font-size: 1.5rem;
+}
+
+.explore_content{
+  width: 55%;
+  text-transform: uppercase;
+}
+
+.explore_content h1{
+  font-weight: lighter;
+}
+
+/*
+*==============================*
+!==============================!
+?GROUP 13.@INSTAGRAM SECTION STYLES
+!==============================!
+*==============================*
+*/
+
+.instagram_section{
+  line-height: 2;
+}
+
+.insta_slider img{
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+}
+
+.insta_slider .swiper-slide{
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+  padding: 30px 0;
+  cursor: pointer;
+}
+
+.insta_slider{
+  width: 95%;
+  padding: 40px;
+  margin: 0 auto;
+  /* overflow: hidden; */
+}
+
+.insta_slider svg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: 2;
+}
+
+.insta_slider .swiper-slide::before{
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  transition: all 0.3s;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.insta_slider .swiper-slide:hover::before,.insta_slider .swiper-slide:hover svg{
+  opacity: 1;
+}
+
+.btn_insta{
+  padding: 10px 20px !important;
+  width: max-content !important;
+  background: var(--mate-red) !important;
+  border-radius: 2px !important;
+  color: #fff !important;
+  position: relative !important;
+  border: none !important;
+}
+
+.btn_insta::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  transition: all 0.3s;
+  opacity: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn_insta:hover::before{
+  opacity: 1;
+}
+
+.btn_insta span{
+  display: inline-block;
+  position: relative;
+  z-index: 100;
+}
+
+
+/*
+*==============================*
+!==============================!
+?GROUP 14.@CONTACT US SECTION STYLES
+!==============================!
+*==============================*
+*/
+
+
+section.contact_us{
+  background-color: #eee;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+
+.contact_us_inner{
+  padding: 30px;
+}
+
+
+.contact_us_inner{
+  color: var(--dark-midnight-blue);
+  line-height: 2;
+}
+
+
+
+/*
+*==============================*
+!==============================!
+?GROUP 16.@HOW WE HELP YOU SECTION STYLES
+!==============================!
+*==============================*
+*/
+
+.help_us{
+  background-image: url(./images/book_1.png);
+  background-size: cover;
+  background-position: center;
+  line-height: 3;
+}
+
+.help_us_inner{
+  backdrop-filter: blur(20px);
+}
+
+
+/*
+*==============================*
+!==============================!
+?GROUP 17.@CONTACT FORM SECTION STYLES
+!==============================!
+*==============================*
+*/
+
+.contact_form input,.contact_form textarea{
+  padding: 1rem;
+  height: auto !important;
+  font-weight: 700;
+}
+
+.contact_form .row{
+  margin-bottom: 2rem;
+}
+
+.contact_form label{
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.label_wrapper{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer_main{
+  background-color: var(--dark-midnight-blue);
+}
+
+.footer_sub{
+  background-color: #2e2e2e;
 }
