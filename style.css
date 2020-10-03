@@ -1254,5 +1254,15 @@ section.contact_us{
 }
 
 .footer_sub{
-  background-color: #2e2e2e;
+  background-color: #112223;
+}
+
+.footer_link{
+  font-size: 0.8rem;
+}
+
+
+.cookie_box_inner{
+  background-color: #9f9f9f;
+  font-weight: 500;
 }
