@@ -962,6 +962,8 @@ ul.cd-author-info li span {
   margin-bottom: 20px;
 }
 
+
+
 .bar_like::before{
   content: "";
   width: 100%;
@@ -1051,6 +1053,17 @@ ul.cd-author-info li span {
   width: 15% !important;
   margin-right: 20px;
   margin-bottom: 20px;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .bar_like{
+    width: 100%;
+  }
+  .you_may_like p{
+    width: 100%;
+  }
 }
 
 /*
@@ -1266,3 +1279,5 @@ section.contact_us{
   background-color: #9f9f9f;
   font-weight: 500;
 }
+
+
