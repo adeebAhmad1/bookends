@@ -14,11 +14,12 @@ var mySwiper = new Swiper('.swiper_container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   }
-})
+});
+const slidesPerView = innerWidth > 992 ? 5 : innerWidth > 768 ? 4 : innerWidth > 576 ? 3 : innerWidth < 576 ? 2 : 2
 new Swiper('.insta_slider', {
   // Optional parameters
   loop: true,
-  slidesPerView: 5,
+  slidesPerView,
   spaceBetween: 20,
   // Navigation arrows
   navigation: {
