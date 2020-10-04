@@ -1,9 +1,19 @@
 // ! PRODUCT BUTTONS
-const product_buttons = document.querySelectorAll(".products_buttons_wrapper button")
-const product_container = document.querySelectorAll(".products_wrapper")
+const product_buttons = document.querySelectorAll(".products_buttons_wrapper button");
+const product_container = document.querySelectorAll(".products_wrapper");
 const you_may_like_image_selector = document.querySelectorAll('.image_wrapper');
 const you_may_like_main_img = document.querySelector('.main_img');
 const cart_item_number = document.querySelector('.cart_item_number');
+const accept_cookie = document.querySelectorAll('.accept_cookie');
+const cookie_box = document.querySelector('.cookie_box');
+const cart_icon = document.querySelectorAll('.cart_icon');
+
+
+cart_icon.forEach(el=>{
+  el.addEventListener("click",()=>{
+    document.body.classList.toggle("overflow-hidden");
+  })
+})
 
 // ? SWIPER JS INITIALIZATION
 var mySwiper = new Swiper('.swiper_container', {
@@ -15,7 +25,17 @@ var mySwiper = new Swiper('.swiper_container', {
     prevEl: '.swiper-button-prev',
   }
 });
-const slidesPerView = innerWidth > 992 ? 5 : innerWidth > 768 ? 4 : innerWidth > 576 ? 3 : innerWidth < 576 ? 2 : 2
+
+if(localStorage.getItem("cookie") != "done"){
+  accept_cookie.forEach(el=> el.addEventListener("click",(e)=>{
+    e.preventDefault();
+    cookie_box.classList.add("d-none");
+    localStorage.setItem("cookie","done");
+  }))
+} else{
+  cookie_box.classList.add("d-none");
+}
+const slidesPerView = innerWidth > 992 ? 5 : innerWidth > 768 ? 4 : innerWidth > 576 ? 3 : innerWidth < 576 ? 2 : 2;
 new Swiper('.insta_slider', {
   // Optional parameters
   loop: true,
@@ -25,6 +45,17 @@ new Swiper('.insta_slider', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  }
+})
+new Swiper('.brand_container', {
+  // Optional parameters
+  loop: true,
+  slidesPerView: 6,
+  spaceBetween: 30,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.next_arrow',
+    prevEl: '.prev_arrow',
   }
 })
 
@@ -50,7 +81,7 @@ product_buttons.forEach(el=>{
   const num = cart_item_number.querySelector(".value");
   el.addEventListener('click',()=>{
     if(+num.textContent >= 1 || el.dataset.sign != "-"){
-      num.textContent = eval(`${num.textContent+el.dataset.sign + "1"}`)
+      num.textContent = eval(`${num.textContent+el.dataset.sign + "1"}`);
     }
   });
 })

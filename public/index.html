@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -27,7 +27,7 @@
             <div class="col-lg-7">
               <a href="#">
                 <svg
-                  width="9"
+                  width="0.5rem"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 384 512"
                 >
@@ -39,72 +39,95 @@
                 Store Locator
               </a>
               |
-              <a href="#">
-                <svg
-                  width="9"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 384 512"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M209.2 233.4l-108-31.6C88.7 198.2 80 186.5 80 173.5c0-16.3 13.2-29.5 29.5-29.5h66.3c12.2 0 24.2 3.7 34.2 10.5 6.1 4.1 14.3 3.1 19.5-2l34.8-34c7.1-6.9 6.1-18.4-1.8-24.5C238 74.8 207.4 64.1 176 64V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C45.8 64-5.4 118.7.5 183.6c4.2 46.1 39.4 83.6 83.8 96.6l102.5 30c12.5 3.7 21.2 15.3 21.2 28.3 0 16.3-13.2 29.5-29.5 29.5h-66.3C100 368 88 364.3 78 357.5c-6.1-4.1-14.3-3.1-19.5 2l-34.8 34c-7.1 6.9-6.1 18.4 1.8 24.5 24.5 19.2 55.1 29.9 86.5 30v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48.2c46.6-.9 90.3-28.6 105.7-72.7 21.5-61.6-14.6-124.8-72.5-141.7z"
-                  ></path>
-                </svg>
-                Currency
-                <span>&nbsp;</span>
-                <svg
-                  width="7"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
-                  ></path>
-                </svg>
+              <a href="#" class="dropdown_outer">
+                <span class="word_wrapper">
+                  <svg
+                    width="0.5rem"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 384 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M209.2 233.4l-108-31.6C88.7 198.2 80 186.5 80 173.5c0-16.3 13.2-29.5 29.5-29.5h66.3c12.2 0 24.2 3.7 34.2 10.5 6.1 4.1 14.3 3.1 19.5-2l34.8-34c7.1-6.9 6.1-18.4-1.8-24.5C238 74.8 207.4 64.1 176 64V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C45.8 64-5.4 118.7.5 183.6c4.2 46.1 39.4 83.6 83.8 96.6l102.5 30c12.5 3.7 21.2 15.3 21.2 28.3 0 16.3-13.2 29.5-29.5 29.5h-66.3C100 368 88 364.3 78 357.5c-6.1-4.1-14.3-3.1-19.5 2l-34.8 34c-7.1 6.9-6.1 18.4 1.8 24.5 24.5 19.2 55.1 29.9 86.5 30v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48.2c46.6-.9 90.3-28.6 105.7-72.7 21.5-61.6-14.6-124.8-72.5-141.7z"
+                    ></path>
+                  </svg>
+                  Currency
+                  <span>&nbsp;</span>
+                  <svg
+                    width="0.5rem"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                    ></path>
+                  </svg>
+                </span>
+                <span class="dropdown_wrapper">
+                  <div class="item">USD($)</div>
+                  <div class="item">GBP(£)</div>
+                  <div class="item">EUR(€)</div>
+                </span>
               </a>
               |
-              <a href="#">
-                Language
-                <span>&nbsp;</span>
-                <svg
-                  width="7"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
-                  ></path>
-                </svg>
+              <a href="#" class="dropdown_outer">
+                <span class="word_wrapper">
+                  Language
+                  <span>&nbsp;</span>
+                  <svg
+                    width="0.5rem"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                    ></path>
+                  </svg>
+                </span>
+                <span class="dropdown_wrapper">
+                  <div class="item">ENGLISH</div>
+                  <div class="item">FRENCH</div>
+                  <div class="item">DUTCH</div>
+                  <div class="item">ARABIC</div>
+                </span>
               </a>
               |
-              <a href="#">
-                <svg
-                  width="9"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
-                  ></path>
-                </svg>
-                My Account
-                <span>&nbsp;</span>
-                <svg
-                  width="7"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
-                  ></path>
-                </svg>
+              <a href="#" class="dropdown_outer">
+                <span>
+                  <svg
+                    width="0.5rem"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+                    ></path>
+                  </svg>
+                  My Account
+                  <span>&nbsp;</span>
+                  <svg
+                    width="0.5rem"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                    ></path>
+                  </svg>
+                </span>
+                <span class="dropdown_wrapper">
+                  <div class="item">INFORMATION</div>
+                  <div class="item">EDIT INFO</div>
+                  <div class="item">SETTINGS</div>
+                  <div class="item">LOGOUT</div>
+                </span>
               </a>
             </div>
             <div class="col-lg-5">
@@ -126,7 +149,7 @@
                   <a href="#">
                     Books
                     <svg
-                      width="8"
+                      width="0.5rem"
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
@@ -177,7 +200,7 @@
                   <a href="#">
                     Kids
                     <svg
-                      width="8"
+                      width="0.5rem"
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
@@ -237,7 +260,7 @@
               <div class="side_links">
                 <a href="#">
                   <svg
-                    width="20"
+                    width="1.25rem"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"
                   >
@@ -249,7 +272,7 @@
                 </a>
                 <a href="#">
                   <svg
-                    width="20"
+                    width="1.25rem"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"
                   >
@@ -261,7 +284,7 @@
                 </a>
                 <a href="#">
                   <svg
-                    width="20"
+                    width="1.25rem"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"
                   >
@@ -271,9 +294,9 @@
                     ></path>
                   </svg>
                 </a>
-                <a href="#">
+                <a href="#" class="cart_icon">
                   <svg
-                    width="20"
+                    width="1.25rem"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 576 512"
                   >
@@ -291,6 +314,26 @@
     </header>
     <!-- ! HEADER END ! -->
 
+    <!-- TODO ({CART STARTS}) -->
+
+    <div class="cart_menu bg-white position-fixed d-flex flex-column">
+      <div class="cart_heading p-3">
+        <h3 class="px-2">
+          <span class="h6">Cart (0) </span>
+          <a
+            href="#"
+            class="text-decoration-none cart_icon float-right text-dark"
+            >&times;</a
+          >
+        </h3>
+      </div>
+      <hr class="m-0" />
+      <div class="h-100 d-flex justify-content-center align-items-center">
+        No Items in the cart
+      </div>
+    </div>
+
+    <!-- TODO ({CART ENDS}) -->
     <main>
       <!-- ? SLIDER START -->
 
@@ -334,8 +377,8 @@
             </div>
           </div>
           <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="text-dark swiper-button-prev"></div>
+          <div class="text-dark swiper-button-next"></div>
         </div>
       </section>
 
@@ -356,40 +399,38 @@
       <!-- ! CATEGORY CARDS START ! -->
 
       <section class="category_cards">
-        <div class="category_wrapper">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-lg-4 col-md-6 col-sm-6 col-6">
-                <img src="./images/category_1.png" alt="" />
-                <div class="category_card_content">
-                  <h1>Detective Novels</h1>
-                  <p>50% off</p>
-                  <p>SHOP NOW</p>
-                </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+              <img src="./images/category_1.png" alt="" />
+              <div class="category_card_content">
+                <h3>Detective Novels</h3>
+                <p>50% off</p>
+                <p>SHOP NOW</p>
               </div>
-              <div class="col-lg-4 col-md-6 col-sm-6 col-6">
-                <img src="./images/category_2.png" alt="" />
-                <div class="category_card_content">
-                  <h1>Drama & Fiction</h1>
-                  <p>50% off</p>
-                  <p>SHOP NOW</p>
-                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+              <img src="./images/category_2.png" alt="" />
+              <div class="category_card_content">
+                <h3>Drama & Fiction</h3>
+                <p>50% off</p>
+                <p>SHOP NOW</p>
               </div>
-              <div class="col-lg-4 col-md-6 col-sm-6 col-6">
-                <img src="./images/category_3.png" alt="" />
-                <div class="category_card_content">
-                  <h1>Tragic Stories</h1>
-                  <p>50% off</p>
-                  <p>SHOP NOW</p>
-                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+              <img src="./images/category_3.png" alt="" />
+              <div class="category_card_content">
+                <h3>Tragic Stories</h3>
+                <p>50% off</p>
+                <p>SHOP NOW</p>
               </div>
-              <div class="col-lg-4 col-md-6 col-sm-6 col-6 hide_on_large">
-                <img src="./images/category_4.png" alt="" />
-                <div class="category_card_content">
-                  <h1>Horror Stories</h1>
-                  <p>50% off</p>
-                  <p>SHOP NOW</p>
-                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-6 hide_on_large">
+              <img src="./images/category_4.png" alt="" />
+              <div class="category_card_content">
+                <h3>Horror Stories</h3>
+                <p>50% off</p>
+                <p>SHOP NOW</p>
               </div>
             </div>
           </div>
@@ -400,7 +441,7 @@
 
       <!-- ? BOOK STACK START ? -->
 
-      <section class="books_stack">
+      <!-- <section class="books_stack">
         <div class="stack_container">
           <h5>Trending Deals</h5>
           <a href="#">See More</a>
@@ -431,16 +472,16 @@
             </figure>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- ? BOOK STACK END ? -->
 
       <!-- * PRODUCTS SECTION START * -->
 
       <section class="products">
-        <div class="products_container">
-          <div class="heading_wrapper">
-            <h2 class="products_heading">Products</h2>
+        <div class="container pt-5">
+          <div class="heading_wrapper pt-2">
+            <h1 class="products_heading">Products</h1>
             <p>Books that inspire you & increase your love of reading.</p>
           </div>
           <div class="products_buttons_wrapper">
@@ -448,7 +489,7 @@
             <button data-target=".featured">Featured</button>
             <button data-target=".sale">Sale off</button>
           </div>
-          <div class="all_products">
+          <div class="all_products container">
             <div class="products_wrapper row best active">
               <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                 <div class="product_card">
@@ -1109,7 +1150,7 @@
               </div>
               <div class="col-lg-8">
                 <div class="about_content">
-                  <h1>What is Lorem Ipsum?</h1>
+                  <h3>What is Lorem Ipsum?</h3>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
                     veniam rerum vitae odio molestiae dolorum, tempore totam
@@ -1129,7 +1170,7 @@
             <div class="row">
               <div class="col-lg-8">
                 <div class="about_content">
-                  <h1>What is Lorem Ipsum?</h1>
+                  <h3>What is Lorem Ipsum?</h3>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
                     veniam rerum vitae odio molestiae dolorum, tempore totam
@@ -1160,78 +1201,68 @@
         <div class="container">
           <div class="swiper-container swiper_container">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper cd-testimonials">
+            <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
                 <div class="testimonial">
-                  <div class="testimonial-content">
-                    <p>
-                      FIRST SLIDE Lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit. Maecenas sed diam eget risus varius
-                      blandit sit amet non magna.
-                    </p>
-                    <div class="cd-author">
+                  <div class="testimonial-content mx-3">
+                    <div class="pic">
                       <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRJZG-8Pk5VYr_MOP4Ks3uEeZdArTUAizNRwg&usqp=CAU"
-                        alt="Author image"
+                        src="https://bestjquery.com/tutorial/testimonial/demo48/images/img-2.jpg"
+                        alt=""
                       />
-                      <ul class="cd-author-info">
-                        <li>
-                          Lorem<strong>Ipsum</strong><br /><span
-                            >@twitterhandle</span
-                          >
-                        </li>
-                      </ul>
                     </div>
+                    <h3 class="title">Williamson</h3>
+                    <span class="post">Web Developer</span>
                   </div>
+                  <p class="description mr-5">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nullam dolor tellus, efficitur ut tortor id, molestie
+                    egestas nibh. In blandit ex at erat vehicula molestie.
+                    Mauris vel volutpat nulla. Suspendisse lorem ex, congue at
+                    elit id, tincidunt tempor orci. Nullam nec augue ac tellus
+                    rhoncus tincidunt nec ut ligula. Praesent.
+                  </p>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="testimonial">
                   <div class="testimonial-content">
-                    <p>
-                      SECOND SLIDE Lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit. Maecenas sed diam eget risus varius
-                      blandit sit amet non magna.
-                    </p>
-                    <div class="cd-author">
+                    <div class="pic">
                       <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRJZG-8Pk5VYr_MOP4Ks3uEeZdArTUAizNRwg&usqp=CAU"
-                        alt="Author image"
+                        src="https://bestjquery.com/tutorial/testimonial/demo48/images/img-1.jpg"
+                        alt=""
                       />
-                      <ul class="cd-author-info">
-                        <li>
-                          Lorem<strong>Ipsum</strong><br /><span
-                            >@twitterhandle</span
-                          >
-                        </li>
-                      </ul>
                     </div>
+                    <h3 class="title">Williamson</h3>
+                    <span class="post">Web Developer</span>
                   </div>
+                  <p class="description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Nobis eligendi aliquid aperiam iure illum. Praesentium natus
+                    optio autem expedita similique harum ex id molestiae dicta
+                    eius sapiente quibusdam, reprehenderit culpa!
+                  </p>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="testimonial">
                   <div class="testimonial-content">
-                    <p>
-                      THIRD SLIDE Lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit. Maecenas sed diam eget risus varius
-                      blandit sit amet non magna.
-                    </p>
-                    <div class="cd-author">
+                    <div class="pic">
                       <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRJZG-8Pk5VYr_MOP4Ks3uEeZdArTUAizNRwg&usqp=CAU"
-                        alt="Author image"
+                        src="https://bestjquery.com/tutorial/testimonial/demo48/images/img-3.jpg"
+                        alt=""
                       />
-                      <ul class="cd-author-info">
-                        <li>
-                          Lorem<strong>Ipsum</strong><br /><span
-                            >@twitterhandle</span
-                          >
-                        </li>
-                      </ul>
                     </div>
+                    <h3 class="title">Williamson</h3>
+                    <span class="post">Web Developer</span>
                   </div>
+                  <p class="description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Illo ut esse, neque aspernatur adipisci modi maxime aut
+                    repellendus officia, quae mollitia quis vero ducimus ratione
+                    voluptate dolorum pariatur cum repudiandae.
+                  </p>
                 </div>
               </div>
             </div>
@@ -1258,22 +1289,22 @@
                 <img class="main_img" src="./images/may_like_1.png" alt="" />
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-6">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-6 p_0_small">
                       <div class="image_wrapper active">
                         <img src="./images/may_like_1.png" alt="" />
                       </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-6">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-6 p_0_small">
                       <div class="image_wrapper">
                         <img src="./images/may_like_2.png" alt="" />
                       </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-6">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-6 p_0_small">
                       <div class="image_wrapper">
                         <img src="./images/may_like_3.png" alt="" />
                       </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-6">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-6 p_0_small">
                       <div class="image_wrapper">
                         <img src="./images/stack_2.png" alt="" />
                       </div>
@@ -1287,7 +1318,7 @@
               <h3 class="price">$250.00</h3>
               <p>
                 <svg
-                  width="15"
+                  width="1rem"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
                 >
@@ -1300,7 +1331,7 @@
               </p>
               <p>
                 <svg
-                  width="15"
+                  width="1rem"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
                 >
@@ -1327,7 +1358,7 @@
                 <button class="cart_btn">Add to cart</button>
                 <button class="wishlist_button">
                   <svg
-                    width="20"
+                    width="1.25rem"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"
                   >
@@ -1345,7 +1376,7 @@
               </div>
               <p>
                 <svg
-                  width="13"
+                  width="0.8125rem"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
                 >
@@ -1358,7 +1389,7 @@
               </p>
               <p>
                 <svg
-                  width="15"
+                  width="1rem"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 640 512"
                 >
@@ -1380,29 +1411,27 @@
 
       <!-- ! EXPLORE SECTION START ! -->
 
-      <section class="explore">
-        <div class="category_wrapper">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                <img src="./images/book_1.png" alt="" />
-                <div
-                  class="category_card_content p-2 explore_card_1 explore_content"
-                >
-                  <h1>Detective Novel of the Year</h1>
-                  <p class="explore_para">
-                    Explore NOW &nbsp; <span>&#x2192;</span>
-                  </p>
-                </div>
+      <section class="explore category_cards">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+              <img src="./images/book_1.png" alt="" />
+              <div
+                class="category_card_content p-2 explore_card_1 explore_content"
+              >
+                <h3>Detective Novel of the Year</h3>
+                <p class="explore_para">
+                  Explore NOW &nbsp; <span>&#x2192;</span>
+                </p>
               </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                <img src="./images/book_2.png" alt="" />
-                <div class="category_card_content p-2 explore_content">
-                  <h1>Horror Book of this season</h1>
-                  <p class="explore_para">
-                    Explore NOW &nbsp; <span>&#x2192;</span>
-                  </p>
-                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+              <img src="./images/book_2.png" alt="" />
+              <div class="category_card_content p-2 explore_content">
+                <h3>Horror Book of this season</h3>
+                <p class="explore_para">
+                  Explore NOW &nbsp; <span>&#x2192;</span>
+                </p>
               </div>
             </div>
           </div>
@@ -1416,7 +1445,7 @@
       <section class="instagram_section">
         <h1 class="text-center font-weight-bold">
           <svg
-            width="40"
+            width="2.5rem"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
           >
@@ -1435,7 +1464,7 @@
             <div class="swiper-slide">
               <img src="./images/insta_book_1.png" alt="" />
               <svg
-                width="40"
+                width="2.5rem"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
@@ -1448,7 +1477,7 @@
             <div class="swiper-slide">
               <img src="./images/insta_book_2.png" alt="" />
               <svg
-                width="40"
+                width="2.5rem"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
@@ -1461,7 +1490,7 @@
             <div class="swiper-slide">
               <img src="./images/insta_book_3.png" alt="" />
               <svg
-                width="40"
+                width="2.5rem"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
@@ -1474,7 +1503,7 @@
             <div class="swiper-slide">
               <img src="./images/insta_book_4.png" alt="" />
               <svg
-                width="40"
+                width="2.5rem"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
@@ -1487,7 +1516,7 @@
             <div class="swiper-slide">
               <img src="./images/insta_book_5.png" alt="" />
               <svg
-                width="40"
+                width="2.5rem"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
@@ -1500,7 +1529,7 @@
             <div class="swiper-slide">
               <img src="./images/insta_book_6.png" alt="" />
               <svg
-                width="40"
+                width="2.5rem"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
@@ -1513,7 +1542,7 @@
             <div class="swiper-slide">
               <img src="./images/insta_book_7.png" alt="" />
               <svg
-                width="40"
+                width="2.5rem"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
@@ -1526,7 +1555,7 @@
             <div class="swiper-slide">
               <img src="./images/insta_book_8.png" alt="" />
               <svg
-                width="40"
+                width="2.5rem"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
@@ -1539,7 +1568,7 @@
             <div class="swiper-slide">
               <img src="./images/insta_book_9.png" alt="" />
               <svg
-                width="40"
+                width="2.5rem"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
@@ -1552,7 +1581,7 @@
             <div class="swiper-slide">
               <img src="./images/insta_book_10.png" alt="" />
               <svg
-                width="40"
+                width="2.5rem"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
@@ -1565,7 +1594,7 @@
             <div class="swiper-slide">
               <img src="./images/insta_book_11.png" alt="" />
               <svg
-                width="40"
+                width="2.5rem"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
@@ -1578,7 +1607,7 @@
             <div class="swiper-slide">
               <img src="./images/insta_book_12.png" alt="" />
               <svg
-                width="40"
+                width="2.5rem"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
@@ -1605,9 +1634,9 @@
       <!-- * CONTACT US SECTION START * -->
 
       <section class="contact_us">
-        <div class="container-fluid">
+        <div class="container">
           <div class="row">
-            <div class="col-lg-5 col-md-7 col-sm-10 mx-auto col-12">
+            <div class="col-lg-6 col-md-7 col-sm-10 mx-auto col-12">
               <div class="contact_us_inner">
                 <h3>
                   <b> Contact Details </b>
@@ -1674,7 +1703,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-7 col-md-5 col-sm-12 mx-auto col-12">
+            <div class="col-lg-6 col-md-5 col-sm-12 mx-auto col-12">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.68038143898!2d-0.12681408469192249!3d51.500732519012296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c38c8cd1d9%3A0xb78f2474b9a45aa9!2sBig%20Ben!5e0!3m2!1sen!2s!4v1601659742256!5m2!1sen!2s"
                 width="100%"
@@ -1693,23 +1722,29 @@
       <section class="brands">
         <div class="container">
           <div class="row">
-            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
-              <img src="./images/brands_1.png" alt="" />
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
-              <img src="./images/brands_2.png" alt="" />
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
-              <img src="./images/brands_3.jpg" alt="" />
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
-              <img src="./images/brands_4.jpg" alt="" />
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
-              <img src="./images/brands_5.jpg" alt="" />
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
-              <img src="./images/brands_6.jpg" alt="" />
+            <div class="swiper-container brand_container ">
+              <div class="swiper-wrapper pb-5">
+                <div class="swiper-slide">
+                  <img src="./images/brands_1.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/brands_2.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/brands_3.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/brands_4.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/brands_5.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/brands_6.jpg" alt="" />
+                </div>
+              </div>
+              <div class="prev_arrow"> &leftarrow; </div>
+              <div class="next_arrow"> &rightarrow; </div>
             </div>
           </div>
         </div>
@@ -1717,17 +1752,15 @@
 
       <!-- ! BRANDS SECTION END ! -->
 
-
-
       <!-- ? HOW WE HELP YOU SECTION START ? -->
 
       <section class="help_us text-white text-center">
         <div class="help_us_inner p-5">
-          <h1><b>How can we help you?</b></h1>
-          <p>
+          <h1 class="mb-3"><b>How can we help you?</b></h1>
+          <h5 class="mb-5">
             Let us know How can we help you today! Call +12345678901
             representative will contact you soon.
-          </p>
+          </h5>
           <button class="btn_insta">CONTACT US <span>&#x2192;</span></button>
         </div>
       </section>
@@ -1787,8 +1820,23 @@
 
       <!-- * CONTACT FORM SECTION END * -->
 
-
+      <div class="cookie_box p-2 bg-light">
+        <div class="cookie_box_inner p-3">
+          <p class="text-right h4">
+            <a class="text-white accept_cookie" href="#">&times;</a>
+          </p>
+          <p class="text-white text-justify">
+            The Cookie settings on this website are set to " allow all cookies "
+            to give you the very best experiance. Please click on Accept Cookies
+            to continue to use this site.
+          </p>
+          <button class="btn bg-light accept_cookie text-dark px-3 py-2">
+            Accept Cookies
+          </button>
+        </div>
+      </div>
     </main>
+
     <footer>
       <div class="footer_main">
         <div class="container py-5">
@@ -1798,35 +1846,127 @@
                 <div class="row">
                   <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                     <h6 class="text-white mb-4"><b>SHOP</b></h6>
-                    <p><a class="text-white text-decoration-none" href="#">Comics</a></p>
-                    <p><a class="text-white text-decoration-none" href="#">Story Books</a></p>
-                    <p><a class="text-white text-decoration-none" href="#">Horror Books</a></p>
-                    <p><a class="text-white text-decoration-none" href="#">Romantic Books</a></p>
-                    <p><a class="text-white text-decoration-none" href="#">Biography</a></p>
-                    <p><a class="text-white text-decoration-none" href="#">Mystery Novels</a></p>
-                    <p><a class="text-white text-decoration-none" href="#">Fantasy Books</a></p>
+                    <p>
+                      <a class="text-white text-decoration-none" href="#"
+                        >Comics</a
+                      >
+                    </p>
+                    <p>
+                      <a class="text-white text-decoration-none" href="#"
+                        >Story Books</a
+                      >
+                    </p>
+                    <p>
+                      <a class="text-white text-decoration-none" href="#"
+                        >Horror Books</a
+                      >
+                    </p>
+                    <p>
+                      <a class="text-white text-decoration-none" href="#"
+                        >Romantic Books</a
+                      >
+                    </p>
+                    <p>
+                      <a class="text-white text-decoration-none" href="#"
+                        >Biography</a
+                      >
+                    </p>
+                    <p>
+                      <a class="text-white text-decoration-none" href="#"
+                        >Mystery Novels</a
+                      >
+                    </p>
+                    <p>
+                      <a class="text-white text-decoration-none" href="#"
+                        >Fantasy Books</a
+                      >
+                    </p>
                   </div>
                   <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                     <h6 class="text-white mb-4"><b>INFORMATION</b></h6>
-                    <p><a class="text-white text-decoration-none" href="#">ABout us</a></p>
-                    <p><a class="text-white text-decoration-none" href="#">Customer Service</a></p>
-                    <p><a class="text-white text-decoration-none" href="#">New Collections</a></p>
-                    <p><a class="text-white text-decoration-none" href="#">Best Sellers</a></p>
-                    <p><a class="text-white text-decoration-none" href="#">Manufacturers</a></p>
-                    <p><a class="text-white text-decoration-none" href="#">Privacy Policy</a></p>
-                    <p><a class="text-white text-decoration-none" href="#">Terms & Conditions</a></p>
-                    <p><a class="text-white text-decoration-none" href="#">Blogs</a></p>
+                    <p>
+                      <a class="text-white text-decoration-none" href="#"
+                        >ABout us</a
+                      >
+                    </p>
+                    <p>
+                      <a class="text-white text-decoration-none" href="#"
+                        >Customer Service</a
+                      >
+                    </p>
+                    <p>
+                      <a class="text-white text-decoration-none" href="#"
+                        >New Collections</a
+                      >
+                    </p>
+                    <p>
+                      <a class="text-white text-decoration-none" href="#"
+                        >Best Sellers</a
+                      >
+                    </p>
+                    <p>
+                      <a class="text-white text-decoration-none" href="#"
+                        >Manufacturers</a
+                      >
+                    </p>
+                    <p>
+                      <a class="text-white text-decoration-none" href="#"
+                        >Privacy Policy</a
+                      >
+                    </p>
+                    <p>
+                      <a class="text-white text-decoration-none" href="#"
+                        >Terms & Conditions</a
+                      >
+                    </p>
+                    <p>
+                      <a class="text-white text-decoration-none" href="#"
+                        >Blogs</a
+                      >
+                    </p>
                   </div>
                   <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                     <h6 class="text-white mb-4"><b>CUSTOMER SERVICE</b></h6>
-                    <p><a class="text-white text-decoration-none" href="#">Search Terms</a></p>
-                    <p><a class="text-white text-decoration-none" href="#">Advance Search</a></p>
-                    <p><a class="text-white text-decoration-none" href="#">Orders and Returns</a></p>
-                    <p><a class="text-white text-decoration-none" href="#">Contact Us</a></p>
-                    <p><a class="text-white text-decoration-none" href="#">RSS</a></p>
-                    <p><a class="text-white text-decoration-none" href="#">Helps & FAQ's</a></p>
-                    <p><a class="text-white text-decoration-none" href="#">Consultants</a></p>
-                    <p><a class="text-white text-decoration-none" href="#">Store Location</a></p>
+                    <p>
+                      <a class="text-white text-decoration-none" href="#"
+                        >Search Terms</a
+                      >
+                    </p>
+                    <p>
+                      <a class="text-white text-decoration-none" href="#"
+                        >Advance Search</a
+                      >
+                    </p>
+                    <p>
+                      <a class="text-white text-decoration-none" href="#"
+                        >Orders and Returns</a
+                      >
+                    </p>
+                    <p>
+                      <a class="text-white text-decoration-none" href="#"
+                        >Contact Us</a
+                      >
+                    </p>
+                    <p>
+                      <a class="text-white text-decoration-none" href="#"
+                        >RSS</a
+                      >
+                    </p>
+                    <p>
+                      <a class="text-white text-decoration-none" href="#"
+                        >Helps & FAQ's</a
+                      >
+                    </p>
+                    <p>
+                      <a class="text-white text-decoration-none" href="#"
+                        >Consultants</a
+                      >
+                    </p>
+                    <p>
+                      <a class="text-white text-decoration-none" href="#"
+                        >Store Location</a
+                      >
+                    </p>
                   </div>
                 </div>
               </div>
@@ -1836,27 +1976,65 @@
                 <div class="col-lg-12">
                   <h6 class="text-white mb-4"><b>SOCIAL CONTACTS</b></h6>
                   <a href="#" class="mr-3 text-white">
-                    <svg height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+                    <svg
+                      height="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 320 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                      ></path>
+                    </svg>
                   </a>
                   <a href="#" class="mr-3 text-white">
-                    <svg height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+                    <svg
+                      height="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                      ></path>
+                    </svg>
                   </a>
                   <a href="#" class="mr-3 text-white">
-                    <svg height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"></path></svg>
+                    <svg
+                      height="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 384 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"
+                      ></path>
+                    </svg>
                   </a>
                   <a href="#" class="mr-3 text-white">
-                    <svg height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                    <svg
+                      height="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                      ></path>
+                    </svg>
                   </a>
                   <a href="#" class="text-white">
-                    <svg height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"></path></svg>
+                    <svg
+                      height="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 640 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"
+                      ></path>
+                    </svg>
                   </a>
-                </div>
-                <div class="col-lg-12 cookie_box mt-5 p-2 offset-0 bg-light">
-                  <div class="cookie_box_inner p-3">
-                    <p class="text-right h4"><a class="text-white" href="#">&times;</a></p>
-                    <p class="text-white text-justify">The Cookie settings on this website are set to " allow all cookies " to give you the very best experiance. Please click on Accept Cookies to continue to use this site.</p>
-                    <button class="btn bg-light text-dark px-3 py-2">Accept Cookies</button>
-                  </div>
                 </div>
               </div>
             </div>
@@ -1864,7 +2042,7 @@
         </div>
       </div>
       <div class="footer_sub p-5">
-        <div class="container">
+        <div class="container pb-4">
           <div class="row">
             <div class="col-lg-6">
               <p class="text-white">&copy; 2020 Store. All rights reserved.</p>
@@ -1873,48 +2051,76 @@
               <div class="row">
                 <div class="col-lg-3"></div>
                 <div class="col-lg-4 text-light">
-                  LANGUAGE : &nbsp; EN
-                  <svg
-                  width="7"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
-                  ></path>
-                </svg>
+                  LANGUAGE :
+                  <a
+                    href="#"
+                    class="dropdown_outer text-decoration-none text-white"
+                  >
+                    <span>
+                      &nbsp; EN
+                      <svg
+                        width="0.5rem"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span class="dropdown_wrapper text-black-50">
+                      <div class="item font-weight-bold">DUTCH</div>
+                      <div class="item font-weight-bold">FRENCH</div>
+                      <div class="item font-weight-bold">ARABIC</div>
+                    </span>
+                  </a>
                 </div>
                 <div class="col-lg-5 text-light">
-                  CURRENCY : &nbsp; USD $
-                  <svg
-                  width="7"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
-                  ></path>
-                  </svg>
+                  CURRENCY :
+                  <a
+                    href="#"
+                    class="dropdown_outer text-decoration-none text-white"
+                  >
+                    <span>
+                      &nbsp; USD $
+                      <svg
+                        width="0.5rem"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span class="dropdown_wrapper text-black-50">
+                      <div class="item font-weight-bold">GBP £</div>
+                      <div class="item font-weight-bold">EUR €</div>
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row mt-4">
+          <div class="row mt-5">
             <div class="col-lg-1 col-md-3 col-sm-3 col-3">
-              <img height="35" class="d-inline-block mr-3 w-100" src="./images/footer_1.png" alt="">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 24" width="100%"><g fill="none"><path fill="#000" d="M35,0 L3,0 C1.3,0 0,1.3 0,3 L0,21 C0,22.7 1.4,24 3,24 L35,24 C36.7,24 38,22.7 38,21 L38,3 C38,1.3 36.6,0 35,0 Z" opacity=".07"></path><path fill="#006FCF" d="M35,1 C36.1,1 37,1.9 37,3 L37,21 C37,22.1 36.1,23 35,23 L3,23 C1.9,23 1,22.1 1,21 L1,3 C1,1.9 1.9,1 3,1 L35,1"></path><path fill="#FFF" d="M8.971,10.268 L9.745,12.144 L8.203,12.144 L8.971,10.268 Z M25.046,10.346 L22.069,10.346 L22.069,11.173 L24.998,11.173 L24.998,12.412 L22.075,12.412 L22.075,13.334 L25.052,13.334 L25.052,14.073 L27.129,11.828 L25.052,9.488 L25.046,10.346 L25.046,10.346 Z M10.983,8.006 L14.978,8.006 L15.865,9.941 L16.687,8 L27.057,8 L28.135,9.19 L29.25,8 L34.013,8 L30.494,11.852 L33.977,15.68 L29.143,15.68 L28.065,14.49 L26.94,15.68 L10.03,15.68 L9.536,14.49 L8.406,14.49 L7.911,15.68 L4,15.68 L7.286,8 L10.716,8 L10.983,8.006 Z M19.646,9.084 L17.407,9.084 L15.907,12.62 L14.282,9.084 L12.06,9.084 L12.06,13.894 L10,9.084 L8.007,9.084 L5.625,14.596 L7.18,14.596 L7.674,13.406 L10.27,13.406 L10.764,14.596 L13.484,14.596 L13.484,10.661 L15.235,14.602 L16.425,14.602 L18.165,10.673 L18.165,14.603 L19.623,14.603 L19.647,9.083 L19.646,9.084 Z M28.986,11.852 L31.517,9.084 L29.695,9.084 L28.094,10.81 L26.546,9.084 L20.652,9.084 L20.652,14.602 L26.462,14.602 L28.076,12.864 L29.624,14.602 L31.499,14.602 L28.987,11.852 L28.986,11.852 Z"></path></g></svg>
             </div>
             <div class="col-lg-1 col-md-3 col-sm-3 col-3">
-              <img height="35" class="d-inline-block mr-3 w-100" src="./images/footer_2.png" alt="">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 24" width="100%"><path d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z" fill="#000" opacity=".07"></path><path d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32" fill="#FFF"></path><path d="M37 16.95V21c0 1.1-.9 2-2 2H23.228c7.896-1.815 12.043-4.601 13.772-6.05z" fill="#EDA024"></path><path fill="#494949" d="M9 11h20v2H9z"></path><path d="M22 12c0 1.7-1.3 3-3 3s-3-1.4-3-3 1.4-3 3-3c1.7 0 3 1.3 3 3z" fill="#EDA024"></path></svg>
             </div>
             <div class="col-lg-1 col-md-3 col-sm-3 col-3">
-              <img height="35" class="d-inline-block mr-3 w-100" src="./images/footer_3.png" alt="">
+              <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" width="100%"><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><circle fill="#EB001B" cx="15" cy="12" r="7"></circle><circle fill="#F79E1B" cx="23" cy="12" r="7"></circle><path fill="#FF5F00" d="M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z"></path></svg>
             </div>
             <div class="col-lg-1 col-md-3 col-sm-3 col-3">
-              <img height="35" class="d-inline-block mr-3 w-100" src="./images/footer_4.png" alt="">
+              <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" width="100%"><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><path d="M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z" fill="#142688"></path></svg>
+            </div>
+            <div class="col-lg-1 col-md-3 col-sm-3 col-3">
+              <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" width="100%"><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><path d="M12 12v3.7c0 .3-.2.3-.5.2-1.9-.8-3-3.3-2.3-5.4.4-1.1 1.2-2 2.3-2.4.4-.2.5-.1.5.2V12zm2 0V8.3c0-.3 0-.3.3-.2 2.1.8 3.2 3.3 2.4 5.4-.4 1.1-1.2 2-2.3 2.4-.4.2-.4.1-.4-.2V12zm7.2-7H13c3.8 0 6.8 3.1 6.8 7s-3 7-6.8 7h8.2c3.8 0 6.8-3.1 6.8-7s-3-7-6.8-7z" fill="#3086C8"></path></svg>
             </div>
           </div>
         </div>
@@ -1922,6 +2128,6 @@
     </footer>
     <!-- ! BODY END ! -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="index.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

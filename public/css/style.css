@@ -14,9 +14,9 @@
 
 ! 6. CATEGORY_CARDS STYLES
 
-? 7. BOOKS_STACK STYLES
+//? 7. BOOKS_STACK STYLES
 
-* 8. PRODUCS STYLES
+* 8. PRODUCTS STYLES
 
 ! 9. ABOUT_US STYLES
 
@@ -30,7 +30,7 @@
 
 * 14. CONTACT US SECTION STYLES
 
-! 15. BRANDS SECTION STYLES( NO STYLES )
+! 15. BRANDS SECTION STYLES
 
 ? 16. HOW WE HELP YOU SECTION STYLES
 
@@ -48,11 +48,10 @@ todo------------------------------------ */
 */
 
 :root{
-  --mate-red: #c40233;
-  --mate-brown: #654321;
-  --mate-light-blue: #87cefa;
-  --dark-midnight-blue: #152238;
+  --mate-red: #AC3B61;
+  --dark-midnight-blue: #123C69;
   --white: #fff;
+  --swiper-navigation-size: 2.75rem !important;
 }
 
 
@@ -66,27 +65,38 @@ todo------------------------------------ */
 
 * {
   font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 @media (min-width: 992px){
   html{
-    font-size: 100%;
+    font-size: 16px;
   }
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) and (max-width: 992px) {
   html{
     font-size: 90%;
   }
+  .p_0_small{
+    padding: 0 0.8rem !important;
+  }
 }
-@media (min-width: 576px){
+@media (min-width: 576px) and (max-width: 768px) {
   html{
     font-size: 80%;
+  }
+  .p_0_small{
+    padding: 0 0.7rem !important;
   }
 }
 @media (max-width: 576px){
   html{
     font-size: 50%;
+  }
+  .p_0_small{
+    padding: 0 0.5rem !important;
   }
 }
 
@@ -95,6 +105,18 @@ body {
   margin: 0;
   padding: 0;
 }
+
+body.overflow-hidden::before{
+  position: fixed;
+  content: "";
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10000;
+}
+
 
 section{
   margin-bottom: 1.875rem;
@@ -124,6 +146,36 @@ ul{
 }
 .header_upper a:hover {
   color: #666;
+}
+
+.dropdown_outer{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown_wrapper{
+  display: block;
+  position: absolute;
+  top: 100%;
+  min-width: 100%;
+  z-index: 100;
+  left: 0;
+  transform: rotateX(90deg);
+  transform-origin: top;
+  transition: all 0.3s;
+  background-color: #fff;
+}
+
+
+.dropdown_outer:hover .dropdown_wrapper{
+  transform: rotateX(0deg);
+}
+.dropdown_wrapper .item{
+  padding: 1rem;
+  font-size: 0.7rem;
+}
+.dropdown_wrapper .item:hover{
+  background-color: #eee;
 }
 
 .header_email_wrapper {
@@ -272,6 +324,28 @@ header{
 }
 
 
+.cart_menu{
+  height: 100vh;
+  right: 0;
+  top: 0;
+  z-index: 10001;
+  transition: all 0.5s;
+  max-width: 100%;
+  min-width: 320px;
+  width: 35%;
+  transform: translateX(100%);
+}
+
+body.overflow-hidden .cart_menu{
+  transform: translateX(0%);
+}
+
+.cart_heading{
+  background-color: #e0e0e0;
+}
+
+
+
 /*
 ?==============================?
 !==============================!
@@ -287,16 +361,31 @@ header{
   background-size: cover;
 }
 
+.slider .swiper-slide::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 .slide_1{
-  background-image: url(./images/slide_1.png);
+  background-image: url(../images/slide_1.png);
 }
 
 .slide_2{
-  background-image: url(./images/slide_2.png);
+  background-image: url(../images/slide_2.png);
 }
 
 .slide_3{
-  background-image: url(./images/slide_3.png);
+  background-image: url(../images/slide_3.png);
+}
+
+.slider_content{
+  position: relative;
+  z-index: 100;
 }
 
 .slide_1 .slider_content{
@@ -347,7 +436,7 @@ header{
   display: flex;
   padding: 0;
   font-weight: bold;
-  box-shadow: 0 0 0.625rem #000;
+  box-shadow: 0 0 0.625rem #222;
   text-align: center;
   background-color:var(--dark-midnight-blue);
   color: var(--white);
@@ -379,7 +468,7 @@ header{
 }
 
 .second_half{
-  padding: 0.625rem 0 0.625rem 3.125rem;
+  padding: 0.625rem 3.125rem;
   position: relative;
   background-color: var(--mate-red);
   color: var(--white);
@@ -407,16 +496,12 @@ header{
 */
 
 
-.category_wrapper{
-  width: 95%;
-  margin: 0 auto;
-}
 
-.category_wrapper .col-lg-3{
+.category_cards .col-lg-3{
   position: relative;
 }
 
-.category_wrapper img{
+.category_cards img{
   width: 100%;
   min-height: 100%;
 }
@@ -425,14 +510,13 @@ header{
   padding: 0.625rem;
   top: 0;
   width: 75%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
   font-weight: bold;
   top: 50%;
   transform: translate(0,-50%);
 }
 
-.category_card_content h1{
-  font-size: 2rem;
+.category_card_content h3{
   font-weight: 700;
 }
 
@@ -445,6 +529,7 @@ header{
 *==============================*
 */
 
+/* 
 .books_stack{
   background-color: #152238;
   padding: 1.25rem 0;
@@ -468,7 +553,6 @@ header{
 .stack_container img{
   height: 100%;
   margin: 0 0.3125rem;
-  /* width: auto; */
   width: 100%;
   transition: all 0.5s ease-in-out;
   border-radius: 0.1875rem;
@@ -505,22 +589,16 @@ header{
 .stack_container figure:hover figcaption{
   opacity: 1;
   transform: translate(-50%,-50%);
-}
+} */
 
 
 /*
 ?==============================?
 !==============================!
-*GROUP 8.@PRODUCS STYLES
+*GROUP 8.@PRODUCTS STYLES
 !==============================!
 ?==============================?
 */
-
-.products_container{
-  padding-top: 4.375rem;
-  width: 90%;
-  margin: 0 auto;
-}
 
 .heading_wrapper{
   text-align: center;
@@ -577,6 +655,15 @@ header{
   position: relative;
 }
 
+.product_card:hover .product_image{
+  overflow: hidden;
+}
+
+.product_card:hover img{
+  transition: all 5s ease-in;
+  transform: scale(1.3);
+}
+
 .product_image::before,.product_image::after{
   content: "";
   width: 0;
@@ -609,6 +696,7 @@ header{
 
 .products_wrapper img{
   width: 100%;
+  transition: all 0.4s;
 }
 
 .product_content{
@@ -734,16 +822,15 @@ header{
   padding: 1.25rem;
 }
 
-.about_inner h1{
+.about_inner h1,.about_inner h3{
   text-align: center;
   font-weight: 700;
 }
 
 .about_heading{
   font-weight: 700;
-  font-size: 4rem;
   padding: 1.25rem;
-  color: var(--mate-light-blue);
+  color: var(--mate-red);
   margin-bottom: 1.25rem;
 }
 
@@ -767,7 +854,7 @@ header{
   padding: 1.25rem;
 }
 
-.about_content h1{
+.about_content h3{
   text-align: left;
   margin-bottom: 1.5rem;
   /* margin-top: 1rem; */
@@ -783,7 +870,13 @@ header{
   text-align: justify;
   margin-bottom: 1.5rem;
 }
-
+.cookie_box{
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  right: 0;
+  width: 100%;
+}
 /*
 ?==============================?
 !==============================!
@@ -793,120 +886,92 @@ header{
 */
 
 .testimonials{
-  background-color: var(--mate-brown);
+  background-color: var(--mate-red);
   padding-bottom: 1.875rem;
 }
 
 .testimonial_heading{
   font-weight: bold;
   font-style: italic;
-  font-size: 3.5rem;
   padding: 1.875rem;
   margin-bottom: 1.25rem;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
-.cd-testimonials {
-	color: var(--white);
-	text-align: center;
-	list-style: none;
-	padding: 0;
-	margin: 0;
+.testimonial{
+  margin: 1.25rem 0;
+  display: flex;
+}
+.testimonial .testimonial-content{
+  width: 20%;
+  display: inline-block;
+  text-align: center;
+}
+.testimonial .pic{
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 0.5rem solid rgba(0, 0, 0, 0.15);
+}
+.testimonial .pic img{
+  width: 100%;
+  height: auto;
+}
+.testimonial .title{
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 0.625rem 0 0 0;
+}
+.testimonial .post{
+  font-size: 0.75rem;
+  color: #fff;
+}
+.testimonial .description{
+  display: inline-block;
+  width: 70%;
+  padding: 1.875rem 1.25rem;
+  border: 0.0625rem solid rgba(0, 0, 0, 0.15);
+  font-size: 0.9rem;
+  text-align: justify;
+  color: #fff;
+  margin: 0;
+  position: relative;
+}
+.testimonial .description:before{
+  content: "";
+  border: 0.625rem solid transparent;
+  border-right: 0.625rem solid rgba(0, 0, 0, 0.15);
+  position: absolute;
+  top: 1.25rem;
+  left: -1.3125rem;
 }
 
-.cd-testimonials > .testimonial {
-	position: absolute;
-	opacity: 0;
-}
-
-.cd-testimonials > .testimonial:first-child {
-	position: relative;
-	opacity: 1;
-}
-
-.testimonial-content p {
-	font-style: italic;
-	line-height: 1.4;
-	margin-bottom: 1em;
-  padding: 0 0.875rem;
-  font-weight: 300;
-}
-
-@media only screen and (min-width: 768px) {
-	.testimonial-content p {
-		font-size: 1.25rem;
-	}
-}
-
-@media only screen and (min-width: 1170px) {
-	.testimonial-content p {
-		font-size: 1.5rem;
-		line-height: 1.6;
-	}
-}
-
-.cd-author-info span p {
-	display: inline-block;
-	font-size: 0.875rem;
-	padding-left: 0;
-}
-
-.cd-author img,
-.cd-author .cd-author-info {
-	display: inline-block;
-	vertical-align: top;
-}
-
-.cd-author img {
-	width: 2.5rem;
-	height: 2.5rem;
-	border-radius: 50%;
-	margin-right: 0.3125rem;
-}
-
-.cd-author .cd-author-info {
-	text-align: left;
-	line-height: 1;
-}
-
-.cd-author .cd-author-info li:first-child {
-	font-size: 0.875rem;
-	margin-top: 0.25rem;
-}
-
-.cd-author .cd-author-info li:last-child {
-	font-size: 0.75rem;
-}
-
-ul.cd-author-info {
-	list-style: none;
-}
-
-.testimonial-content {
-  max-width: 62.5rem;
-  width: 80%;
-  margin: 0 auto 1.875rem auto;
-}
-
-ul.cd-author-info li span {
-	font-size: 0.875rem;
-	padding-left: 1.875rem;
-	line-height: 1.5rem;
-	font-style: italic;
-	font-weight: 300;
-}
-
-@media only screen and (min-width: 768px) {
-	.cd-author img {
-		width: 3.625rem;
-		height: 3.625rem;
-	}
-	.cd-author .cd-author-info {
-		line-height: 1.4;
-	}
-	.cd-author .cd-author-info li:first-child {
-		font-size: 1.125rem;
-	}
+@media only screen and (max-width: 767px){
+  .testimonial{
+    display: block;
+    text-align: center;
+  }
+  .testimonial .testimonial-content{
+      float: none;
+      width: 100%;
+      margin: 0 0 1.25rem 0;
+  }
+  .testimonial .description{
+      width: 80%;
+      margin-right: 0 !important;
+      margin: 0 auto !important;
+      display: block;
+  }
+  .testimonial .description:before{
+      border: 0.625rem solid transparent;
+      border-bottom: 0.625rem solid rgba(255,255,255,0.15);
+      position: absolute;
+      top: -1.25rem;
+      left: 47.5%;
+  }
 }
 
 
@@ -1246,6 +1311,19 @@ section.contact_us{
   width: 100%;
 }
 
+.prev_arrow,.next_arrow{
+  font-size: 2rem;
+  color: #000;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+}
+.prev_arrow{
+  left: 0;
+}
+.next_arrow{
+  right: 0;
+}
 
 /*
 *==============================*
@@ -1256,14 +1334,14 @@ section.contact_us{
 */
 
 .help_us{
-  background-image: url(./images/book_1.png);
+  background-image: url(../images/book_1.png);
   background-size: cover;
   background-position: center;
   line-height: 3;
 }
 
 .help_us_inner{
-  backdrop-filter: blur(1.25rem);
+  backdrop-filter: blur(3.25rem);
 }
 
 
