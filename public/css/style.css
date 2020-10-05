@@ -93,7 +93,7 @@ todo------------------------------------ */
 }
 @media (max-width: 576px){
   html{
-    font-size: 50%;
+    font-size: 65%;
   }
   .p_0_small{
     padding: 0 0.5rem !important;
