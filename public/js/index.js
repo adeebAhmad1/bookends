@@ -12,6 +12,14 @@ const collapse_links = document.querySelectorAll('[data-link]');
 
 collapse_links.forEach(el=>{
   el.addEventListener("click",()=>{
+    const sign = el.querySelector(".plus");
+    if(sign){
+      if(sign.innerHTML === "+"){
+        sign.innerHTML = "-"
+      } else{
+        sign.innerHTML = "+"
+      }
+    }
     const link = document.querySelector(`.menu_${el.dataset.link}`);
     link.classList.toggle("collapse_link")
   })

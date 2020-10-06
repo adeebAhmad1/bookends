@@ -369,7 +369,7 @@ body.overflow-hidden .cart_menu{
     width: 25%;
     height: 100vh;
     background-color: #fff;
-    z-index: 1000;
+
     display: block !important;
     overflow-y: scroll;
     transform: translateX(100%);
@@ -381,8 +381,9 @@ body.overflow-hidden .cart_menu{
   }
   .sidebar_wrapper a{
     display: block !important;
-    font-size: 1rem !important;
-    padding: 0.6rem;
+    font-size: 1.5rem !important;
+    padding: 2rem 1rem;
+    margin-bottom: 1rem;
   }
   [data-link] a,[data-link]{
     font-weight: bold !important;
