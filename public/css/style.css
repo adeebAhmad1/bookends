@@ -507,6 +507,9 @@ body.overflow-hidden .cart_menu{
   .slider_content {
     padding: 1.5rem !important;
   }
+  .slider .swiper-slide{
+    padding: 1.5rem;
+  }
 }
 
 .shop_btn{
