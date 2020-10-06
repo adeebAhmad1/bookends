@@ -93,7 +93,7 @@ todo------------------------------------ */
 }
 @media (max-width: 576px){
   html{
-    font-size: 65%;
+    font-size: 70%;
   }
   .p_0_small{
     padding: 0 0.5rem !important;
@@ -106,7 +106,7 @@ body {
   padding: 0;
 }
 
-body.overflow-hidden::before{
+body.overflow-hidden::before,body.over_hide::before{
   position: fixed;
   content: "";
   width: 100%;
@@ -114,7 +114,7 @@ body.overflow-hidden::before{
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.4);
-  z-index: 10000;
+  z-index: 1000;
 }
 
 
@@ -188,15 +188,7 @@ ul{
   font-weight: 800;
   color: var(--mate-red);
 }
-.links_wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.first_row{
-  display: none;
-}
 .header_links {
   list-style: none;
   margin: 0;
@@ -243,6 +235,8 @@ ul{
   color: var(--mate-red);
 }
 
+@media (min-width: 992px) {
+    
 .mega-menu {
   -webkit-tap-highlight-color: transparent;
   font-weight: 400;
@@ -287,6 +281,11 @@ ul{
   font-weight: 900;
 }
 
+.links_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .mega-menu li a {
   text-align: left;
   color: #888;
@@ -301,6 +300,8 @@ ul{
   -webkit-transform: scaleY(1);
 }
 
+}
+
 .header{
   padding: 0.625rem 0;
 }
@@ -312,7 +313,11 @@ header{
   text-decoration: none;
   color: #333;
   display: inline-block;
+  white-space: nowrap;
   padding: 0 0.625rem;
+}
+header a{
+  white-space: nowrap;
 }
 
 .side_links a:hover{
@@ -343,8 +348,76 @@ body.overflow-hidden .cart_menu{
 .cart_heading{
   background-color: #e0e0e0;
 }
+.kids_ul > a{
+  padding: 0 !important;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 
+}
 
+@media (max-width: 992px){
+  body.over_hide .sidebar_wrapper{
+    transform: translateX(100%);
+  }
+  .sidebar_wrapper{
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-width: 100%;
+    min-width: 320px;
+    z-index: 10000;
+    width: 25%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 1000;
+    display: block !important;
+    overflow-y: scroll;
+    transform: translateX(100%);
+    padding: 2rem 2rem;
+    transition: all 0.4s;
+  }
+  body.over_hide .sidebar_wrapper{
+    transform: translateX(0);
+  }
+  .sidebar_wrapper a{
+    display: block !important;
+    font-size: 1rem !important;
+    padding: 0.6rem;
+  }
+  [data-link] a,[data-link]{
+    font-weight: bold !important;
+  }
+  .sidebar_wrapper .side_links{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body.over_hide{
+    overflow: hidden;
+  }
+  .sidebar_wrapper li{
+    display: block !important;
+  }
+  .sidebar_wrapper li.first_row{
+    display: none !important;
+  }
+  .sidebar_wrapper .row{
+    display: block !important;
+  }
+  .collapse_link{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+  }
+  .sidebar_wrapper a svg{
+    float: right;
+  }
+}
+
+.first_row{
+  display: none !important;
+}
 
 /*
 ?==============================?
@@ -886,7 +959,7 @@ body.overflow-hidden .cart_menu{
 */
 
 .testimonials{
-  background-color: var(--mate-red);
+  /* background-color: var(--mate-red); */
   padding-bottom: 1.875rem;
 }
 
@@ -898,80 +971,66 @@ body.overflow-hidden .cart_menu{
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.testimonial{
-  margin: 1.25rem 0;
+.testimonial-quote {
   display: flex;
-}
-.testimonial .testimonial-content{
-  width: 20%;
-  display: inline-block;
-  text-align: center;
-}
-.testimonial .pic{
-  width: 6.25rem;
-  height: 6.25rem;
-  border-radius: 50%;
+  align-items: center;
+  width: 80%;
   margin: 0 auto;
-  overflow: hidden;
-  border: 0.5rem solid rgba(0, 0, 0, 0.15);
-}
-.testimonial .pic img{
-  width: 100%;
-  height: auto;
-}
-.testimonial .title{
-  font-size: 1rem;
-  font-weight: bold;
-  color: #fff;
-  margin: 0.625rem 0 0 0;
-}
-.testimonial .post{
-  font-size: 0.75rem;
-  color: #fff;
-}
-.testimonial .description{
-  display: inline-block;
-  width: 70%;
-  padding: 1.875rem 1.25rem;
-  border: 0.0625rem solid rgba(0, 0, 0, 0.15);
-  font-size: 0.9rem;
-  text-align: justify;
-  color: #fff;
-  margin: 0;
-  position: relative;
-}
-.testimonial .description:before{
-  content: "";
-  border: 0.625rem solid transparent;
-  border-right: 0.625rem solid rgba(0, 0, 0, 0.15);
-  position: absolute;
-  top: 1.25rem;
-  left: -1.3125rem;
 }
 
-@media only screen and (max-width: 767px){
-  .testimonial{
-    display: block;
-    text-align: center;
-  }
-  .testimonial .testimonial-content{
-      float: none;
-      width: 100%;
-      margin: 0 0 1.25rem 0;
-  }
-  .testimonial .description{
-      width: 80%;
-      margin-right: 0 !important;
-      margin: 0 auto !important;
-      display: block;
-  }
-  .testimonial .description:before{
-      border: 0.625rem solid transparent;
-      border-bottom: 0.625rem solid rgba(255,255,255,0.15);
-      position: absolute;
-      top: -1.25rem;
-      left: 47.5%;
-  }
+
+.testimonial-quote blockquote {
+  /* Negate theme styles */
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  background: none;
+  color: #2e2e2e;
+  font-family: Georgia, serif;
+  font-size: 1.2rem;
+  text-align: justify;
+  font-style: italic;
+  line-height: 1.4 !important;
+  margin: 0;
+  position: relative;
+  z-index: 600;
+}
+
+.testimonial-quote blockquote * {
+  box-sizing: border-box; 
+}
+
+.testimonial-quote blockquote p {
+  color: #2e2e2e; 
+  line-height: 1.4 !important;
+}
+
+.testimonial-quote img {
+  border: 0.1875rem solid #999;
+  border-radius: 50%;
+  display: block;
+  width: 7.5rem;
+  height: 7.5rem;  
+}
+
+.testimonial-quote cite {
+  color: #2e2e2e;
+  display: block;
+  font-size: .8em; 
+}
+
+.testimonial-quote cite span {
+  color: #2e2e2e;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+}
+
+.testimonial-quote {
+  position: relative; 
 }
 
 
@@ -1196,6 +1255,8 @@ p.explore_para span{
   width: 60%;
   margin: 0 auto;
   display: block;
+  height: 12.5rem;
+  border-radius: 0.5rem;
 }
 
 .insta_slider .swiper-slide{
@@ -1206,7 +1267,7 @@ p.explore_para span{
 
 .insta_slider{
   width: 95%;
-  padding: 2.5rem;
+  /* padding: 2.5rem; */
   margin: 0 auto;
   /* overflow: hidden; */
 }

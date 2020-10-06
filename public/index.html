@@ -12,11 +12,11 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- ! HEADER START ! -->
@@ -137,175 +137,195 @@
         </div>
         <div class="header">
           <div class="row">
-            <div class="col-lg-2">
-              <h2 class="header_logo">Bookends</h2>
+            <div class="col-lg-3 col-md-6 col-sm-7 col-8">
+              <h1 class="header_logo">Bookends</h1>
             </div>
-            <div class="col-lg-7 links_wrapper">
-              <ul class="header_links">
-                <li class="link_item pl-2 pr-2">
-                  <a href="#">Home</a>
-                </li>
-                <li class="link_item dropdown_item pl-2 pr-2">
-                  <a href="#">
-                    Books
-                    <svg
-                      width="0.5rem"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 448 512"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
-                      ></path>
-                    </svg>
-                  </a>
-                  <ul class="row mega-menu">
-                    <li class="col-4">
-                      <ul>
-                        <li class="mega-menu-title">
-                          <a href="#">Custom Favourite</a>
+            <div class="col-lg-9 col-md-6 col-sm-5 col-4 text-right hide_on_large">
+              <button class="btn btn_close btn-outline-dark px-3 py-2 d-inline-block">
+                <svg width="1.5rem" fill="currentColor" viewBox="0 -53 384 384" width="384pt" xmlns="http://www.w3.org/2000/svg"><path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/></svg>
+              </button>
+            </div>
+            <div class="col-lg-9 sidebar_wrapper d-flex justify-content-center align-items-center">
+              <div class="row w-100">
+                <h1 class="col-lg-12 btn_close  hide_on_large text-right">&times;</h1>
+                <div class="col-lg-8 links_wrapper">
+                  <ul class="header_links">
+                    <li class="link_item">
+                      <a class="pl-2 pr-2" href="#">Home</a>
+                    </li>
+                    <li class="link_item dropdown_item">
+                      <a href="#" data-link="1" class="pl-2 pr-2">
+                        Books
+                        <svg
+                          width="0.5rem"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 448 512"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                          ></path>
+                        </svg>
+                      </a>
+                      <ul class="row mega-menu collapse_link menu_1">
+                        <li class="col-lg-4">
+                          <ul>
+                            <li class="mega-menu-title" data-link="2">
+                              <a href="#">Custom Favourite <span class="hide_on_large float-right">+</span> </a>
+                            </li>
+                            <div class="collapse_link menu_2">
+                              <li><a href="#">Fiction Books</a></li>
+                              <li><a href="#">Theoratical Books</a></li>
+                              <li><a href="#">School Books</a></li>
+                            </div>
+                          </ul>
                         </li>
-                        <li><a href="#">Fiction Books</a></li>
-                        <li><a href="#">Theoratical Books</a></li>
-                        <li><a href="#">School Books</a></li>
+                        <li class="col-lg-4">
+                          <ul>
+                            <li class="mega-menu-title" data-link="3">
+                              <a href="#">Categories<span class="hide_on_large float-right">+</span></a>
+                            </li>
+                            <div class="collapse_link menu_3">
+                              <li><a href="#">Comics</a></li>
+                              <li><a href="#">Fantasy</a></li>
+                              <li><a href="#">Detective</a></li>
+                              <li><a href="#">Novels</a></li>
+                            </div>
+                          </ul>
+                        </li>
+                        <li class="col-lg-4">
+                          <ul>
+                            <li class="mega-menu-title" data-link="4"><a href="#">Science<span class="hide_on_large float-right">+</span></a></li>
+                            <div class="collapse_link menu_4">
+                              <li><a href="#">Science Fiction</a></li>
+                              <li><a href="#">Biography</a></li>
+                              <li><a href="#">History</a></li>
+                              <li><a href="#">Poetry</a></li>
+                            </div>
+                          </ul>
+                        </li>
                       </ul>
                     </li>
-                    <li class="col-4">
-                      <ul>
-                        <li class="mega-menu-title">
-                          <a href="#">Categories</a>
-                        </li>
-                        <li><a href="#">Comics</a></li>
-                        <li><a href="#">Fantasy</a></li>
-                        <li><a href="#">Detective</a></li>
-                        <li><a href="#">Novels</a></li>
-                      </ul>
+                    <li class="link_item">
+                      <a href="#" class="pl-2 pr-2"> Collection </a>
                     </li>
-                    <li class="col-4">
-                      <ul>
-                        <li class="mega-menu-title"><a href="#">Science</a></li>
-                        <li><a href="#">Science Fiction</a></li>
-                        <li><a href="#">Biography</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Poetry</a></li>
-                      </ul>
+                    <li class="link_item dropdown_item">
+                      <a href="#" class="pl-2 pr-2" data-link="5">
+                        Kids
+                        <svg
+                          width="0.5rem"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 448 512"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                          ></path>
+                        </svg>
+                      </a>
+                          <ul class="row mega-menu menu_5 collapse_link kids_ul collapse_link">
+                            <li class="col-lg-4 first_row">
+                              <ul>
+                                <li class="mega-menu-title">
+                                  <a href="#">Custom Favourite<span class="hide_on_large float-right">+</span></a>
+                                </li>
+                                <li><a href="#">Fiction Books</a></li>
+                                <li><a href="#">Theoratical Books</a></li>
+                                <li><a href="#">School Books</a></li>
+                              </ul>
+                            </li>
+                            <li class="col-lg-6">
+                              <ul> 
+                                <li class="mega-menu-title" data-link="6">
+                                  <a href="#">Top Collections<span class="hide_on_large float-right">+</span></a>
+                                </li>
+                                <div class="collapse_link menu_6">
+                                  <li><a href="#">American Girl</a></li>
+                                  <li><a href="#">Diary Wimpy Kid</a></li>
+                                  <li><a href="#">Finding Dory</a></li>
+                                  <li><a href="#">Harry Potter</a></li>
+                                  <li><a href="#">Land of Stories</a></li>
+                                </div>
+                              </ul>
+                            </li>
+                            <li class="col-lg-6">
+                              <ul>
+                                <li class="mega-menu-title" data-link="7">
+                                  <a href="#">More For Kids<span class="hide_on_large float-right">+</span></a>
+                                </li>
+                                <div class="collapse_link menu_7">
+                                  <li><a href="#">B&N Educators</a></li>
+                                  <li><a href="#">B&N Kids' Club</a></li>
+                                  <li><a href="#">Kids' Music</a></li>
+                                  <li><a href="#">Toys & Games</a></li>
+                                  <li><a href="#">Hoodies</a></li>
+                                </div>
+                              </ul>
+                            </li>
+                          </ul>
+                    </li>
+                    <li class="link_item">
+                      <a href="#" class="pl-2 pr-2"> Contact Us </a>
+                    </li>
+                    <li class="link_item">
+                      <a href="#" class="pl-2 pr-2"> About Us </a>
                     </li>
                   </ul>
-                </li>
-                <li class="link_item pl-2 pr-2">
-                  <a href="#"> Collection </a>
-                </li>
-                <li class="link_item dropdown_item pl-2 pr-2">
-                  <a href="#">
-                    Kids
-                    <svg
-                      width="0.5rem"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 448 512"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
-                      ></path>
-                    </svg>
-                    <ul class="row mega-menu">
-                      <li class="col-4 first_row">
-                        <ul>
-                          <li class="mega-menu-title">
-                            <a href="#">Custom Favourite</a>
-                          </li>
-                          <li><a href="#">Fiction Books</a></li>
-                          <li><a href="#">Theoratical Books</a></li>
-                          <li><a href="#">School Books</a></li>
-                        </ul>
-                      </li>
-                      <li class="col-6">
-                        <ul>
-                          <li class="mega-menu-title">
-                            <a href="#">Top Collections</a>
-                          </li>
-                          <li><a href="#">American Girl</a></li>
-                          <li><a href="#">Diary Wimpy Kid</a></li>
-                          <li><a href="#">Finding Dory</a></li>
-                          <li><a href="#">Harry Potter</a></li>
-                          <li><a href="#">Land of Stories</a></li>
-                        </ul>
-                      </li>
-                      <li class="col-6">
-                        <ul>
-                          <li class="mega-menu-title">
-                            <a href="#">More For Kids</a>
-                          </li>
-                          <li><a href="#">B&N Educators</a></li>
-                          <li><a href="#">B&N Kids' Club</a></li>
-                          <li><a href="#">Kids' Music</a></li>
-                          <li><a href="#">Toys & Games</a></li>
-                          <li><a href="#">Hoodies</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </a>
-                </li>
-                <li class="link_item pl-2 pr-2">
-                  <a href="#"> Contact Us </a>
-                </li>
-                <li class="link_item pl-2 pr-2">
-                  <a href="#"> About Us </a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-3">
-              <div class="side_links">
-                <a href="#">
-                  <svg
-                    width="1.25rem"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M504.971 359.029c9.373 9.373 9.373 24.569 0 33.941l-80 79.984c-15.01 15.01-40.971 4.49-40.971-16.971V416h-58.785a12.004 12.004 0 0 1-8.773-3.812l-70.556-75.596 53.333-57.143L352 336h32v-39.981c0-21.438 25.943-31.998 40.971-16.971l80 79.981zM12 176h84l52.781 56.551 53.333-57.143-70.556-75.596A11.999 11.999 0 0 0 122.785 96H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12zm372 0v39.984c0 21.46 25.961 31.98 40.971 16.971l80-79.984c9.373-9.373 9.373-24.569 0-33.941l-80-79.981C409.943 24.021 384 34.582 384 56.019V96h-58.785a12.004 12.004 0 0 0-8.773 3.812L96 336H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h110.785c3.326 0 6.503-1.381 8.773-3.812L352 176h32z"
-                    ></path>
-                  </svg>
-                </a>
-                <a href="#">
-                  <svg
-                    width="1.25rem"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
-                    ></path>
-                  </svg>
-                </a>
-                <a href="#">
-                  <svg
-                    width="1.25rem"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
-                    ></path>
-                  </svg>
-                </a>
-                <a href="#" class="cart_icon">
-                  <svg
-                    width="1.25rem"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 576 512"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
-                    ></path>
-                  </svg>
-                </a>
+                </div>
+                <div class="col-lg-4">
+                  <div class="side_links">
+                    <a href="#">
+                      <svg
+                        width="1.25rem"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M504.971 359.029c9.373 9.373 9.373 24.569 0 33.941l-80 79.984c-15.01 15.01-40.971 4.49-40.971-16.971V416h-58.785a12.004 12.004 0 0 1-8.773-3.812l-70.556-75.596 53.333-57.143L352 336h32v-39.981c0-21.438 25.943-31.998 40.971-16.971l80 79.981zM12 176h84l52.781 56.551 53.333-57.143-70.556-75.596A11.999 11.999 0 0 0 122.785 96H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12zm372 0v39.984c0 21.46 25.961 31.98 40.971 16.971l80-79.984c9.373-9.373 9.373-24.569 0-33.941l-80-79.981C409.943 24.021 384 34.582 384 56.019V96h-58.785a12.004 12.004 0 0 0-8.773 3.812L96 336H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h110.785c3.326 0 6.503-1.381 8.773-3.812L352 176h32z"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a href="#">
+                      <svg
+                        width="1.25rem"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a href="#">
+                      <svg
+                        width="1.25rem"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a href="#" class="cart_icon">
+                      <svg
+                        width="1.25rem"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -417,7 +437,7 @@
                 <p>SHOP NOW</p>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-3">
               <img src="./images/category_3.png" alt="" />
               <div class="category_card_content">
                 <h3>Tragic Stories</h3>
@@ -425,7 +445,7 @@
                 <p>SHOP NOW</p>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-6 hide_on_large">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-3 hide_on_large">
               <img src="./images/category_4.png" alt="" />
               <div class="category_card_content">
                 <h3>Horror Stories</h3>
@@ -491,10 +511,10 @@
           </div>
           <div class="all_products container">
             <div class="products_wrapper row best active">
-              <div class="col-lg-3 col-md-4 col-sm-4 col-4">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <div class="product_card">
                   <div class="product_image">
-                    <img src="./images/stack_2.png" alt="" />
+                    <img src="./images/stack_1.png" alt="" />
                     <div class="product_icon_wrapper">
                       <div class="product_icons">
                         <div class="product_icon">
@@ -544,7 +564,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-4 col-4">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <div class="product_card">
                   <div class="product_image">
                     <img src="./images/stack_3.png" alt="" />
@@ -597,7 +617,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-4 col-4">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <div class="product_card">
                   <div class="product_image">
                     <img src="./images/stack_4.png" alt="" />
@@ -650,7 +670,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-4 col-4">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <div class="product_card">
                   <div class="product_image">
                     <img src="./images/stack_5.png" alt="" />
@@ -705,7 +725,7 @@
               </div>
             </div>
             <div class="products_wrapper row featured">
-              <div class="col-lg-3 col-md-4 col-sm-4 col-4">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <div class="product_card">
                   <div class="product_image">
                     <img src="./images/stack_5.png" alt="" />
@@ -758,7 +778,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-4 col-4">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <div class="product_card">
                   <div class="product_image">
                     <img src="./images/stack_2.png" alt="" />
@@ -811,7 +831,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-4 col-4">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <div class="product_card">
                   <div class="product_image">
                     <img src="./images/stack_3.png" alt="" />
@@ -864,7 +884,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-4 col-4">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <div class="product_card">
                   <div class="product_image">
                     <img src="./images/stack_6.png" alt="" />
@@ -919,7 +939,7 @@
               </div>
             </div>
             <div class="products_wrapper row sale">
-              <div class="col-lg-3 col-md-4 col-sm-4 col-4">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <div class="product_card">
                   <div class="product_image">
                     <img src="./images/stack_2.png" alt="" />
@@ -972,7 +992,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-4 col-4">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <div class="product_card">
                   <div class="product_image">
                     <img src="./images/stack_7.png" alt="" />
@@ -1025,7 +1045,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-4 col-4">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <div class="product_card">
                   <div class="product_image">
                     <img src="./images/stack_4.png" alt="" />
@@ -1078,7 +1098,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-4 col-4">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <div class="product_card">
                   <div class="product_image">
                     <img src="./images/stack_3.png" alt="" />
@@ -1204,74 +1224,56 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
-                <div class="testimonial">
-                  <div class="testimonial-content mx-3">
-                    <div class="pic">
-                      <img
-                        src="https://bestjquery.com/tutorial/testimonial/demo48/images/img-2.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <h3 class="title">Williamson</h3>
-                    <span class="post">Web Developer</span>
+                <div class="testimonial-quote group">
+                  <img src="./images/testimonial.png">
+                  <div class="quote-container ml-5">
+                      <blockquote>
+                          <p>Overall, fantastic! I'd recommend them to anyone looking for a creative, thoughtful, and professional team.”</p>
+                      </blockquote>  
+                      <cite><span>Kristi Bruno</span><br>
+                          Social Media Specialist<br>
+                          American College of Chest Physicians
+                      </cite>
                   </div>
-                  <p class="description mr-5">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nullam dolor tellus, efficitur ut tortor id, molestie
-                    egestas nibh. In blandit ex at erat vehicula molestie.
-                    Mauris vel volutpat nulla. Suspendisse lorem ex, congue at
-                    elit id, tincidunt tempor orci. Nullam nec augue ac tellus
-                    rhoncus tincidunt nec ut ligula. Praesent.
-                  </p>
-                </div>
+              </div>    
+                
               </div>
               <div class="swiper-slide">
-                <div class="testimonial">
-                  <div class="testimonial-content">
-                    <div class="pic">
-                      <img
-                        src="https://bestjquery.com/tutorial/testimonial/demo48/images/img-1.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <h3 class="title">Williamson</h3>
-                    <span class="post">Web Developer</span>
+                <div class="testimonial-quote group">
+                  <img src="./images/testimonial.png">
+                  <div class="quote-container ml-5">
+                      <blockquote>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias tempore est obcaecati ducimus?”</p>
+                      </blockquote>  
+                      <cite><span>Kristi Bruno</span><br>
+                          Social Media Specialist<br>
+                          American College of Chest Physicians
+                      </cite>
                   </div>
-                  <p class="description">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Nobis eligendi aliquid aperiam iure illum. Praesentium natus
-                    optio autem expedita similique harum ex id molestiae dicta
-                    eius sapiente quibusdam, reprehenderit culpa!
-                  </p>
-                </div>
+              </div>
               </div>
               <div class="swiper-slide">
-                <div class="testimonial">
-                  <div class="testimonial-content">
-                    <div class="pic">
-                      <img
-                        src="https://bestjquery.com/tutorial/testimonial/demo48/images/img-3.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <h3 class="title">Williamson</h3>
-                    <span class="post">Web Developer</span>
+                
+                <div class="testimonial-quote group">
+                  <img src="./images/testimonial.png">
+                  <div class="quote-container ml-5">
+                      <blockquote>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ullam nisi officiis!”</p>
+                      </blockquote>  
+                      <cite><span>Kristi Bruno</span><br>
+                          Social Media Specialist<br>
+                          American College of Chest Physicians
+                      </cite>
                   </div>
-                  <p class="description">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Illo ut esse, neque aspernatur adipisci modi maxime aut
-                    repellendus officia, quae mollitia quis vero ducimus ratione
-                    voluptate dolorum pariatur cum repudiandae.
-                  </p>
-                </div>
+              </div>
               </div>
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
 
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev text-white"></div>
-            <div class="swiper-button-next text-white"></div>
+            <div class="swiper-button-prev text-dark"></div>
+            <div class="swiper-button-next text-dark"></div>
           </div>
         </div>
       </section>
@@ -1371,9 +1373,9 @@
                 </button>
               </div>
               <div class="supponsor">
-                <img src="./images/supponsor.png" alt="" />
-                <img src="./images/supponsor2.png" alt="" />
-                <img src="./images/supponsor3.png" alt="" />
+                <img src="./images/brands_3.jpg" alt="" />
+                <img src="./images/brands_4.jpg" alt="" />
+                <img src="./images/brands_5.jpg" alt="" />
               </div>
               <p>
                 <svg
@@ -1421,13 +1423,13 @@
               <div
                 class="category_card_content p-4 explore_card_1 explore_content"
               >
-                <h3>Detective Novel of the Year</h3>
+                <h3>Detective Book of the Year</h3>
                 <p class="explore_para">
                   Explore NOW &nbsp; <span>&#x2192;</span>
                 </p>
               </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-10 mx-auto">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-10 mx-auto mb-4">
               <img src="./images/book_2.png" alt="" />
               <div class="category_card_content p-4 explore_content">
                 <h3>Horror Book of this season</h3>
@@ -1464,7 +1466,7 @@
         <div class="swiper-container insta_slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="./images/insta_book_1.png" alt="" />
+              <img src="./images/stack_1.png" alt="" />
               <svg
                 width="2.5rem"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1477,7 +1479,7 @@
               </svg>
             </div>
             <div class="swiper-slide">
-              <img src="./images/insta_book_2.png" alt="" />
+              <img src="./images/stack_2.png" alt="" />
               <svg
                 width="2.5rem"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1490,7 +1492,7 @@
               </svg>
             </div>
             <div class="swiper-slide">
-              <img src="./images/insta_book_3.png" alt="" />
+              <img src="./images/stack_3.png" alt="" />
               <svg
                 width="2.5rem"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1503,7 +1505,7 @@
               </svg>
             </div>
             <div class="swiper-slide">
-              <img src="./images/insta_book_4.png" alt="" />
+              <img src="./images/stack_4.png" alt="" />
               <svg
                 width="2.5rem"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1516,7 +1518,7 @@
               </svg>
             </div>
             <div class="swiper-slide">
-              <img src="./images/insta_book_5.png" alt="" />
+              <img src="./images/stack_5.png" alt="" />
               <svg
                 width="2.5rem"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1529,7 +1531,7 @@
               </svg>
             </div>
             <div class="swiper-slide">
-              <img src="./images/insta_book_6.png" alt="" />
+              <img src="./images/stack_6.png" alt="" />
               <svg
                 width="2.5rem"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1542,7 +1544,7 @@
               </svg>
             </div>
             <div class="swiper-slide">
-              <img src="./images/insta_book_7.png" alt="" />
+              <img src="./images/stack_7.png" alt="" />
               <svg
                 width="2.5rem"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1554,71 +1556,7 @@
                 ></path>
               </svg>
             </div>
-            <div class="swiper-slide">
-              <img src="./images/insta_book_8.png" alt="" />
-              <svg
-                width="2.5rem"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512"
-              >
-                <path
-                  fill="currentColor"
-                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                ></path>
-              </svg>
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/insta_book_9.png" alt="" />
-              <svg
-                width="2.5rem"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512"
-              >
-                <path
-                  fill="currentColor"
-                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                ></path>
-              </svg>
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/insta_book_10.png" alt="" />
-              <svg
-                width="2.5rem"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512"
-              >
-                <path
-                  fill="currentColor"
-                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                ></path>
-              </svg>
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/insta_book_11.png" alt="" />
-              <svg
-                width="2.5rem"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512"
-              >
-                <path
-                  fill="currentColor"
-                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                ></path>
-              </svg>
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/insta_book_12.png" alt="" />
-              <svg
-                width="2.5rem"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512"
-              >
-                <path
-                  fill="currentColor"
-                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                ></path>
-              </svg>
-            </div>
+            
           </div>
           <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
@@ -1774,7 +1712,7 @@
       <section class="contact_form">
         <div class="container">
           <div class="row">
-            <div class="col-lg-12 px-1">
+            <div class="col-lg-12">
               <h1><b>Looking farword to hearing from you</b></h1>
             </div>
             <div class="col-lg-3 label_wrapper">
@@ -1815,7 +1753,9 @@
             </div>
           </div>
           <div class="row">
-            <button class="col-lg-12 btn btn-dark p-3">Submit</button>
+            <div class="col-lg-12 row mx-auto">
+              <button class="col-lg-12 mx-auto btn btn-dark p-3">Submit</button>
+            </div>
           </div>
         </div>
       </section>

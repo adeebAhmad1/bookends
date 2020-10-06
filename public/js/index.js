@@ -7,7 +7,17 @@ const cart_item_number = document.querySelector('.cart_item_number');
 const accept_cookie = document.querySelectorAll('.accept_cookie');
 const cookie_box = document.querySelector('.cookie_box');
 const cart_icon = document.querySelectorAll('.cart_icon');
+const menu_btn = document.querySelectorAll('.btn_close');
+const collapse_links = document.querySelectorAll('[data-link]');
 
+collapse_links.forEach(el=>{
+  el.addEventListener("click",()=>{
+    const link = document.querySelector(`.menu_${el.dataset.link}`);
+    link.classList.toggle("collapse_link")
+  })
+})
+
+menu_btn.forEach(el=> el.addEventListener("click",()=> document.body.classList.toggle("over_hide")))
 
 cart_icon.forEach(el=>{
   el.addEventListener("click",()=>{
@@ -50,7 +60,7 @@ new Swiper('.insta_slider', {
 new Swiper('.brand_container', {
   // Optional parameters
   loop: true,
-  slidesPerView: 6,
+  slidesPerView,
   spaceBetween: 30,
   // Navigation arrows
   navigation: {
