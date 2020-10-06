@@ -1,6 +1,7 @@
 /* todo------------------------------------
 ![Table of contents]!
 
+!
 
 ? 1. ROOT COLORS
 
@@ -14,7 +15,7 @@
 
 ! 6. CATEGORY_CARDS STYLES
 
-//? 7. BOOKS_STACK STYLES
+? 7. ANIMATIONS
 
 * 8. PRODUCTS STYLES
 
@@ -35,6 +36,8 @@
 ? 16. HOW WE HELP YOU SECTION STYLES
 
 * 17. CONTACT FORM SECTION STYLES
+
+! 18. FOOTER STYLES
 
 todo------------------------------------ */
 
@@ -64,9 +67,13 @@ todo------------------------------------ */
 */
 
 * {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Raleway', sans-serif;
   padding: 0;
   margin: 0;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 @media (min-width: 992px){
@@ -93,7 +100,7 @@ todo------------------------------------ */
 }
 @media (max-width: 576px){
   html{
-    font-size: 70%;
+    font-size: 65%;
   }
   .p_0_small{
     padding: 0 0.5rem !important;
@@ -335,8 +342,8 @@ header a{
   top: 0;
   z-index: 10001;
   transition: all 0.5s;
-  max-width: 100%;
-  min-width: 320px;
+  max-width: 300px;
+  min-width: 30%;
   width: 35%;
   transform: translateX(100%);
 }
@@ -462,6 +469,19 @@ body.overflow-hidden .cart_menu{
   z-index: 100;
 }
 
+.swiper-slide-active .slider_sub_heading{
+  animation: slide_from_up 1s ease-in-out;
+}
+.swiper-slide-active .main_heading{
+  animation: slide_from_left 1s ease-in-out;
+}
+.swiper-slide-active .slider_content p{
+  animation: slide_from_right 1s ease-in-out;
+}
+.swiper-slide-active .shop_btn{
+  animation: slide_from_down 1s ease-in-out;
+}
+
 .slide_1 .slider_content{
   margin-right: auto;
   text-align: left;
@@ -514,6 +534,12 @@ body.overflow-hidden .cart_menu{
   text-align: center;
   background-color:var(--dark-midnight-blue);
   color: var(--white);
+}
+
+@media (max-width: 768px){
+  .bar{
+    font-size: 0.8rem;
+  }
 }
 
 .first_half{
@@ -571,13 +597,18 @@ body.overflow-hidden .cart_menu{
 
 
 
-.category_cards .col-lg-3{
+.category_card{
   position: relative;
+  overflow: hidden;
 }
 
-.category_cards img{
+.category_card img{
   width: 100%;
   min-height: 100%;
+  transition: all 4s;
+}
+.category_card:hover img{
+  transform: scale(1.4);
 }
 .category_card_content{
   position: absolute;
@@ -598,72 +629,52 @@ body.overflow-hidden .cart_menu{
 /*
 *==============================*
 !==============================!
-?GROUP 7.@BOOKS_STACK STYLES
+?GROUP 7.@ANIMATIONS
 !==============================!
 *==============================*
 */
 
-/* 
-.books_stack{
-  background-color: #152238;
-  padding: 1.25rem 0;
+
+@keyframes slide_from_up{
+  0% {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
-
-.stack_container{
-  width: 95%;
-  margin: 0 auto;
-  background-color: var(--white);
-  box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.5);
-  border-radius: 0.625rem;
-  padding: 0.625rem;
+@keyframes slide_from_left{
+  0% {
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
-
-.stack_container h5{
-  font-weight: bold;
-  display: inline-block;
-  margin-right: 0.625rem;
+@keyframes slide_from_right{
+  0% {
+    transform: translateX(200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
-
-.stack_container img{
-  height: 100%;
-  margin: 0 0.3125rem;
-  width: 100%;
-  transition: all 0.5s ease-in-out;
-  border-radius: 0.1875rem;
+@keyframes slide_from_down{
+  0% {
+    transform: translateY(200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
-
-.stack_container figure{
-  position: relative;
-  cursor: pointer;
-  margin-bottom: 0;
-}
-
-.stack_container figure:last-child{
-  padding-right: 1.5625rem !important;
-}
-
-.stack_container figure:hover img{
-  filter: blur(0.25rem) brightness(70%);
-}
-
-
-.stack_container figcaption{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,50%);
-  z-index: 100;
-  opacity: 0;
-  width: 100%;
-  text-align: center;
-  color: var(--white);
-  transition: all 0.5s ease-in-out;
-}
-
-.stack_container figure:hover figcaption{
-  opacity: 1;
-  transform: translate(-50%,-50%);
-} */
 
 
 /*
@@ -694,7 +705,6 @@ body.overflow-hidden .cart_menu{
   left: 0;
   width: 100%;
   height: 30%;
-  z-index: -1;
   background-color: var(--mate-red);
   opacity: 0.3;
 }
@@ -711,7 +721,7 @@ body.overflow-hidden .cart_menu{
   box-shadow: none;
   display: inline-block;
   width: 9.375rem;
-  border-radius: 50rem;
+  border-radius: 0;
   margin: 0.625rem;
   padding: 0.625rem;
   transition: all 0.4s ease;
@@ -791,10 +801,26 @@ body.overflow-hidden .cart_menu{
 .product_content p {
   margin-bottom: 0.5rem;
   font-weight: bold;
+  position: relative;
 }
 
 .product_content p:last-child{
+  display: inline-block;
   color: var(--mate-red);
+}
+.product_content p:last-child::before{
+  width: 0%;
+  content: "";
+  height: 2px;
+  position: absolute;
+  transition: all 0.5s;
+  bottom: 0;
+  left: 0;
+  background-color: var(--mate-red);
+}
+
+.product_card:hover p:last-child::before{
+  width: 100%;
 }
 
 .product_icon_wrapper{
@@ -996,6 +1022,12 @@ body.overflow-hidden .cart_menu{
   margin: 0;
   position: relative;
   z-index: 600;
+}
+
+@media (max-width: 576px) {
+  .testimonial-quote blockquote{
+    font-size: 0.9rem;
+  }
 }
 
 .testimonial-quote blockquote * {
@@ -1309,6 +1341,7 @@ p.explore_para span{
   color: #fff !important;
   position: relative !important;
   border: none !important;
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4) !important;
 }
 
 .btn_insta::before{
@@ -1374,7 +1407,7 @@ section.contact_us{
 }
 
 .prev_arrow,.next_arrow{
-  font-size: 2rem;
+  font-size: 3.5rem;
   color: #000;
   position: absolute;
   bottom: 0;
@@ -1396,7 +1429,7 @@ section.contact_us{
 */
 
 .help_us{
-  background-image: url(../images/book_1.png);
+  background-image: url(../images/category_2.png);
   background-size: cover;
   background-position: center;
   line-height: 3;
@@ -1419,10 +1452,17 @@ section.contact_us{
   padding: 1rem;
   height: auto !important;
   font-weight: 700;
+  border-radius: 0 !important;
+  box-shadow: 0 0.6rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.contact_form button{
+  box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.5);
+  border-radius: 0 !important;
 }
 
 .contact_form .row{
-  margin-bottom: 2rem;
+  margin: 1rem;
 }
 
 .contact_form label{
@@ -1430,10 +1470,64 @@ section.contact_us{
   font-weight: 700;
 }
 
+.contact_inner {
+  position: relative;
+  background: #fff;
+}
+
+.contact_inner::before,.contact_inner::after {
+  content: "";
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  z-index: -1;
+}
+
+.contact_inner::before{
+  top: -0.125rem;
+  left: -0.125rem;
+  border-top: 0.125rem solid var(--dark-midnight-blue);
+  border-left: 0.125rem solid var(--dark-midnight-blue);
+}
+
+.contact_inner::after{
+  bottom: -0.125rem;
+  right: -0.125rem;
+  border-bottom: 0.125rem solid var(--dark-midnight-blue);
+  border-right: 0.125rem solid var(--dark-midnight-blue);
+}
+
 .label_wrapper{
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+/*
+?==============================?
+!==============================!
+*GROUP 18.@FOOTER STYLES
+!==============================!
+?==============================?
+*/
+
+.footer_link_column{
+  position: relative;
+}
+
+.footer_link_column::before{
+  width: 0%;
+  content: "";
+  height: 2px;
+  position: absolute;
+  transition: all 0.5s;
+  bottom: 0;
+  left: 0;
+  background-color: var(--white);
+}
+
+.footer_link_column:hover::before{
+  width: 100%;
 }
 
 .footer_main{
@@ -1454,4 +1548,21 @@ section.contact_us{
   font-weight: 500;
 }
 
+.scroll_to_top{
+  right: 2rem;
+  bottom: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.3rem;
+  transition: all 1s;
+  z-index: 100000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 0.0625rem solid #23272b;
+  outline-offset: 0.3rem;
+}
 
+.scroll_to_top.hidden{
+  transform: translateX(-100vw);
+}
