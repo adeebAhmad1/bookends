@@ -10,49 +10,34 @@ const cart_icon = document.querySelectorAll('.cart_icon');
 const menu_btn = document.querySelectorAll('.btn_close');
 const collapse_links = document.querySelectorAll('[data-link]');
 const scroll_to_top = document.querySelector('.scroll_to_top');
+const search_icon = document.querySelectorAll('.search_icon');
+const slidesPerView = innerWidth > 992 ? 5 : innerWidth > 768 ? 4 : innerWidth > 576 ? 3 : 2;
+
+const menuOpen = (el,className) => el.addEventListener("click",()=> document.body.classList.toggle(className))
 
 document.querySelectorAll('a').forEach(el=> el.classList.contains("not") ? "" : el.addEventListener("click",e=> e.preventDefault()))
+collapse_links.forEach(el=>el.addEventListener("click",()=>document.querySelector(`.menu_${el.dataset.link}`).classList.toggle("collapse_link")))
+search_icon.forEach(el=> menuOpen(el,"search_active"))
+menu_btn.forEach(el=> menuOpen(el,"over_hide"))
+cart_icon[0].addEventListener("mouseenter",()=> document.body.classList.toggle("overflow-hidden"))
+cart_icon[1].addEventListener("click",()=> document.body.classList.toggle("overflow-hidden"))
 
-collapse_links.forEach(el=>{
-  el.addEventListener("click",()=>{
-    const sign = el.querySelector(".plus");
-    if(sign){
-      if(sign.innerHTML === "+"){
-        sign.innerHTML = "-"
-      } else{
-        sign.innerHTML = "+"
-      }
-    }
-    const link = document.querySelector(`.menu_${el.dataset.link}`);
-    link.classList.toggle("collapse_link")
-  })
-})
 
-menu_btn.forEach(el=> el.addEventListener("click",()=> document.body.classList.toggle("over_hide")))
+const handleScroll = ()=>{
+  !(scrollY >= innerHeight/2) ? scroll_to_top.classList.add("hidden") : scroll_to_top.classList.remove("hidden")
+}
 
-cart_icon.forEach(el=>{
-  el.addEventListener("click",()=>{
-    document.body.classList.toggle("overflow-hidden");
-  })
-})
-
-addEventListener("scroll",()=>{
-  if(scrollY > innerHeight/2){
-    if(scroll_to_top.classList.contains("hidden")){
-      scroll_to_top.classList.remove("hidden")
-    }
-  }
-  if(scrollY < innerHeight/2){
-    if(!scroll_to_top.classList.contains("hidden")){
-      scroll_to_top.classList.add("hidden")
-    }
-  }
-})
+handleScroll();
+addEventListener("scroll", handleScroll);
 
 // ? SWIPER JS INITIALIZATION
 var mySwiper = new Swiper('.swiper_container', {
   // Optional parameters
   loop: true,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
@@ -69,7 +54,7 @@ if(localStorage.getItem("cookie") != "done"){
 } else{
   cookie_box.classList.add("d-none");
 }
-const slidesPerView = innerWidth > 992 ? 5 : innerWidth > 768 ? 4 : innerWidth > 576 ? 3 : 2;
+
 new Swiper('.insta_slider', {
   // Optional parameters
   loop: true,

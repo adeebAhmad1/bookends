@@ -6,21 +6,30 @@
     <title>Ebook Store</title>
 
     <!-- ! BOOTSTRAP CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
 
     <!-- ! GOOGLE FONTS CDN (RALEWAY) -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- ! SWIPERJS STYLESHEET CDN -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- ! HEADER START ! -->
     <header id="header">
-      <div class="container">
-        <div class="header_upper">
+      <div class="header_upper">
+        <div class="container">
           <div class="row">
             <div class="col-lg-7">
               <a href="#">
@@ -129,27 +138,161 @@
               </a>
             </div>
             <div class="col-lg-5">
-              <div class="header_email_wrapper">demo@gmail.com</div>
+              <div class="header_email_wrapper">
+                <svg
+                  width="0.7rem"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"
+                  ></path>
+                </svg>
+                +1123456789
+              </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="container">
         <div class="header">
           <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-7 col-8">
               <h1 class="header_logo">Bookends</h1>
             </div>
-            <div class="col-lg-9 col-md-6 col-sm-5 col-4 text-right hide_on_large">
-              <button class="btn btn_close btn-outline-dark px-3 py-2 d-inline-block">
-                <svg width="1.5rem" fill="currentColor" viewBox="0 -53 384 384" width="384pt" xmlns="http://www.w3.org/2000/svg"><path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/></svg>
+            <div
+              class="col-lg-9 col-md-6 col-sm-5 col-4 text-right hide_on_large"
+            >
+              <button
+                class="btn btn_close btn-outline-dark px-3 py-2 d-inline-block"
+              >
+                <svg
+                  width="1.5rem"
+                  fill="currentColor"
+                  viewBox="0 -53 384 384"
+                  width="384pt"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"
+                  />
+                  <path
+                    d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"
+                  />
+                  <path
+                    d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"
+                  />
+                </svg>
               </button>
             </div>
-            <div class="col-lg-9 sidebar_wrapper d-flex justify-content-center align-items-center">
+            <div
+              class="col-lg-9 sidebar_wrapper d-flex justify-content-center align-items-center"
+            >
               <div class="row w-100">
-                <h1 class="col-lg-12 btn_close  hide_on_large text-right">&times;</h1>
+                <h1 class="col-lg-12 btn_close hide_on_large text-right">
+                  &times;
+                </h1>
                 <div class="col-lg-8 links_wrapper">
                   <ul class="header_links">
-                    <li class="link_item">
-                      <a class="pl-2 pr-2" href="#">Home</a>
+                    <li class="link_item dropdown_item">
+                      <a href="#" data-link="1" class="pl-2 pr-2">
+                        Latest
+                        <svg
+                          width="0.5rem"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 448 512"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                          ></path>
+                        </svg>
+                      </a>
+                      <ul class="row mega-menu collapse_link menu_1">
+                        <li class="col-lg-4">
+                          <ul>
+                            <li class="mega-menu-title" data-link="2">
+                              <a href="#"
+                                >Detective Novel
+                                <span class="hide_on_large plus float-right">
+                                  <svg
+                                    width="0.5rem"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512"
+                                  >
+                                    <path
+                                      fill="currentColor"
+                                      d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                                    ></path>
+                                  </svg>
+                                </span>
+                              </a>
+                            </li>
+                            <div class="collapse_link menu_2">
+                              <li><a href="#">The Moonstone</a></li>
+                              <li><a href="#">The Big Sleep</a></li>
+                              <li><a href="#">A Study in Scarlet</a></li>
+                            </div>
+                          </ul>
+                        </li>
+                        <li class="col-lg-4">
+                          <ul>
+                            <li class="mega-menu-title" data-link="3">
+                              <a href="#"
+                                >Comics<span
+                                  class="hide_on_large plus float-right"
+                                >
+                                  <svg
+                                    width="0.5rem"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512"
+                                  >
+                                    <path
+                                      fill="currentColor"
+                                      d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                                    ></path>
+                                  </svg> </span
+                              ></a>
+                            </li>
+                            <div class="collapse_link menu_3">
+                              <li><a href="#">X-Force #13</a></li>
+                              <li><a href="#">Marauders #13</a></li>
+                              <li><a href="#">True Believers</a></li>
+                              <li><a href="#">Iron Man And Hulk</a></li>
+                            </div>
+                          </ul>
+                        </li>
+                        <li class="col-lg-4">
+                          <ul>
+                            <li class="mega-menu-title" data-link="4">
+                              <a href="#"
+                                >For Kids<span
+                                  class="hide_on_large plus float-right"
+                                  ><svg
+                                    width="0.5rem"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512"
+                                  >
+                                    <path
+                                      fill="currentColor"
+                                      d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                                    ></path></svg></span
+                              ></a>
+                            </li>
+                            <div class="collapse_link menu_4">
+                              <li><a href="#">Class Act</a></li>
+                              <li><a href="#">The Lost Spells</a></li>
+                              <li><a href="#">Bunheads</a></li>
+                              <li><a href="#">The Goody</a></li>
+                            </div>
+                          </ul>
+                        </li>
+                      </ul>
                     </li>
                     <li class="link_item dropdown_item">
                       <a href="#" data-link="1" class="pl-2 pr-2">
@@ -170,7 +313,20 @@
                         <li class="col-lg-4">
                           <ul>
                             <li class="mega-menu-title" data-link="2">
-                              <a href="#">Custom Favourite <span class="hide_on_large plus float-right">+</span> </a>
+                              <a href="#"
+                                >Custom Favourite
+                                <span class="hide_on_large plus float-right"
+                                  ><svg
+                                    width="0.5rem"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512"
+                                  >
+                                    <path
+                                      fill="currentColor"
+                                      d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                                    ></path></svg></span>
+                              </a>
                             </li>
                             <div class="collapse_link menu_2">
                               <li><a href="#">Fiction Books</a></li>
@@ -182,7 +338,20 @@
                         <li class="col-lg-4">
                           <ul>
                             <li class="mega-menu-title" data-link="3">
-                              <a href="#">Categories<span class="hide_on_large plus float-right">+</span></a>
+                              <a href="#"
+                                >Categories<span
+                                  class="hide_on_large plus float-right"
+                                  ><svg
+                                    width="0.5rem"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512"
+                                  >
+                                    <path
+                                      fill="currentColor"
+                                      d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                                    ></path></svg></span
+                              ></a>
                             </li>
                             <div class="collapse_link menu_3">
                               <li><a href="#">Comics</a></li>
@@ -194,7 +363,22 @@
                         </li>
                         <li class="col-lg-4">
                           <ul>
-                            <li class="mega-menu-title" data-link="4"><a href="#">Science<span class="hide_on_large plus float-right">+</span></a></li>
+                            <li class="mega-menu-title" data-link="4">
+                              <a href="#"
+                                >Science<span
+                                  class="hide_on_large plus float-right"
+                                  ><svg
+                                    width="0.5rem"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512"
+                                  >
+                                    <path
+                                      fill="currentColor"
+                                      d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                                    ></path></svg></span
+                              ></a>
+                            </li>
                             <div class="collapse_link menu_4">
                               <li><a href="#">Science Fiction</a></li>
                               <li><a href="#">Biography</a></li>
@@ -223,57 +407,102 @@
                           ></path>
                         </svg>
                       </a>
-                          <ul class="row mega-menu menu_5 collapse_link kids_ul collapse_link">
-                            <li class="col-lg-4 first_row">
-                              <ul>
-                                <li class="mega-menu-title">
-                                  <a href="#">Custom Favourite<span class="hide_on_large float-right">+</span></a>
-                                </li>
-                                <li><a href="#">Fiction Books</a></li>
-                                <li><a href="#">Theoratical Books</a></li>
-                                <li><a href="#">School Books</a></li>
-                              </ul>
+                      <ul
+                        class="row mega-menu menu_5 collapse_link kids_ul collapse_link"
+                      >
+                        <li class="col-lg-4 first_row">
+                          <ul>
+                            <li class="mega-menu-title">
+                              <a href="#"
+                                >Custom Favourite<span
+                                  class="hide_on_large float-right"
+                                  >+</span
+                                ></a
+                              >
                             </li>
-                            <li class="col-lg-6">
-                              <ul> 
-                                <li class="mega-menu-title" data-link="6">
-                                  <a href="#">Top Collections<span class="hide_on_large plus float-right">+</span></a>
-                                </li>
-                                <div class="collapse_link menu_6">
-                                  <li><a href="#">American Girl</a></li>
-                                  <li><a href="#">Diary Wimpy Kid</a></li>
-                                  <li><a href="#">Finding Dory</a></li>
-                                  <li><a href="#">Harry Potter</a></li>
-                                  <li><a href="#">Land of Stories</a></li>
-                                </div>
-                              </ul>
-                            </li>
-                            <li class="col-lg-6">
-                              <ul>
-                                <li class="mega-menu-title" data-link="7">
-                                  <a href="#">More For Kids<span class="hide_on_large plus float-right">+</span></a>
-                                </li>
-                                <div class="collapse_link menu_7">
-                                  <li><a href="#">B&N Educators</a></li>
-                                  <li><a href="#">B&N Kids' Club</a></li>
-                                  <li><a href="#">Kids' Music</a></li>
-                                  <li><a href="#">Toys & Games</a></li>
-                                  <li><a href="#">Hoodies</a></li>
-                                </div>
-                              </ul>
-                            </li>
+                            <li><a href="#">Fiction Books</a></li>
+                            <li><a href="#">Theoratical Books</a></li>
+                            <li><a href="#">School Books</a></li>
                           </ul>
+                        </li>
+                        <li class="col-lg-6">
+                          <ul>
+                            <li class="mega-menu-title" data-link="6">
+                              <a href="#"
+                                >Top Collections<span
+                                  class="hide_on_large plus float-right"
+                                  ><svg
+                                    width="0.5rem"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512"
+                                  >
+                                    <path
+                                      fill="currentColor"
+                                      d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                                    ></path></svg></span
+                              ></a>
+                            </li>
+                            <div class="collapse_link menu_6">
+                              <li><a href="#">American Girl</a></li>
+                              <li><a href="#">Diary Wimpy Kid</a></li>
+                              <li><a href="#">Finding Dory</a></li>
+                              <li><a href="#">Harry Potter</a></li>
+                              <li><a href="#">Land of Stories</a></li>
+                            </div>
+                          </ul>
+                        </li>
+                        <li class="col-lg-6">
+                          <ul>
+                            <li class="mega-menu-title" data-link="7">
+                              <a href="#"
+                                >More For Kids<span
+                                  class="hide_on_large plus float-right"
+                                  ><svg
+                                    width="0.5rem"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512"
+                                  >
+                                    <path
+                                      fill="currentColor"
+                                      d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                                    ></path></svg></span
+                              ></a>
+                            </li>
+                            <div class="collapse_link menu_7">
+                              <li><a href="#">B&N Educators</a></li>
+                              <li><a href="#">B&N Kids' Club</a></li>
+                              <li><a href="#">Kids' Music</a></li>
+                              <li><a href="#">Toys & Games</a></li>
+                              <li><a href="#">Hoodies</a></li>
+                            </div>
+                          </ul>
+                        </li>
+                      </ul>
                     </li>
                     <li class="link_item">
-                      <a href="#contact" class="pl-2 pr-2 not"> Contact Us </a>
+                      <a href="#" class="pl-2 pr-2"> Featured </a>
                     </li>
                     <li class="link_item">
-                      <a href="#about" class="pl-2 pr-2 not"> About Us </a>
+                      <a href="#" class="pl-2 pr-2"> Blog </a>
                     </li>
                   </ul>
                 </div>
                 <div class="col-lg-4">
                   <div class="side_links">
+                    <a href="#" class="search_icon">
+                      <svg
+                        width="1.25rem"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+                        ></path>
+                      </svg>
+                    </a>
                     <a href="#">
                       <svg
                         width="1.25rem"
@@ -294,18 +523,6 @@
                       >
                         <path
                           fill="currentColor"
-                          d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
-                        ></path>
-                      </svg>
-                    </a>
-                    <a href="#">
-                      <svg
-                        width="1.25rem"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512"
-                      >
-                        <path
-                          fill="currentColor"
                           d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
                         ></path>
                       </svg>
@@ -314,7 +531,7 @@
                       <svg
                         width="1.25rem"
                         xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 576 512"
+                        viewBox="0 0 576 576"
                       >
                         <path
                           fill="currentColor"
@@ -350,7 +567,10 @@
         No Items in the cart
       </div>
     </div>
-
+    <div class="search_bar">
+      <input type="text" class="search_input px-2 py-2" placeholder="Search" />
+      <span class="search_icon">&times;</span>
+    </div>
     <!-- TODO ({CART ENDS}) -->
     <main>
       <!-- ? SLIDER START -->
@@ -360,8 +580,8 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide d-flex align-items-center p-5 slide_1">
-              <div class="slider_content p-5">
+            <div class="swiper-slide d-flex align-items-center slide_1 py-5">
+              <div class="slider_content container py-5">
                 <h2 class="slider_sub_heading">New Arrival</h2>
                 <h1 class="main_heading">LATEST BOOKS</h1>
                 <p>
@@ -371,8 +591,8 @@
                 <button class="shop_btn">Shop Now</button>
               </div>
             </div>
-            <div class="swiper-slide d-flex p-5 align-items-center slide_2">
-              <div class="slider_content p-5">
+            <div class="swiper-slide d-flex py-5 align-items-center slide_2">
+              <div class="slider_content container py-5">
                 <h2 class="slider_sub_heading">New Arrival</h2>
                 <h1 class="main_heading">LATEST BOOKS</h1>
                 <p>
@@ -382,8 +602,8 @@
                 <button class="shop_btn">Shop Now</button>
               </div>
             </div>
-            <div class="swiper-slide d-flex p-5 align-items-center slide_3">
-              <div class="slider_content p-5">
+            <div class="swiper-slide d-flex py-5 align-items-center slide_3">
+              <div class="slider_content container py-5">
                 <h2 class="slider_sub_heading">New Arrival</h2>
                 <h1 class="main_heading">LATEST BOOKS</h1>
                 <p>
@@ -405,10 +625,12 @@
       <!-- * BREADCRUMB START * -->
 
       <section class="breadcrumb_bar">
-        <div class="bar">
-          <div class="first_half">Bookends</div>
-          <div class="second_half">Book Marketplace</div>
-          <div class="third_half">For Lovers of books.</div>
+        <div class="container">
+          <div class="bar">
+            <div class="first_half">Bookends</div>
+            <div class="second_half">Book Marketplace</div>
+            <div class="third_half">For Lovers of books.</div>
+          </div>
         </div>
       </section>
 
@@ -430,7 +652,7 @@
             <div class="col-lg-4 category_card col-md-6 col-sm-6 col-6 mb-3">
               <img src="./images/category_2.png" alt="" />
               <div class="category_card_content">
-                <h3>Drama </h3>
+                <h3>Drama</h3>
                 <p>50% off</p>
                 <p>SHOP NOW</p>
               </div>
@@ -443,7 +665,9 @@
                 <p>SHOP NOW</p>
               </div>
             </div>
-            <div class="col-lg-4 category_card col-md-6 col-sm-6 col-6 mb-3 hide_on_large">
+            <div
+              class="col-lg-4 category_card col-md-6 col-sm-6 col-6 mb-3 hide_on_large"
+            >
               <img src="./images/category_4.png" alt="" />
               <div class="category_card_content">
                 <h3>Horror Stories</h3>
@@ -456,7 +680,6 @@
       </section>
 
       <!-- ! CATEGORY CARDS END ! -->
-
 
       <!-- * PRODUCTS SECTION START * -->
 
@@ -473,47 +696,56 @@
           </div>
           <div class="all_products container">
             <div class="products_wrapper row best active">
-              <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="col-lg-3 col-md-6 col-sm-12 col-12 px-4 mb-4">
                 <div class="product_card">
-                  <div class="product_image">
-                    <img src="./images/stack_1.png" alt="" />
-                    <div class="product_icon_wrapper">
-                      <div class="product_icons">
-                        <div class="product_icon">
+                  <div class="product_icon_wrapper">
+                      <div class="product_icons flex-column">
+                        <button class="product_icon p-3 mb-3">
                           <svg
+                            width="1.25rem"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 576 576"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+                            ></path>
+                          </svg>
+                          &nbsp;
+                          Add To Cart
+                        </button>
+                        <button class="product_icon p-3 mb-3">
+                          <svg
+                            width="1.25rem"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
                             <path
                               fill="currentColor"
-                              d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"
+                              d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
                             ></path>
                           </svg>
-                        </div>
-                        <div class="product_icon">
+                          &nbsp;
+                          Add To Wishlist
+                        </button>
+                        <button class="product_icon p-3">
                           <svg
+                            width="1.25rem"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
                             <path
                               fill="currentColor"
-                              d="M320.2 243.8l-49.7 99.4c-6 12.1-23.4 11.7-28.9-.6l-56.9-126.3-30 71.7H60.6l182.5 186.5c7.1 7.3 18.6 7.3 25.7 0L451.4 288H342.3l-22.1-44.2zM473.7 73.9l-2.4-2.5c-51.5-52.6-135.8-52.6-187.4 0L256 100l-27.9-28.5c-51.5-52.7-135.9-52.7-187.4 0l-2.4 2.4C-10.4 123.7-12.5 203 31 256h102.4l35.9-86.2c5.4-12.9 23.6-13.2 29.4-.4l58.2 129.3 49-97.9c5.9-11.8 22.7-11.8 28.6 0l27.6 55.2H481c43.5-53 41.4-132.3-7.3-182.1z"
+                              d="M504.971 359.029c9.373 9.373 9.373 24.569 0 33.941l-80 79.984c-15.01 15.01-40.971 4.49-40.971-16.971V416h-58.785a12.004 12.004 0 0 1-8.773-3.812l-70.556-75.596 53.333-57.143L352 336h32v-39.981c0-21.438 25.943-31.998 40.971-16.971l80 79.981zM12 176h84l52.781 56.551 53.333-57.143-70.556-75.596A11.999 11.999 0 0 0 122.785 96H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12zm372 0v39.984c0 21.46 25.961 31.98 40.971 16.971l80-79.984c9.373-9.373 9.373-24.569 0-33.941l-80-79.981C409.943 24.021 384 34.582 384 56.019V96h-58.785a12.004 12.004 0 0 0-8.773 3.812L96 336H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h110.785c3.326 0 6.503-1.381 8.773-3.812L352 176h32z"
                             ></path>
                           </svg>
-                        </div>
-                        <div class="product_icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"
-                          >
-                            <path
-                              fill="currentColor"
-                              d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
-                            ></path>
-                          </svg>
-                        </div>
+                          &nbsp;
+                          Details
+                        </button>
                       </div>
                     </div>
+                  <div class="product_image">
+                    <img src="./images/stack_1.png" alt="" />
                   </div>
                   <div class="product_content">
                     <h5>
@@ -526,47 +758,56 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="col-lg-3 col-md-6 col-sm-12 col-12 px-4 mb-4">
                 <div class="product_card">
-                  <div class="product_image">
-                    <img src="./images/stack_3.png" alt="" />
-                    <div class="product_icon_wrapper">
-                      <div class="product_icons">
-                        <div class="product_icon">
+                  <div class="product_icon_wrapper">
+                      <div class="product_icons flex-column">
+                        <button class="product_icon p-3 mb-3">
                           <svg
+                            width="1.25rem"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 576 576"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+                            ></path>
+                          </svg>
+                          &nbsp;
+                          Add To Cart
+                        </button>
+                        <button class="product_icon p-3 mb-3">
+                          <svg
+                            width="1.25rem"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
                             <path
                               fill="currentColor"
-                              d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"
+                              d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
                             ></path>
                           </svg>
-                        </div>
-                        <div class="product_icon">
+                          &nbsp;
+                          Add To Wishlist
+                        </button>
+                        <button class="product_icon p-3">
                           <svg
+                            width="1.25rem"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
                             <path
                               fill="currentColor"
-                              d="M320.2 243.8l-49.7 99.4c-6 12.1-23.4 11.7-28.9-.6l-56.9-126.3-30 71.7H60.6l182.5 186.5c7.1 7.3 18.6 7.3 25.7 0L451.4 288H342.3l-22.1-44.2zM473.7 73.9l-2.4-2.5c-51.5-52.6-135.8-52.6-187.4 0L256 100l-27.9-28.5c-51.5-52.7-135.9-52.7-187.4 0l-2.4 2.4C-10.4 123.7-12.5 203 31 256h102.4l35.9-86.2c5.4-12.9 23.6-13.2 29.4-.4l58.2 129.3 49-97.9c5.9-11.8 22.7-11.8 28.6 0l27.6 55.2H481c43.5-53 41.4-132.3-7.3-182.1z"
+                              d="M504.971 359.029c9.373 9.373 9.373 24.569 0 33.941l-80 79.984c-15.01 15.01-40.971 4.49-40.971-16.971V416h-58.785a12.004 12.004 0 0 1-8.773-3.812l-70.556-75.596 53.333-57.143L352 336h32v-39.981c0-21.438 25.943-31.998 40.971-16.971l80 79.981zM12 176h84l52.781 56.551 53.333-57.143-70.556-75.596A11.999 11.999 0 0 0 122.785 96H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12zm372 0v39.984c0 21.46 25.961 31.98 40.971 16.971l80-79.984c9.373-9.373 9.373-24.569 0-33.941l-80-79.981C409.943 24.021 384 34.582 384 56.019V96h-58.785a12.004 12.004 0 0 0-8.773 3.812L96 336H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h110.785c3.326 0 6.503-1.381 8.773-3.812L352 176h32z"
                             ></path>
                           </svg>
-                        </div>
-                        <div class="product_icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"
-                          >
-                            <path
-                              fill="currentColor"
-                              d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
-                            ></path>
-                          </svg>
-                        </div>
+                          &nbsp;
+                          Details
+                        </button>
                       </div>
                     </div>
+                  <div class="product_image">
+                    <img src="./images/stack_3.png" alt="" />
                   </div>
                   <div class="product_content">
                     <h5>
@@ -579,47 +820,56 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="col-lg-3 col-md-6 col-sm-12 col-12 px-4 mb-4">
                 <div class="product_card">
-                  <div class="product_image">
-                    <img src="./images/stack_4.png" alt="" />
-                    <div class="product_icon_wrapper">
-                      <div class="product_icons">
-                        <div class="product_icon">
+                  <div class="product_icon_wrapper">
+                      <div class="product_icons flex-column">
+                        <button class="product_icon p-3 mb-3">
                           <svg
+                            width="1.25rem"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 576 576"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+                            ></path>
+                          </svg>
+                          &nbsp;
+                          Add To Cart
+                        </button>
+                        <button class="product_icon p-3 mb-3">
+                          <svg
+                            width="1.25rem"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
                             <path
                               fill="currentColor"
-                              d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"
+                              d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
                             ></path>
                           </svg>
-                        </div>
-                        <div class="product_icon">
+                          &nbsp;
+                          Add To Wishlist
+                        </button>
+                        <button class="product_icon p-3">
                           <svg
+                            width="1.25rem"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
                             <path
                               fill="currentColor"
-                              d="M320.2 243.8l-49.7 99.4c-6 12.1-23.4 11.7-28.9-.6l-56.9-126.3-30 71.7H60.6l182.5 186.5c7.1 7.3 18.6 7.3 25.7 0L451.4 288H342.3l-22.1-44.2zM473.7 73.9l-2.4-2.5c-51.5-52.6-135.8-52.6-187.4 0L256 100l-27.9-28.5c-51.5-52.7-135.9-52.7-187.4 0l-2.4 2.4C-10.4 123.7-12.5 203 31 256h102.4l35.9-86.2c5.4-12.9 23.6-13.2 29.4-.4l58.2 129.3 49-97.9c5.9-11.8 22.7-11.8 28.6 0l27.6 55.2H481c43.5-53 41.4-132.3-7.3-182.1z"
+                              d="M504.971 359.029c9.373 9.373 9.373 24.569 0 33.941l-80 79.984c-15.01 15.01-40.971 4.49-40.971-16.971V416h-58.785a12.004 12.004 0 0 1-8.773-3.812l-70.556-75.596 53.333-57.143L352 336h32v-39.981c0-21.438 25.943-31.998 40.971-16.971l80 79.981zM12 176h84l52.781 56.551 53.333-57.143-70.556-75.596A11.999 11.999 0 0 0 122.785 96H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12zm372 0v39.984c0 21.46 25.961 31.98 40.971 16.971l80-79.984c9.373-9.373 9.373-24.569 0-33.941l-80-79.981C409.943 24.021 384 34.582 384 56.019V96h-58.785a12.004 12.004 0 0 0-8.773 3.812L96 336H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h110.785c3.326 0 6.503-1.381 8.773-3.812L352 176h32z"
                             ></path>
                           </svg>
-                        </div>
-                        <div class="product_icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"
-                          >
-                            <path
-                              fill="currentColor"
-                              d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
-                            ></path>
-                          </svg>
-                        </div>
+                          &nbsp;
+                          Details
+                        </button>
                       </div>
                     </div>
+                  <div class="product_image">
+                    <img src="./images/stack_4.png" alt="" />
                   </div>
                   <div class="product_content">
                     <h5>
@@ -632,47 +882,56 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="col-lg-3 col-md-6 col-sm-12 col-12 px-4 mb-4">
                 <div class="product_card">
-                  <div class="product_image">
-                    <img src="./images/stack_5.png" alt="" />
-                    <div class="product_icon_wrapper">
-                      <div class="product_icons">
-                        <div class="product_icon">
+                  <div class="product_icon_wrapper">
+                      <div class="product_icons flex-column">
+                        <button class="product_icon p-3 mb-3">
                           <svg
+                            width="1.25rem"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 576 576"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+                            ></path>
+                          </svg>
+                          &nbsp;
+                          Add To Cart
+                        </button>
+                        <button class="product_icon p-3 mb-3">
+                          <svg
+                            width="1.25rem"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
                             <path
                               fill="currentColor"
-                              d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"
+                              d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
                             ></path>
                           </svg>
-                        </div>
-                        <div class="product_icon">
+                          &nbsp;
+                          Add To Wishlist
+                        </button>
+                        <button class="product_icon p-3">
                           <svg
+                            width="1.25rem"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
                             <path
                               fill="currentColor"
-                              d="M320.2 243.8l-49.7 99.4c-6 12.1-23.4 11.7-28.9-.6l-56.9-126.3-30 71.7H60.6l182.5 186.5c7.1 7.3 18.6 7.3 25.7 0L451.4 288H342.3l-22.1-44.2zM473.7 73.9l-2.4-2.5c-51.5-52.6-135.8-52.6-187.4 0L256 100l-27.9-28.5c-51.5-52.7-135.9-52.7-187.4 0l-2.4 2.4C-10.4 123.7-12.5 203 31 256h102.4l35.9-86.2c5.4-12.9 23.6-13.2 29.4-.4l58.2 129.3 49-97.9c5.9-11.8 22.7-11.8 28.6 0l27.6 55.2H481c43.5-53 41.4-132.3-7.3-182.1z"
+                              d="M504.971 359.029c9.373 9.373 9.373 24.569 0 33.941l-80 79.984c-15.01 15.01-40.971 4.49-40.971-16.971V416h-58.785a12.004 12.004 0 0 1-8.773-3.812l-70.556-75.596 53.333-57.143L352 336h32v-39.981c0-21.438 25.943-31.998 40.971-16.971l80 79.981zM12 176h84l52.781 56.551 53.333-57.143-70.556-75.596A11.999 11.999 0 0 0 122.785 96H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12zm372 0v39.984c0 21.46 25.961 31.98 40.971 16.971l80-79.984c9.373-9.373 9.373-24.569 0-33.941l-80-79.981C409.943 24.021 384 34.582 384 56.019V96h-58.785a12.004 12.004 0 0 0-8.773 3.812L96 336H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h110.785c3.326 0 6.503-1.381 8.773-3.812L352 176h32z"
                             ></path>
                           </svg>
-                        </div>
-                        <div class="product_icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"
-                          >
-                            <path
-                              fill="currentColor"
-                              d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
-                            ></path>
-                          </svg>
-                        </div>
+                          &nbsp;
+                          Details
+                        </button>
                       </div>
                     </div>
+                  <div class="product_image">
+                    <img src="./images/stack_5.png" alt="" />
                   </div>
                   <div class="product_content">
                     <h5>
@@ -687,47 +946,56 @@
               </div>
             </div>
             <div class="products_wrapper row featured">
-              <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="col-lg-3 col-md-6 col-sm-12 col-12 px-4 mb-4">
                 <div class="product_card">
-                  <div class="product_image">
-                    <img src="./images/stack_5.png" alt="" />
-                    <div class="product_icon_wrapper">
-                      <div class="product_icons">
-                        <div class="product_icon">
+                  <div class="product_icon_wrapper">
+                      <div class="product_icons flex-column">
+                        <button class="product_icon p-3 mb-3">
                           <svg
+                            width="1.25rem"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 576 576"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+                            ></path>
+                          </svg>
+                          &nbsp;
+                          Add To Cart
+                        </button>
+                        <button class="product_icon p-3 mb-3">
+                          <svg
+                            width="1.25rem"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
                             <path
                               fill="currentColor"
-                              d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"
+                              d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
                             ></path>
                           </svg>
-                        </div>
-                        <div class="product_icon">
+                          &nbsp;
+                          Add To Wishlist
+                        </button>
+                        <button class="product_icon p-3">
                           <svg
+                            width="1.25rem"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
                             <path
                               fill="currentColor"
-                              d="M320.2 243.8l-49.7 99.4c-6 12.1-23.4 11.7-28.9-.6l-56.9-126.3-30 71.7H60.6l182.5 186.5c7.1 7.3 18.6 7.3 25.7 0L451.4 288H342.3l-22.1-44.2zM473.7 73.9l-2.4-2.5c-51.5-52.6-135.8-52.6-187.4 0L256 100l-27.9-28.5c-51.5-52.7-135.9-52.7-187.4 0l-2.4 2.4C-10.4 123.7-12.5 203 31 256h102.4l35.9-86.2c5.4-12.9 23.6-13.2 29.4-.4l58.2 129.3 49-97.9c5.9-11.8 22.7-11.8 28.6 0l27.6 55.2H481c43.5-53 41.4-132.3-7.3-182.1z"
+                              d="M504.971 359.029c9.373 9.373 9.373 24.569 0 33.941l-80 79.984c-15.01 15.01-40.971 4.49-40.971-16.971V416h-58.785a12.004 12.004 0 0 1-8.773-3.812l-70.556-75.596 53.333-57.143L352 336h32v-39.981c0-21.438 25.943-31.998 40.971-16.971l80 79.981zM12 176h84l52.781 56.551 53.333-57.143-70.556-75.596A11.999 11.999 0 0 0 122.785 96H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12zm372 0v39.984c0 21.46 25.961 31.98 40.971 16.971l80-79.984c9.373-9.373 9.373-24.569 0-33.941l-80-79.981C409.943 24.021 384 34.582 384 56.019V96h-58.785a12.004 12.004 0 0 0-8.773 3.812L96 336H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h110.785c3.326 0 6.503-1.381 8.773-3.812L352 176h32z"
                             ></path>
                           </svg>
-                        </div>
-                        <div class="product_icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"
-                          >
-                            <path
-                              fill="currentColor"
-                              d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
-                            ></path>
-                          </svg>
-                        </div>
+                          &nbsp;
+                          Details
+                        </button>
                       </div>
                     </div>
+                  <div class="product_image">
+                    <img src="./images/stack_5.png" alt="" />
                   </div>
                   <div class="product_content">
                     <h5>
@@ -740,47 +1008,56 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="col-lg-3 col-md-6 col-sm-12 col-12 px-4 mb-4">
                 <div class="product_card">
-                  <div class="product_image">
-                    <img src="./images/stack_2.png" alt="" />
-                    <div class="product_icon_wrapper">
-                      <div class="product_icons">
-                        <div class="product_icon">
+                  <div class="product_icon_wrapper">
+                      <div class="product_icons flex-column">
+                        <button class="product_icon p-3 mb-3">
                           <svg
+                            width="1.25rem"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 576 576"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+                            ></path>
+                          </svg>
+                          &nbsp;
+                          Add To Cart
+                        </button>
+                        <button class="product_icon p-3 mb-3">
+                          <svg
+                            width="1.25rem"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
                             <path
                               fill="currentColor"
-                              d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"
+                              d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
                             ></path>
                           </svg>
-                        </div>
-                        <div class="product_icon">
+                          &nbsp;
+                          Add To Wishlist
+                        </button>
+                        <button class="product_icon p-3">
                           <svg
+                            width="1.25rem"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
                             <path
                               fill="currentColor"
-                              d="M320.2 243.8l-49.7 99.4c-6 12.1-23.4 11.7-28.9-.6l-56.9-126.3-30 71.7H60.6l182.5 186.5c7.1 7.3 18.6 7.3 25.7 0L451.4 288H342.3l-22.1-44.2zM473.7 73.9l-2.4-2.5c-51.5-52.6-135.8-52.6-187.4 0L256 100l-27.9-28.5c-51.5-52.7-135.9-52.7-187.4 0l-2.4 2.4C-10.4 123.7-12.5 203 31 256h102.4l35.9-86.2c5.4-12.9 23.6-13.2 29.4-.4l58.2 129.3 49-97.9c5.9-11.8 22.7-11.8 28.6 0l27.6 55.2H481c43.5-53 41.4-132.3-7.3-182.1z"
+                              d="M504.971 359.029c9.373 9.373 9.373 24.569 0 33.941l-80 79.984c-15.01 15.01-40.971 4.49-40.971-16.971V416h-58.785a12.004 12.004 0 0 1-8.773-3.812l-70.556-75.596 53.333-57.143L352 336h32v-39.981c0-21.438 25.943-31.998 40.971-16.971l80 79.981zM12 176h84l52.781 56.551 53.333-57.143-70.556-75.596A11.999 11.999 0 0 0 122.785 96H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12zm372 0v39.984c0 21.46 25.961 31.98 40.971 16.971l80-79.984c9.373-9.373 9.373-24.569 0-33.941l-80-79.981C409.943 24.021 384 34.582 384 56.019V96h-58.785a12.004 12.004 0 0 0-8.773 3.812L96 336H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h110.785c3.326 0 6.503-1.381 8.773-3.812L352 176h32z"
                             ></path>
                           </svg>
-                        </div>
-                        <div class="product_icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"
-                          >
-                            <path
-                              fill="currentColor"
-                              d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
-                            ></path>
-                          </svg>
-                        </div>
+                          &nbsp;
+                          Details
+                        </button>
                       </div>
                     </div>
+                  <div class="product_image">
+                    <img src="./images/stack_2.png" alt="" />
                   </div>
                   <div class="product_content">
                     <h5>
@@ -793,47 +1070,56 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="col-lg-3 col-md-6 col-sm-12 col-12 px-4 mb-4">
                 <div class="product_card">
-                  <div class="product_image">
-                    <img src="./images/stack_3.png" alt="" />
-                    <div class="product_icon_wrapper">
-                      <div class="product_icons">
-                        <div class="product_icon">
+                  <div class="product_icon_wrapper">
+                      <div class="product_icons flex-column">
+                        <button class="product_icon p-3 mb-3">
                           <svg
+                            width="1.25rem"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 576 576"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+                            ></path>
+                          </svg>
+                          &nbsp;
+                          Add To Cart
+                        </button>
+                        <button class="product_icon p-3 mb-3">
+                          <svg
+                            width="1.25rem"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
                             <path
                               fill="currentColor"
-                              d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"
+                              d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
                             ></path>
                           </svg>
-                        </div>
-                        <div class="product_icon">
+                          &nbsp;
+                          Add To Wishlist
+                        </button>
+                        <button class="product_icon p-3">
                           <svg
+                            width="1.25rem"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
                             <path
                               fill="currentColor"
-                              d="M320.2 243.8l-49.7 99.4c-6 12.1-23.4 11.7-28.9-.6l-56.9-126.3-30 71.7H60.6l182.5 186.5c7.1 7.3 18.6 7.3 25.7 0L451.4 288H342.3l-22.1-44.2zM473.7 73.9l-2.4-2.5c-51.5-52.6-135.8-52.6-187.4 0L256 100l-27.9-28.5c-51.5-52.7-135.9-52.7-187.4 0l-2.4 2.4C-10.4 123.7-12.5 203 31 256h102.4l35.9-86.2c5.4-12.9 23.6-13.2 29.4-.4l58.2 129.3 49-97.9c5.9-11.8 22.7-11.8 28.6 0l27.6 55.2H481c43.5-53 41.4-132.3-7.3-182.1z"
+                              d="M504.971 359.029c9.373 9.373 9.373 24.569 0 33.941l-80 79.984c-15.01 15.01-40.971 4.49-40.971-16.971V416h-58.785a12.004 12.004 0 0 1-8.773-3.812l-70.556-75.596 53.333-57.143L352 336h32v-39.981c0-21.438 25.943-31.998 40.971-16.971l80 79.981zM12 176h84l52.781 56.551 53.333-57.143-70.556-75.596A11.999 11.999 0 0 0 122.785 96H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12zm372 0v39.984c0 21.46 25.961 31.98 40.971 16.971l80-79.984c9.373-9.373 9.373-24.569 0-33.941l-80-79.981C409.943 24.021 384 34.582 384 56.019V96h-58.785a12.004 12.004 0 0 0-8.773 3.812L96 336H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h110.785c3.326 0 6.503-1.381 8.773-3.812L352 176h32z"
                             ></path>
                           </svg>
-                        </div>
-                        <div class="product_icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"
-                          >
-                            <path
-                              fill="currentColor"
-                              d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
-                            ></path>
-                          </svg>
-                        </div>
+                          &nbsp;
+                          Details
+                        </button>
                       </div>
                     </div>
+                  <div class="product_image">
+                    <img src="./images/stack_3.png" alt="" />
                   </div>
                   <div class="product_content">
                     <h5>
@@ -846,47 +1132,56 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="col-lg-3 col-md-6 col-sm-12 col-12 px-4 mb-4">
                 <div class="product_card">
-                  <div class="product_image">
-                    <img src="./images/stack_6.png" alt="" />
-                    <div class="product_icon_wrapper">
-                      <div class="product_icons">
-                        <div class="product_icon">
+                  <div class="product_icon_wrapper">
+                      <div class="product_icons flex-column">
+                        <button class="product_icon p-3 mb-3">
                           <svg
+                            width="1.25rem"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 576 576"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+                            ></path>
+                          </svg>
+                          &nbsp;
+                          Add To Cart
+                        </button>
+                        <button class="product_icon p-3 mb-3">
+                          <svg
+                            width="1.25rem"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
                             <path
                               fill="currentColor"
-                              d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"
+                              d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
                             ></path>
                           </svg>
-                        </div>
-                        <div class="product_icon">
+                          &nbsp;
+                          Add To Wishlist
+                        </button>
+                        <button class="product_icon p-3">
                           <svg
+                            width="1.25rem"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
                             <path
                               fill="currentColor"
-                              d="M320.2 243.8l-49.7 99.4c-6 12.1-23.4 11.7-28.9-.6l-56.9-126.3-30 71.7H60.6l182.5 186.5c7.1 7.3 18.6 7.3 25.7 0L451.4 288H342.3l-22.1-44.2zM473.7 73.9l-2.4-2.5c-51.5-52.6-135.8-52.6-187.4 0L256 100l-27.9-28.5c-51.5-52.7-135.9-52.7-187.4 0l-2.4 2.4C-10.4 123.7-12.5 203 31 256h102.4l35.9-86.2c5.4-12.9 23.6-13.2 29.4-.4l58.2 129.3 49-97.9c5.9-11.8 22.7-11.8 28.6 0l27.6 55.2H481c43.5-53 41.4-132.3-7.3-182.1z"
+                              d="M504.971 359.029c9.373 9.373 9.373 24.569 0 33.941l-80 79.984c-15.01 15.01-40.971 4.49-40.971-16.971V416h-58.785a12.004 12.004 0 0 1-8.773-3.812l-70.556-75.596 53.333-57.143L352 336h32v-39.981c0-21.438 25.943-31.998 40.971-16.971l80 79.981zM12 176h84l52.781 56.551 53.333-57.143-70.556-75.596A11.999 11.999 0 0 0 122.785 96H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12zm372 0v39.984c0 21.46 25.961 31.98 40.971 16.971l80-79.984c9.373-9.373 9.373-24.569 0-33.941l-80-79.981C409.943 24.021 384 34.582 384 56.019V96h-58.785a12.004 12.004 0 0 0-8.773 3.812L96 336H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h110.785c3.326 0 6.503-1.381 8.773-3.812L352 176h32z"
                             ></path>
                           </svg>
-                        </div>
-                        <div class="product_icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"
-                          >
-                            <path
-                              fill="currentColor"
-                              d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
-                            ></path>
-                          </svg>
-                        </div>
+                          &nbsp;
+                          Details
+                        </button>
                       </div>
                     </div>
+                  <div class="product_image">
+                    <img src="./images/stack_6.png" alt="" />
                   </div>
                   <div class="product_content">
                     <h5>
@@ -901,47 +1196,56 @@
               </div>
             </div>
             <div class="products_wrapper row sale">
-              <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="col-lg-3 col-md-6 col-sm-12 col-12 px-4 mb-4">
                 <div class="product_card">
-                  <div class="product_image">
-                    <img src="./images/stack_2.png" alt="" />
-                    <div class="product_icon_wrapper">
-                      <div class="product_icons">
-                        <div class="product_icon">
+                  <div class="product_icon_wrapper">
+                      <div class="product_icons flex-column">
+                        <button class="product_icon p-3 mb-3">
                           <svg
+                            width="1.25rem"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 576 576"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+                            ></path>
+                          </svg>
+                          &nbsp;
+                          Add To Cart
+                        </button>
+                        <button class="product_icon p-3 mb-3">
+                          <svg
+                            width="1.25rem"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
                             <path
                               fill="currentColor"
-                              d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"
+                              d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
                             ></path>
                           </svg>
-                        </div>
-                        <div class="product_icon">
+                          &nbsp;
+                          Add To Wishlist
+                        </button>
+                        <button class="product_icon p-3">
                           <svg
+                            width="1.25rem"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
                             <path
                               fill="currentColor"
-                              d="M320.2 243.8l-49.7 99.4c-6 12.1-23.4 11.7-28.9-.6l-56.9-126.3-30 71.7H60.6l182.5 186.5c7.1 7.3 18.6 7.3 25.7 0L451.4 288H342.3l-22.1-44.2zM473.7 73.9l-2.4-2.5c-51.5-52.6-135.8-52.6-187.4 0L256 100l-27.9-28.5c-51.5-52.7-135.9-52.7-187.4 0l-2.4 2.4C-10.4 123.7-12.5 203 31 256h102.4l35.9-86.2c5.4-12.9 23.6-13.2 29.4-.4l58.2 129.3 49-97.9c5.9-11.8 22.7-11.8 28.6 0l27.6 55.2H481c43.5-53 41.4-132.3-7.3-182.1z"
+                              d="M504.971 359.029c9.373 9.373 9.373 24.569 0 33.941l-80 79.984c-15.01 15.01-40.971 4.49-40.971-16.971V416h-58.785a12.004 12.004 0 0 1-8.773-3.812l-70.556-75.596 53.333-57.143L352 336h32v-39.981c0-21.438 25.943-31.998 40.971-16.971l80 79.981zM12 176h84l52.781 56.551 53.333-57.143-70.556-75.596A11.999 11.999 0 0 0 122.785 96H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12zm372 0v39.984c0 21.46 25.961 31.98 40.971 16.971l80-79.984c9.373-9.373 9.373-24.569 0-33.941l-80-79.981C409.943 24.021 384 34.582 384 56.019V96h-58.785a12.004 12.004 0 0 0-8.773 3.812L96 336H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h110.785c3.326 0 6.503-1.381 8.773-3.812L352 176h32z"
                             ></path>
                           </svg>
-                        </div>
-                        <div class="product_icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"
-                          >
-                            <path
-                              fill="currentColor"
-                              d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
-                            ></path>
-                          </svg>
-                        </div>
+                          &nbsp;
+                          Details
+                        </button>
                       </div>
                     </div>
+                  <div class="product_image">
+                    <img src="./images/stack_2.png" alt="" />
                   </div>
                   <div class="product_content">
                     <h5>
@@ -954,47 +1258,56 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="col-lg-3 col-md-6 col-sm-12 col-12 px-4 mb-4">
                 <div class="product_card">
-                  <div class="product_image">
-                    <img src="./images/stack_7.png" alt="" />
-                    <div class="product_icon_wrapper">
-                      <div class="product_icons">
-                        <div class="product_icon">
+                  <div class="product_icon_wrapper">
+                      <div class="product_icons flex-column">
+                        <button class="product_icon p-3 mb-3">
                           <svg
+                            width="1.25rem"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 576 576"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+                            ></path>
+                          </svg>
+                          &nbsp;
+                          Add To Cart
+                        </button>
+                        <button class="product_icon p-3 mb-3">
+                          <svg
+                            width="1.25rem"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
                             <path
                               fill="currentColor"
-                              d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"
+                              d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
                             ></path>
                           </svg>
-                        </div>
-                        <div class="product_icon">
+                          &nbsp;
+                          Add To Wishlist
+                        </button>
+                        <button class="product_icon p-3">
                           <svg
+                            width="1.25rem"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
                             <path
                               fill="currentColor"
-                              d="M320.2 243.8l-49.7 99.4c-6 12.1-23.4 11.7-28.9-.6l-56.9-126.3-30 71.7H60.6l182.5 186.5c7.1 7.3 18.6 7.3 25.7 0L451.4 288H342.3l-22.1-44.2zM473.7 73.9l-2.4-2.5c-51.5-52.6-135.8-52.6-187.4 0L256 100l-27.9-28.5c-51.5-52.7-135.9-52.7-187.4 0l-2.4 2.4C-10.4 123.7-12.5 203 31 256h102.4l35.9-86.2c5.4-12.9 23.6-13.2 29.4-.4l58.2 129.3 49-97.9c5.9-11.8 22.7-11.8 28.6 0l27.6 55.2H481c43.5-53 41.4-132.3-7.3-182.1z"
+                              d="M504.971 359.029c9.373 9.373 9.373 24.569 0 33.941l-80 79.984c-15.01 15.01-40.971 4.49-40.971-16.971V416h-58.785a12.004 12.004 0 0 1-8.773-3.812l-70.556-75.596 53.333-57.143L352 336h32v-39.981c0-21.438 25.943-31.998 40.971-16.971l80 79.981zM12 176h84l52.781 56.551 53.333-57.143-70.556-75.596A11.999 11.999 0 0 0 122.785 96H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12zm372 0v39.984c0 21.46 25.961 31.98 40.971 16.971l80-79.984c9.373-9.373 9.373-24.569 0-33.941l-80-79.981C409.943 24.021 384 34.582 384 56.019V96h-58.785a12.004 12.004 0 0 0-8.773 3.812L96 336H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h110.785c3.326 0 6.503-1.381 8.773-3.812L352 176h32z"
                             ></path>
                           </svg>
-                        </div>
-                        <div class="product_icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"
-                          >
-                            <path
-                              fill="currentColor"
-                              d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
-                            ></path>
-                          </svg>
-                        </div>
+                          &nbsp;
+                          Details
+                        </button>
                       </div>
                     </div>
+                  <div class="product_image">
+                    <img src="./images/stack_7.png" alt="" />
                   </div>
                   <div class="product_content">
                     <h5>
@@ -1007,47 +1320,56 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="col-lg-3 col-md-6 col-sm-12 col-12 px-4 mb-4">
                 <div class="product_card">
-                  <div class="product_image">
-                    <img src="./images/stack_4.png" alt="" />
-                    <div class="product_icon_wrapper">
-                      <div class="product_icons">
-                        <div class="product_icon">
+                  <div class="product_icon_wrapper">
+                      <div class="product_icons flex-column">
+                        <button class="product_icon p-3 mb-3">
                           <svg
+                            width="1.25rem"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 576 576"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+                            ></path>
+                          </svg>
+                          &nbsp;
+                          Add To Cart
+                        </button>
+                        <button class="product_icon p-3 mb-3">
+                          <svg
+                            width="1.25rem"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
                             <path
                               fill="currentColor"
-                              d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"
+                              d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
                             ></path>
                           </svg>
-                        </div>
-                        <div class="product_icon">
+                          &nbsp;
+                          Add To Wishlist
+                        </button>
+                        <button class="product_icon p-3">
                           <svg
+                            width="1.25rem"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
                             <path
                               fill="currentColor"
-                              d="M320.2 243.8l-49.7 99.4c-6 12.1-23.4 11.7-28.9-.6l-56.9-126.3-30 71.7H60.6l182.5 186.5c7.1 7.3 18.6 7.3 25.7 0L451.4 288H342.3l-22.1-44.2zM473.7 73.9l-2.4-2.5c-51.5-52.6-135.8-52.6-187.4 0L256 100l-27.9-28.5c-51.5-52.7-135.9-52.7-187.4 0l-2.4 2.4C-10.4 123.7-12.5 203 31 256h102.4l35.9-86.2c5.4-12.9 23.6-13.2 29.4-.4l58.2 129.3 49-97.9c5.9-11.8 22.7-11.8 28.6 0l27.6 55.2H481c43.5-53 41.4-132.3-7.3-182.1z"
+                              d="M504.971 359.029c9.373 9.373 9.373 24.569 0 33.941l-80 79.984c-15.01 15.01-40.971 4.49-40.971-16.971V416h-58.785a12.004 12.004 0 0 1-8.773-3.812l-70.556-75.596 53.333-57.143L352 336h32v-39.981c0-21.438 25.943-31.998 40.971-16.971l80 79.981zM12 176h84l52.781 56.551 53.333-57.143-70.556-75.596A11.999 11.999 0 0 0 122.785 96H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12zm372 0v39.984c0 21.46 25.961 31.98 40.971 16.971l80-79.984c9.373-9.373 9.373-24.569 0-33.941l-80-79.981C409.943 24.021 384 34.582 384 56.019V96h-58.785a12.004 12.004 0 0 0-8.773 3.812L96 336H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h110.785c3.326 0 6.503-1.381 8.773-3.812L352 176h32z"
                             ></path>
                           </svg>
-                        </div>
-                        <div class="product_icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"
-                          >
-                            <path
-                              fill="currentColor"
-                              d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
-                            ></path>
-                          </svg>
-                        </div>
+                          &nbsp;
+                          Details
+                        </button>
                       </div>
                     </div>
+                  <div class="product_image">
+                    <img src="./images/stack_4.png" alt="" />
                   </div>
                   <div class="product_content">
                     <h5>
@@ -1060,47 +1382,56 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="col-lg-3 col-md-6 col-sm-12 col-12 px-4 mb-4">
                 <div class="product_card">
-                  <div class="product_image">
-                    <img src="./images/stack_3.png" alt="" />
-                    <div class="product_icon_wrapper">
-                      <div class="product_icons">
-                        <div class="product_icon">
+                  <div class="product_icon_wrapper">
+                      <div class="product_icons flex-column">
+                        <button class="product_icon p-3 mb-3">
                           <svg
+                            width="1.25rem"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 576 576"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+                            ></path>
+                          </svg>
+                          &nbsp;
+                          Add To Cart
+                        </button>
+                        <button class="product_icon p-3 mb-3">
+                          <svg
+                            width="1.25rem"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
                             <path
                               fill="currentColor"
-                              d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"
+                              d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
                             ></path>
                           </svg>
-                        </div>
-                        <div class="product_icon">
+                          &nbsp;
+                          Add To Wishlist
+                        </button>
+                        <button class="product_icon p-3">
                           <svg
+                            width="1.25rem"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
                             <path
                               fill="currentColor"
-                              d="M320.2 243.8l-49.7 99.4c-6 12.1-23.4 11.7-28.9-.6l-56.9-126.3-30 71.7H60.6l182.5 186.5c7.1 7.3 18.6 7.3 25.7 0L451.4 288H342.3l-22.1-44.2zM473.7 73.9l-2.4-2.5c-51.5-52.6-135.8-52.6-187.4 0L256 100l-27.9-28.5c-51.5-52.7-135.9-52.7-187.4 0l-2.4 2.4C-10.4 123.7-12.5 203 31 256h102.4l35.9-86.2c5.4-12.9 23.6-13.2 29.4-.4l58.2 129.3 49-97.9c5.9-11.8 22.7-11.8 28.6 0l27.6 55.2H481c43.5-53 41.4-132.3-7.3-182.1z"
+                              d="M504.971 359.029c9.373 9.373 9.373 24.569 0 33.941l-80 79.984c-15.01 15.01-40.971 4.49-40.971-16.971V416h-58.785a12.004 12.004 0 0 1-8.773-3.812l-70.556-75.596 53.333-57.143L352 336h32v-39.981c0-21.438 25.943-31.998 40.971-16.971l80 79.981zM12 176h84l52.781 56.551 53.333-57.143-70.556-75.596A11.999 11.999 0 0 0 122.785 96H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12zm372 0v39.984c0 21.46 25.961 31.98 40.971 16.971l80-79.984c9.373-9.373 9.373-24.569 0-33.941l-80-79.981C409.943 24.021 384 34.582 384 56.019V96h-58.785a12.004 12.004 0 0 0-8.773 3.812L96 336H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h110.785c3.326 0 6.503-1.381 8.773-3.812L352 176h32z"
                             ></path>
                           </svg>
-                        </div>
-                        <div class="product_icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"
-                          >
-                            <path
-                              fill="currentColor"
-                              d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
-                            ></path>
-                          </svg>
-                        </div>
+                          &nbsp;
+                          Details
+                        </button>
                       </div>
                     </div>
+                  <div class="product_image">
+                    <img src="./images/stack_3.png" alt="" />
                   </div>
                   <div class="product_content">
                     <h5>
@@ -1127,13 +1458,12 @@
           <div class="heading_wrapper">
             <h1 class="products_heading mx-auto">About Us</h1>
           </div>
-          <!-- <h1 class="about_heading">About Us</h1> -->
           <div class="about_card container-fluid">
             <div class="row">
-              <div class="col-lg-4 col-md-8 mx-auto about_image">
+              <div class="col-lg-5 col-md-8 mx-auto about_image pl-0">
                 <img src="images/about_us_graph.png" alt="" srcset="" />
               </div>
-              <div class="col-lg-8">
+              <div class="col-lg-7">
                 <div class="about_content">
                   <h3>What is Lorem Ipsum?</h3>
                   <p>
@@ -1149,19 +1479,22 @@
           </div>
           <div class="about_card container-fluid">
             <div class="row">
-              <div class="col-lg-8">
+              <div class="col-lg-5 col-md-8 mx-auto about_image pl-0">
+                <img src="images/about_us_graph.png" alt="" srcset="" />
+              </div>
+              <div class="col-lg-7">
                 <div class="about_content">
                   <h3>What is Lorem Ipsum?</h3>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
                     veniam rerum vitae odio molestiae dolorum, tempore totam
                     quasi? Et voluptas velit architecto ab autem quos minima
-                    dolorum non delectus in. 
+                    dolorum non delectus in.
                   </p>
                   <button class="btn_insta">Learn More</button>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-8 mx-auto about_image">
+              <div class="col-lg-5 col-md-8 hide_on_med mx-auto about_image pr-0">
                 <img src="images/about_us_graph.png" alt="" srcset="" />
               </div>
             </div>
@@ -1174,7 +1507,9 @@
       <!-- ? TESTIMONIAL SECTION START ? -->
 
       <section class="testimonials">
-        <h1 class="text-center testimonial_heading text-white">TESTIMONIAL</h1>
+        <div class="heading_wrapper">
+          <h1 class="products_heading mx-auto"><i>TESTIMONIALS</i></h1>
+        </div>
         <div class="container">
           <div class="swiper-container swiper_container">
             <!-- Additional required wrapper -->
@@ -1182,47 +1517,57 @@
               <!-- Slides -->
               <div class="swiper-slide">
                 <div class="testimonial-quote group">
-                  <img src="./images/testimonial.png">
+                  <img src="./images/testimonial.png" class="my-3" />
                   <div class="quote-container ml-5">
-                      <blockquote>
-                          <p>Overall, fantastic! I'd recommend them to anyone looking for a creative, thoughtful, and professional team.”</p>
-                      </blockquote>  
-                      <cite><span>Kristi Bruno</span><br>
-                          Social Media Specialist<br>
-                          American College of Chest Physicians
-                      </cite>
+                    <blockquote>
+                      <p>
+                        Overall, fantastic! I'd recommend them to anyone looking
+                        for a creative, thoughtful, and professional team.”
+                      </p>
+                    </blockquote>
+                    <cite
+                      ><span>Kristi Bruno</span><br />
+                      Social Media Specialist<br />
+                      American College of Chest Physicians
+                    </cite>
                   </div>
-              </div>    
-                
+                </div>
               </div>
               <div class="swiper-slide">
                 <div class="testimonial-quote group">
-                  <img src="./images/testimonial.png">
+                  <img src="./images/testimonial.png" class="my-3" />
                   <div class="quote-container ml-5">
-                      <blockquote>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias tempore est obcaecati ducimus?”</p>
-                      </blockquote>  
-                      <cite><span>Kristi Bruno</span><br>
-                          Social Media Specialist<br>
-                          American College of Chest Physicians
-                      </cite>
+                    <blockquote>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Alias tempore est obcaecati ducimus?”
+                      </p>
+                    </blockquote>
+                    <cite
+                      ><span>Kristi Bruno</span><br />
+                      Social Media Specialist<br />
+                      American College of Chest Physicians
+                    </cite>
                   </div>
-              </div>
+                </div>
               </div>
               <div class="swiper-slide">
-                
                 <div class="testimonial-quote group">
-                  <img src="./images/testimonial.png">
+                  <img src="./images/testimonial.png" class="my-3" />
                   <div class="quote-container ml-5">
-                      <blockquote>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ullam nisi officiis!”</p>
-                      </blockquote>  
-                      <cite><span>Kristi Bruno</span><br>
-                          Social Media Specialist<br>
-                          American College of Chest Physicians
-                      </cite>
+                    <blockquote>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Laboriosam ullam nisi officiis!”
+                      </p>
+                    </blockquote>
+                    <cite
+                      ><span>Kristi Bruno</span><br />
+                      Social Media Specialist<br />
+                      American College of Chest Physicians
+                    </cite>
                   </div>
-              </div>
+                </div>
               </div>
             </div>
             <!-- If we need pagination -->
@@ -1275,93 +1620,93 @@
             <div class="col-lg-7 col-md-8 col-sm-10 mx-auto pt-4">
               <div class="inner_div">
                 <h2>Harry Potter Series</h2>
-              <h3 class="price">$250.00</h3>
-              <p>
-                <svg
-                  width="1rem"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M205.22 22.09c-7.94-28.78-49.44-30.12-58.44 0C100.01 179.85 0 222.72 0 333.91 0 432.35 78.72 512 176 512s176-79.65 176-178.09c0-111.75-99.79-153.34-146.78-311.82zM176 448c-61.75 0-112-50.25-112-112 0-8.84 7.16-16 16-16s16 7.16 16 16c0 44.11 35.89 80 80 80 8.84 0 16 7.16 16 16s-7.16 16-16 16z"
-                  ></path>
-                </svg>
-                <b>14</b> sold in last <b>10</b> hours.
-              </p>
-              <p>
-                <svg
-                  width="1rem"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M360 64c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24 0 90.965 51.016 167.734 120.842 192C75.016 280.266 24 357.035 24 448c-13.255 0-24 10.745-24 24v16c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24v-16c0-13.255-10.745-24-24-24 0-90.965-51.016-167.734-120.842-192C308.984 231.734 360 154.965 360 64zM192 208c-57.787 0-104-66.518-104-144h208c0 77.945-46.51 144-104 144z"
-                  ></path>
-                </svg>
-                &nbsp;<span>HURRY! ONLY</span> <b class="price">15</b>
-                <span>LEFT IN STOCK.</span>
-              </p>
-              <div class="bar_like"></div>
-              <p>
-                Famous Publication of J.K ROWLING. Hurry limited stock left. To
-                inspire your love of reading.
-              </p>
-              <h6><b>J.K ROWLING</b></h6>
-              <div class="buttons_wrapper">
-                <div class="cart_item_number">
-                  <b data-sign="-" class="minus inc">-</b>
-                  <div contenteditable class="value">1</div>
-                  <b data-sign="+" class="plus inc">+</b>
-                </div>
-                <button class="cart_btn">Add to cart</button>
-                <button class="wishlist_button">
+                <h3 class="price">$250.00</h3>
+                <p>
                   <svg
-                    width="1.25rem"
+                    width="1rem"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"
                   >
                     <path
                       fill="currentColor"
-                      d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+                      d="M205.22 22.09c-7.94-28.78-49.44-30.12-58.44 0C100.01 179.85 0 222.72 0 333.91 0 432.35 78.72 512 176 512s176-79.65 176-178.09c0-111.75-99.79-153.34-146.78-311.82zM176 448c-61.75 0-112-50.25-112-112 0-8.84 7.16-16 16-16s16 7.16 16 16c0 44.11 35.89 80 80 80 8.84 0 16 7.16 16 16s-7.16 16-16 16z"
                     ></path>
                   </svg>
-                </button>
-              </div>
-              <div class="supponsor">
-                <img src="./images/brands_3.jpg" alt="" />
-                <img src="./images/brands_4.jpg" alt="" />
-                <img src="./images/brands_5.jpg" alt="" />
-              </div>
-              <p>
-                <svg
-                  width="0.8125rem"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 576 512"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z"
-                  ></path>
-                </svg>
-                <b>82 People</b> are viewing this product right now.
-              </p>
-              <p>
-                <svg
-                  width="1rem"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 640 512"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M624 352h-16V243.9c0-12.7-5.1-24.9-14.1-33.9L494 110.1c-9-9-21.2-14.1-33.9-14.1H416V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h16c0 53 43 96 96 96s96-43 96-96h128c0 53 43 96 96 96s96-43 96-96h48c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zM160 464c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm320 0c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm80-208H416V144h44.1l99.9 99.9V256z"
-                  ></path>
-                </svg>
-                Order in next 19 Hours and 30 Minutes to get it between
-                <u><b>Monday, 5th October</b></u> and
-                <u><b>Sunday, 12th October</b></u>
-              </p>
+                  <b>14</b> sold in last <b>10</b> hours.
+                </p>
+                <p>
+                  <svg
+                    width="1rem"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M360 64c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24 0 90.965 51.016 167.734 120.842 192C75.016 280.266 24 357.035 24 448c-13.255 0-24 10.745-24 24v16c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24v-16c0-13.255-10.745-24-24-24 0-90.965-51.016-167.734-120.842-192C308.984 231.734 360 154.965 360 64zM192 208c-57.787 0-104-66.518-104-144h208c0 77.945-46.51 144-104 144z"
+                    ></path>
+                  </svg>
+                  &nbsp;<span>HURRY! ONLY</span> <b class="price">15</b>
+                  <span>LEFT IN STOCK.</span>
+                </p>
+                <div class="bar_like"></div>
+                <p>
+                  Famous Publication of J.K ROWLING. Hurry limited stock left.
+                  To inspire your love of reading.
+                </p>
+                <h6><b>J.K ROWLING</b></h6>
+                <div class="buttons_wrapper">
+                  <div class="cart_item_number">
+                    <b data-sign="-" class="minus inc">-</b>
+                    <div contenteditable class="value">1</div>
+                    <b data-sign="+" clas s="plus inc">+</b>
+                  </div>
+                  <button class="cart_btn">Add to cart</button>
+                  <button class="wishlist_button">
+                    <svg
+                      width="1.25rem"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <div class="supponsor">
+                  <img src="./images/brands_3.jpg" alt="" />
+                  <img src="./images/brands_4.jpg" alt="" />
+                  <img src="./images/brands_5.jpg" alt="" />
+                </div>
+                <p>
+                  <svg
+                    width="0.8125rem"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 576 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z"
+                    ></path>
+                  </svg>
+                  <b>82 People</b> are viewing this product right now.
+                </p>
+                <p>
+                  <svg
+                    width="1rem"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M624 352h-16V243.9c0-12.7-5.1-24.9-14.1-33.9L494 110.1c-9-9-21.2-14.1-33.9-14.1H416V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h16c0 53 43 96 96 96s96-43 96-96h128c0 53 43 96 96 96s96-43 96-96h48c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zM160 464c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm320 0c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm80-208H416V144h44.1l99.9 99.9V256z"
+                    ></path>
+                  </svg>
+                  Order in next 19 Hours and 30 Minutes to get it between
+                  <u><b>Monday, 5th October</b></u> and
+                  <u><b>Sunday, 12th October</b></u>
+                </p>
               </div>
             </div>
           </div>
@@ -1375,7 +1720,9 @@
       <section class="explore category_cards">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 category_card col-md-6 col-sm-12 col-10 mx-auto mb-4">
+            <div
+              class="col-lg-6 category_card col-md-6 col-sm-12 col-10 mx-auto mb-4"
+            >
               <img src="./images/book_1.png" alt="" />
               <div
                 class="category_card_content p-4 explore_card_1 explore_content"
@@ -1386,7 +1733,9 @@
                 </p>
               </div>
             </div>
-            <div class="col-lg-6 category_card col-md-6 col-sm-12 col-10 mx-auto mb-4">
+            <div
+              class="col-lg-6 category_card col-md-6 col-sm-12 col-10 mx-auto mb-4"
+            >
               <img src="./images/book_2.png" alt="" />
               <div class="category_card_content p-4 explore_content">
                 <h3>Horror Book of this season</h3>
@@ -1513,7 +1862,6 @@
                 ></path>
               </svg>
             </div>
-            
           </div>
           <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
@@ -1619,7 +1967,7 @@
       <section class="brands">
         <div class="container">
           <div class="row">
-            <div class="swiper-container brand_container ">
+            <div class="swiper-container brand_container">
               <div class="swiper-wrapper pb-5">
                 <div class="swiper-slide">
                   <img src="./images/brands_1.png" alt="" />
@@ -1640,8 +1988,8 @@
                   <img src="./images/brands_6.jpg" alt="" />
                 </div>
               </div>
-              <div class="prev_arrow h2"> &leftarrow; </div>
-              <div class="next_arrow h2"> &rightarrow; </div>
+              <div class="prev_arrow h2">&leftarrow;</div>
+              <div class="next_arrow h2">&rightarrow;</div>
             </div>
           </div>
         </div>
@@ -1739,144 +2087,148 @@
     </main>
 
     <footer>
-
       <div class="footer_main">
         <div class="container py-5">
-          <div class="row">
-            <div class="col-lg-7 col-md-8 col-sm-12 col-12 footer_link">
+          <div class="row footer_link">
+            <div class="col-lg-7 col-md-12 col-sm-12 col-12">
               <div class="container-fluid">
                 <div class="row">
-                  <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                  <div class="col-md-4 col-sm-4 col-12">
                     <h6 class="text-white mb-4"><b>SHOP</b></h6>
                     <p class="mb-0">
-                      <a class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block" href="#"
+                      <a
+                        class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block"
+                        href="#"
                         >Comics</a
                       >
                     </p>
                     <p class="mb-0">
-                      <a class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block" href="#"
+                      <a
+                        class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block"
+                        href="#"
                         >Story Books</a
                       >
                     </p>
                     <p class="mb-0">
-                      <a class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block" href="#"
+                      <a
+                        class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block"
+                        href="#"
                         >Horror Books</a
                       >
                     </p>
                     <p class="mb-0">
-                      <a class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block" href="#"
+                      <a
+                        class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block"
+                        href="#"
                         >Romantic Books</a
                       >
                     </p>
                     <p class="mb-0">
-                      <a class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block" href="#"
+                      <a
+                        class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block"
+                        href="#"
                         >Biography</a
                       >
                     </p>
-                    <p class="mb-0">
-                      <a class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block" href="#"
-                        >Mystery Novels</a
-                      >
-                    </p>
-                    <p class="mb-0">
-                      <a class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block" href="#"
-                        >Fantasy Books</a
-                      >
-                    </p>
                   </div>
-                  <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                  <div class="col-md-4 col-sm-4 col-12">
                     <h6 class="text-white mb-4"><b>INFORMATION</b></h6>
                     <p class="mb-0">
-                      <a class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block" href="#"
+                      <a
+                        class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block"
+                        href="#"
                         >About us</a
                       >
                     </p>
                     <p class="mb-0">
-                      <a class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block" href="#"
+                      <a
+                        class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block"
+                        href="#"
                         >Customer Service</a
                       >
                     </p>
                     <p class="mb-0">
-                      <a class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block" href="#"
+                      <a
+                        class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block"
+                        href="#"
                         >New Collections</a
                       >
                     </p>
                     <p class="mb-0">
-                      <a class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block" href="#"
+                      <a
+                        class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block"
+                        href="#"
                         >Best Sellers</a
                       >
                     </p>
                     <p class="mb-0">
-                      <a class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block" href="#"
+                      <a
+                        class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block"
+                        href="#"
                         >Manufacturers</a
                       >
                     </p>
                     <p class="mb-0">
-                      <a class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block" href="#"
+                      <a
+                        class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block"
+                        href="#"
                         >Privacy Policy</a
                       >
                     </p>
-                    <p class="mb-0">
-                      <a class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block" href="#"
-                        >Terms & Conditions</a
-                      >
-                    </p>
-                    <p class="mb-0">
-                      <a class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block" href="#"
-                        >Blogs</a
-                      >
-                    </p>
                   </div>
-                  <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                  <div class="col-md-4 col-sm-4 col-12">
                     <h6 class="text-white mb-4"><b>CUSTOMER SERVICE</b></h6>
                     <p class="mb-0">
-                      <a class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block" href="#"
+                      <a
+                        class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block"
+                        href="#"
                         >Search Terms</a
                       >
                     </p>
                     <p class="mb-0">
-                      <a class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block" href="#"
+                      <a
+                        class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block"
+                        href="#"
                         >Advance Search</a
                       >
                     </p>
                     <p class="mb-0">
-                      <a class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block" href="#"
+                      <a
+                        class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block"
+                        href="#"
                         >Orders and Returns</a
                       >
                     </p>
                     <p class="mb-0">
-                      <a class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block" href="#"
+                      <a
+                        class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block"
+                        href="#"
                         >Contact Us</a
                       >
                     </p>
                     <p class="mb-0">
-                      <a class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block" href="#"
+                      <a
+                        class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block"
+                        href="#"
                         >RSS</a
                       >
                     </p>
                     <p class="mb-0">
-                      <a class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block" href="#"
+                      <a
+                        class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block"
+                        href="#"
                         >Helps & FAQ's</a
-                      >
-                    </p>
-                    <p class="mb-0">
-                      <a class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block" href="#"
-                        >Consultants</a
-                      >
-                    </p>
-                    <p class="mb-0">
-                      <a class="text-white text-decoration-none mb-1 pb-1 footer_link_column d-inline-block" href="#"
-                        >Store Location</a
                       >
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-5 col-md-4 col-sm-12 col-12">
+            <div class="col-lg-5 col-md-8 col-sm-12 col-12">
               <div class="row">
                 <div class="col-lg-12">
-                  <h6 class="text-white mb-4"><b>SOCIAL CONTACTS</b></h6>
+                  <div class="container-fluid">
+                    <h6 class="text-white mb-4"><b>SOCIAL CONTACTS</b></h6>
                   <a href="#" class="text-decoration-none mr-3 text-white">
                     <svg
                       height="20"
@@ -1925,18 +2277,122 @@
                       ></path>
                     </svg>
                   </a>
-                  <a href="#" class="text-white">
-                    <svg
-                      height="20"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 640 512"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"
-                      ></path>
-                    </svg>
-                  </a>
+                </div>
+                <div class="col-lg-12">
+                  <div class="row mt-3">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 38 24"
+                        width="100%"
+                      >
+                        <g fill="none">
+                          <path
+                            fill="#000"
+                            d="M35,0 L3,0 C1.3,0 0,1.3 0,3 L0,21 C0,22.7 1.4,24 3,24 L35,24 C36.7,24 38,22.7 38,21 L38,3 C38,1.3 36.6,0 35,0 Z"
+                            opacity=".07"
+                          ></path>
+                          <path
+                            fill="#006FCF"
+                            d="M35,1 C36.1,1 37,1.9 37,3 L37,21 C37,22.1 36.1,23 35,23 L3,23 C1.9,23 1,22.1 1,21 L1,3 C1,1.9 1.9,1 3,1 L35,1"
+                          ></path>
+                          <path
+                            fill="#FFF"
+                            d="M8.971,10.268 L9.745,12.144 L8.203,12.144 L8.971,10.268 Z M25.046,10.346 L22.069,10.346 L22.069,11.173 L24.998,11.173 L24.998,12.412 L22.075,12.412 L22.075,13.334 L25.052,13.334 L25.052,14.073 L27.129,11.828 L25.052,9.488 L25.046,10.346 L25.046,10.346 Z M10.983,8.006 L14.978,8.006 L15.865,9.941 L16.687,8 L27.057,8 L28.135,9.19 L29.25,8 L34.013,8 L30.494,11.852 L33.977,15.68 L29.143,15.68 L28.065,14.49 L26.94,15.68 L10.03,15.68 L9.536,14.49 L8.406,14.49 L7.911,15.68 L4,15.68 L7.286,8 L10.716,8 L10.983,8.006 Z M19.646,9.084 L17.407,9.084 L15.907,12.62 L14.282,9.084 L12.06,9.084 L12.06,13.894 L10,9.084 L8.007,9.084 L5.625,14.596 L7.18,14.596 L7.674,13.406 L10.27,13.406 L10.764,14.596 L13.484,14.596 L13.484,10.661 L15.235,14.602 L16.425,14.602 L18.165,10.673 L18.165,14.603 L19.623,14.603 L19.647,9.083 L19.646,9.084 Z M28.986,11.852 L31.517,9.084 L29.695,9.084 L28.094,10.81 L26.546,9.084 L20.652,9.084 L20.652,14.602 L26.462,14.602 L28.076,12.864 L29.624,14.602 L31.499,14.602 L28.987,11.852 L28.986,11.852 Z"
+                          ></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 38 24"
+                        width="100%"
+                      >
+                        <path
+                          d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"
+                          fill="#000"
+                          opacity=".07"
+                        ></path>
+                        <path
+                          d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"
+                          fill="#FFF"
+                        ></path>
+                        <path
+                          d="M37 16.95V21c0 1.1-.9 2-2 2H23.228c7.896-1.815 12.043-4.601 13.772-6.05z"
+                          fill="#EDA024"
+                        ></path>
+                        <path fill="#494949" d="M9 11h20v2H9z"></path>
+                        <path
+                          d="M22 12c0 1.7-1.3 3-3 3s-3-1.4-3-3 1.4-3 3-3c1.7 0 3 1.3 3 3z"
+                          fill="#EDA024"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                      <svg
+                        viewBox="0 0 38 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="100%"
+                      >
+                        <path
+                          opacity=".07"
+                          d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"
+                        ></path>
+                        <path
+                          fill="#fff"
+                          d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"
+                        ></path>
+                        <circle fill="#EB001B" cx="15" cy="12" r="7"></circle>
+                        <circle fill="#F79E1B" cx="23" cy="12" r="7"></circle>
+                        <path
+                          fill="#FF5F00"
+                          d="M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                      <svg
+                        viewBox="0 0 38 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="100%"
+                      >
+                        <path
+                          opacity=".07"
+                          d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"
+                        ></path>
+                        <path
+                          fill="#fff"
+                          d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"
+                        ></path>
+                        <path
+                          d="M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z"
+                          fill="#142688"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                      <svg
+                        viewBox="0 0 38 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="100%"
+                      >
+                        <path
+                          opacity=".07"
+                          d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"
+                        ></path>
+                        <path
+                          fill="#fff"
+                          d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"
+                        ></path>
+                        <path
+                          d="M12 12v3.7c0 .3-.2.3-.5.2-1.9-.8-3-3.3-2.3-5.4.4-1.1 1.2-2 2.3-2.4.4-.2.5-.1.5.2V12zm2 0V8.3c0-.3 0-.3.3-.2 2.1.8 3.2 3.3 2.4 5.4-.4 1.1-1.2 2-2.3 2.4-.4.2-.4.1-.4-.2V12zm7.2-7H13c3.8 0 6.8 3.1 6.8 7s-3 7-6.8 7h8.2c3.8 0 6.8-3.1 6.8-7s-3-7-6.8-7z"
+                          fill="#3086C8"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1975,7 +2431,6 @@
                     <span class="dropdown_wrapper text-dark">
                       <div class="item font-weight-bold">DUTCH</div>
                       <div class="item font-weight-bold">FRENCH</div>
-                      <div class="item font-weight-bold">ARABIC</div>
                     </span>
                   </a>
                 </div>
@@ -2008,30 +2463,17 @@
               </div>
             </div>
           </div>
-          <div class="row mt-3 justify-content-center">
-            <div class="col-lg-1 col-md-2 col-sm-2 col-2">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 24" width="100%"><g fill="none"><path fill="#000" d="M35,0 L3,0 C1.3,0 0,1.3 0,3 L0,21 C0,22.7 1.4,24 3,24 L35,24 C36.7,24 38,22.7 38,21 L38,3 C38,1.3 36.6,0 35,0 Z" opacity=".07"></path><path fill="#006FCF" d="M35,1 C36.1,1 37,1.9 37,3 L37,21 C37,22.1 36.1,23 35,23 L3,23 C1.9,23 1,22.1 1,21 L1,3 C1,1.9 1.9,1 3,1 L35,1"></path><path fill="#FFF" d="M8.971,10.268 L9.745,12.144 L8.203,12.144 L8.971,10.268 Z M25.046,10.346 L22.069,10.346 L22.069,11.173 L24.998,11.173 L24.998,12.412 L22.075,12.412 L22.075,13.334 L25.052,13.334 L25.052,14.073 L27.129,11.828 L25.052,9.488 L25.046,10.346 L25.046,10.346 Z M10.983,8.006 L14.978,8.006 L15.865,9.941 L16.687,8 L27.057,8 L28.135,9.19 L29.25,8 L34.013,8 L30.494,11.852 L33.977,15.68 L29.143,15.68 L28.065,14.49 L26.94,15.68 L10.03,15.68 L9.536,14.49 L8.406,14.49 L7.911,15.68 L4,15.68 L7.286,8 L10.716,8 L10.983,8.006 Z M19.646,9.084 L17.407,9.084 L15.907,12.62 L14.282,9.084 L12.06,9.084 L12.06,13.894 L10,9.084 L8.007,9.084 L5.625,14.596 L7.18,14.596 L7.674,13.406 L10.27,13.406 L10.764,14.596 L13.484,14.596 L13.484,10.661 L15.235,14.602 L16.425,14.602 L18.165,10.673 L18.165,14.603 L19.623,14.603 L19.647,9.083 L19.646,9.084 Z M28.986,11.852 L31.517,9.084 L29.695,9.084 L28.094,10.81 L26.546,9.084 L20.652,9.084 L20.652,14.602 L26.462,14.602 L28.076,12.864 L29.624,14.602 L31.499,14.602 L28.987,11.852 L28.986,11.852 Z"></path></g></svg>
-            </div>
-            <div class="col-lg-1 col-md-2 col-sm-2 col-2">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 24" width="100%"><path d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z" fill="#000" opacity=".07"></path><path d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32" fill="#FFF"></path><path d="M37 16.95V21c0 1.1-.9 2-2 2H23.228c7.896-1.815 12.043-4.601 13.772-6.05z" fill="#EDA024"></path><path fill="#494949" d="M9 11h20v2H9z"></path><path d="M22 12c0 1.7-1.3 3-3 3s-3-1.4-3-3 1.4-3 3-3c1.7 0 3 1.3 3 3z" fill="#EDA024"></path></svg>
-            </div>
-            <div class="col-lg-1 col-md-2 col-sm-2 col-2">
-              <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" width="100%"><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><circle fill="#EB001B" cx="15" cy="12" r="7"></circle><circle fill="#F79E1B" cx="23" cy="12" r="7"></circle><path fill="#FF5F00" d="M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z"></path></svg>
-            </div>
-            <div class="col-lg-1 col-md-2 col-sm-2 col-2">
-              <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" width="100%"><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><path d="M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z" fill="#142688"></path></svg>
-            </div>
-            <div class="col-lg-1 col-md-2 col-sm-2 col-2">
-              <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" width="100%"><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><path d="M12 12v3.7c0 .3-.2.3-.5.2-1.9-.8-3-3.3-2.3-5.4.4-1.1 1.2-2 2.3-2.4.4-.2.5-.1.5.2V12zm2 0V8.3c0-.3 0-.3.3-.2 2.1.8 3.2 3.3 2.4 5.4-.4 1.1-1.2 2-2.3 2.4-.4.2-.4.1-.4-.2V12zm7.2-7H13c3.8 0 6.8 3.1 6.8 7s-3 7-6.8 7h8.2c3.8 0 6.8-3.1 6.8-7s-3-7-6.8-7z" fill="#3086C8"></path></svg>
-            </div>
-          </div>
         </div>
       </div>
     </footer>
 
     <!-- ! SCROLL TO TOP BUTTON ! -->
 
-    <a href="#header" class="not hidden scroll_to_top position-fixed text-decoration-none bg-dark text-white">&Uparrow;</a>
+    <a
+      href="#header"
+      class="not hidden scroll_to_top position-fixed text-decoration-none bg-dark text-white"
+      >&Uparrow;</a
+    >
 
     <!-- ! BODY END ! -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
