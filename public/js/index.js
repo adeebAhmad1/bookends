@@ -17,10 +17,11 @@ const menuOpen = (el,className) => el.addEventListener("click",()=> document.bod
 
 document.querySelectorAll('a').forEach(el=> el.classList.contains("not") ? "" : el.addEventListener("click",e=> e.preventDefault()))
 collapse_links.forEach(el=>el.addEventListener("click",()=>document.querySelector(`.menu_${el.dataset.link}`).classList.toggle("collapse_link")))
-search_icon.forEach(el=> menuOpen(el,"search_active"))
 menu_btn.forEach(el=> menuOpen(el,"over_hide"))
 cart_icon[0].addEventListener("mouseenter",()=> document.body.classList.toggle("overflow-hidden"))
 cart_icon[1].addEventListener("click",()=> document.body.classList.toggle("overflow-hidden"))
+search_icon[0].addEventListener("mouseenter",()=> document.body.classList.toggle("search_active"))
+search_icon[1].addEventListener("click",()=> document.body.classList.toggle("search_active"))
 
 
 const handleScroll = ()=>{
