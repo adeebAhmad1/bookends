@@ -1672,10 +1672,10 @@ section.help_us::before {
 
 @media (max-width: 576px){
   .footer_link{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .footer_link h6{
-    font-size: 2rem !important;
+    font-size: 1.6rem !important;
   }
 }
 
