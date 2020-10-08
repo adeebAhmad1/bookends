@@ -14,8 +14,8 @@ const search_icon = document.querySelectorAll('.search_icon');
 const slidesPerView = innerWidth > 992 ? 5 : innerWidth > 768 ? 4 : innerWidth > 576 ? 3 : 2;
 
 const menuOpen = (el,className) => el.addEventListener("click",()=> document.body.classList.toggle(className))
-
 document.querySelectorAll('a').forEach(el=> el.classList.contains("not") ? "" : el.addEventListener("click",e=> e.preventDefault()))
+document.querySelectorAll('form').forEach(el=> el.classList.contains("not") ? "" : el.addEventListener("submit",e=> e.preventDefault()))
 collapse_links.forEach(el=>el.addEventListener("click",()=>document.querySelector(`.menu_${el.dataset.link}`).classList.toggle("collapse_link")))
 menu_btn.forEach(el=> menuOpen(el,"over_hide"))
 cart_icon[0].addEventListener("mouseenter",()=> document.body.classList.toggle("overflow-hidden"))
